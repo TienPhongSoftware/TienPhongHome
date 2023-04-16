@@ -1,0 +1,15 @@
+.hoverButtonNav:hover {
+  --p: 100%;
+  --s: calc(
+    150% + 0.61em
+  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  color: #fff;
+}
+.hoverButtonNav {
+  --c: #1095c1;
+  line-height: 1.2em;
+  background: linear-gradient(to right, black 100%, white 50%);
+  background-size: var(--s, 0%) 200%;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in, background-position 0s;
+}
