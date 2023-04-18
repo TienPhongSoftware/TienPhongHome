@@ -75,4 +75,4 @@ stages:
               appName: $(webAppName)
               runtimeStack: 'NODE|10.10'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              startUpCommand: 'pm2 start dist/main.js --no-daemon'
+              startUpCommand: 'npm run dev'
