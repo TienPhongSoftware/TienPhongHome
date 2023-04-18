@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+div {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/SVN-Gilroy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/fonts/SVN-Gilroy-Xlight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Thin";
+  src: url("/fonts/SVN-Gilroy-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/Helvetica-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Thin";
+  src: url("/fonts/HelveticaNeue-UltraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-Light";
+  src: url("/fonts/Helvetica-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@keyframes slideDown {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.nav-drop-animate {
+  transition: height 0.5s ease-in-out;
+  animation: slideDown 3s forwards;
+}
+
+.line-animation::after {
+  animation: slideDown 3s forwards;
+}
+
+@keyframes circle-animation {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: 100 0;
+  }
+}
+
+/* Thêm hiệu ứng cho circle */
+.line-animation circle {
+  animation: circle-animation 1.5s ease-in-out 1;
+}
