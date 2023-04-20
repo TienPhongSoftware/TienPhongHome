@@ -3,8 +3,103 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Image from "next/image";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 function TabsWorks() {
+  //Load More, All Tabs
+  type Item = {
+    id: number;
+    tittle: string;
+    textIntro: string;
+    url: string;
+  };
+
+  const items: Item[] = [
+    {
+      id: 1,
+      tittle: "Employees & Contractor Portals (CPM)",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 2,
+      tittle: "Item 2",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 3,
+      tittle: "Item 3",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 4,
+      tittle: "Item 4",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 5,
+      tittle: "Item 5",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 1,
+      tittle: "Item 1",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 2,
+      tittle: "Item 2",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 3,
+      tittle: "Item 3",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+    {
+      id: 5,
+      tittle: "Item 5",
+      textIntro:
+        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+      url: "url 1",
+    },
+  ];
+
+  const [hasMore, setHasMore] = useState(true);
+  const [currentItems, setCurrentItems] = useState<Item[]>(items.slice(0, 6));
+  const [loading, setLoading] = useState(false);
+
+  const fetchMoreData = () => {
+    if (currentItems.length >= items.length) {
+      setHasMore(false);
+      return;
+    }
+    setLoading(true);
+    setTimeout(() => {
+      const nextItems = items.slice(
+        currentItems.length,
+        currentItems.length + 6
+      );
+      setCurrentItems((prevItems) => [...prevItems, ...nextItems]);
+      setLoading(false);
+    }, 1000);
+  };
+
   const [selectedTab, setSelectedTab] = useState(0);
 
   const handleTabSelect = (index: number) => {
@@ -114,276 +209,73 @@ function TabsWorks() {
               <div className="flex flex-wrap mx-[-15px]">
                 <div className="basis-[0%] flex-grow max-w-full relative w-full px-[15px]">
                   <div className="p-tabsWorksInside2 relative min-h-[150px]">
-                    <div className="flex flex-wrap px-0 justify-between after:w-WorkTabsAfter">
-                      {/* Clone nội dung ở đây */}
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+                    <InfiniteScroll
+                      className=""
+                      dataLength={currentItems.length}
+                      next={fetchMoreData}
+                      hasMore={hasMore}
+                      loader={
+                        loading ? (
+                          <h4 className="text-center text-blue-400 font-bold w-full">
+                            Loading...
+                          </h4>
+                        ) : null
+                      }
+                    >
+                      <div className="flex flex-wrap px-0 justify-between after:w-WorkTabsAfter">
+                        {/* Clone nội dung ở đây */}
 
-                      {/* Clone nội dung ở đây */}
-                    </div>
-                    <p className=" text-center mt-[44px] mb-[80px] block">
+                        {currentItems.map((item) => (
+                          <div
+                            key={item.id}
+                            className="lg:flex-FooterBigRow lg:max-w-worksAll
+                        bg-white hover:shadow-lg duration-75 pb-worksAll 
+                        sm:flex-WhySM sm:max-w-full block
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
+                          >
+                            <div>
+                              <a
+                                href=""
+                                className="
+                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
+                              >
+                                <Image
+                                  width={958}
+                                  height={623}
+                                  alt="Works Photo"
+                                  src={"/images/layout/works-1.jpg"}
+                                  className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
+                                />
+                              </a>
+                              <div className="md:mb-4 sm:mb-[16]">
+                                <a
+                                  href=""
+                                  className="md:font-bold text-[20px] sm:font-[500]"
+                                >
+                                  {item.tittle}
+                                </a>
+                              </div>
+                              <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
+                                {item.textIntro}
+                              </div>
+                              <div className="bottom-[16px] left-[16px] absolute">
+                                <a
+                                  href={item.url}
+                                  className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
+                                >
+                                  Read more →
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                        {/* Clone nội dung ở đây */}
+                      </div>
+                    </InfiniteScroll>
+                    <p
+                      className=" text-center mt-[44px] mb-[80px] block"
+                      onClick={fetchMoreData}
+                    >
                       <span
                         className="{`mr-6 bg-[#00aeef] border-[#00aeef] 
                         lg:px-[40px] lg:leading-[52px]

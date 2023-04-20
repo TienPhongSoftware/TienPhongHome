@@ -61,7 +61,7 @@ function BannerWorks() {
           leading-[1.2]"
             data-aos="fade-up"
           >
-            A reliable one-stop source for <br /> your software development
+            How we meet <br /> our client’s demand
           </h1>
           <div
             className="lg:text-[1.2vw] sm:text-[5vw] 
@@ -69,8 +69,41 @@ function BannerWorks() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>Act with speed and agility</p>
+            <p>Explore every detail of our success stories</p>
           </div>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="200"
+            href=""
+            className="mr-6 bg-[#00aeef] border-[#00aeef] 
+                  lg:px-[40px] lg:leading-[52px]
+      lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
+      inline-block text-center text-white border-2 rounded-[32px] relative
+      z-10 font-bold overflow-hidden transition-all outline-0 isolate
+      before:z-[-1]
+      before:content['']
+      before:absolute
+      before:w-full
+      before:h-full
+      before:bg-white
+      before:left-[-100%]
+      before:top-0
+      before:transition-all
+      before:duration-[0.5s]
+      hover:before:left-0
+      hover:duration-500
+      hover:text-black
+      sm:min-w-[34vw]
+      sm:text-[3.8vw]
+      sm:leading-[10vw]
+      sm:px-[5vw]
+      md:min-w-[10vw]
+      md:text-[2.8vw]
+      md:leading-[8vw]
+      md:px-[5vw]"
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </div>

@@ -170,7 +170,7 @@ function Home() {
          before:to-slate-900 before:opacity-50 before:z-10"
           >
             <video
-              src="images/videos/video.mp4"
+              src="https://media.enlabsoftware.com/wp-content/uploads/2022/05/27085756/File-final-up-banner-website.mp4"
               autoPlay
               loop
               muted
