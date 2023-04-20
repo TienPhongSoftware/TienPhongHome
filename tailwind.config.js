@@ -55,6 +55,7 @@ module.exports = {
         tabsWorksInside: "calc(72px - 12px)",
         tabsWorksInside2: "15px 0",
         worksAll: "calc(16px + 16px + 16px);",
+        loadMoreButton: "10px 25px",
       },
       transitionProperty: {
         bg: "background-color",
@@ -135,6 +136,7 @@ module.exports = {
         AboutUsRowWidth: "calc(50% - 70px)",
         ServicePhoto: "calc(50% - 48px)",
         FooterBigRow: "calc(60vw + 60vw + 60vw + 24px * 3)",
+        WorkTabsAfter: "calc(33.3% - 24px)",
       },
     },
   },

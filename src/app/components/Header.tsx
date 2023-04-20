@@ -16,13 +16,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/swiper.min.css";
 
-import AOS from "./aos";
-
 library.add(faComputer, faMobile, faScrewdriverWrench, faCaretDown);
 
 function Header() {
-  AOS.init({});
-
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {

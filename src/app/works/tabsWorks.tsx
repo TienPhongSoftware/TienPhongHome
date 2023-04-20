@@ -11,6 +11,8 @@ function TabsWorks() {
     setSelectedTab(index);
   };
 
+  //Load More functions
+
   return (
     <div className="min-h-[80vh] bg-white">
       <Tabs
@@ -112,13 +114,13 @@ function TabsWorks() {
               <div className="flex flex-wrap mx-[-15px]">
                 <div className="basis-[0%] flex-grow max-w-full relative w-full px-[15px]">
                   <div className="p-tabsWorksInside2 relative min-h-[150px]">
-                    <div className="flex flex-wrap justify-between px-0">
+                    <div className="flex flex-wrap px-0 justify-between after:w-WorkTabsAfter">
                       {/* Clone nội dung ở đây */}
                       <div
                         className="lg:flex-FooterBigRow lg:max-w-worksAll
                         bg-white hover:shadow-lg duration-75 pb-worksAll 
                         sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div>
                           <a
@@ -162,7 +164,7 @@ function TabsWorks() {
                         className="lg:flex-FooterBigRow lg:max-w-worksAll
                         bg-white hover:shadow-lg duration-75 pb-worksAll 
                         sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div>
                           <a
@@ -206,7 +208,7 @@ function TabsWorks() {
                         className="lg:flex-FooterBigRow lg:max-w-worksAll
                         bg-white hover:shadow-lg duration-75 pb-worksAll 
                         sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div>
                           <a
@@ -250,7 +252,7 @@ function TabsWorks() {
                         className="lg:flex-FooterBigRow lg:max-w-worksAll
                         bg-white hover:shadow-lg duration-75 pb-worksAll 
                         sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div>
                           <a
@@ -294,7 +296,51 @@ function TabsWorks() {
                         className="lg:flex-FooterBigRow lg:max-w-worksAll
                         bg-white hover:shadow-lg duration-75 pb-worksAll 
                         sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
+                      >
+                        <div>
+                          <a
+                            href=""
+                            className="
+                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
+                          >
+                            <Image
+                              width={958}
+                              height={623}
+                              alt="Works Photo"
+                              src={"/images/layout/works-1.jpg"}
+                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
+                            />
+                          </a>
+                          <div className="md:mb-4 sm:mb-[16]">
+                            <a
+                              href=""
+                              className="md:font-bold text-[20px] sm:font-[500]"
+                            >
+                              Employees & Contractor Portals (CPM)
+                            </a>
+                          </div>
+                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
+                            A custom construction management system (CPM) which
+                            helps to manage employees, contractors, equipment
+                            and also streamline operation and inspection
+                            processes.
+                          </div>
+                          <div className="bottom-[16px] left-[16px] absolute">
+                            <a
+                              href=""
+                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
+                            >
+                              Read more →
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="lg:flex-FooterBigRow lg:max-w-worksAll
+                        bg-white hover:shadow-lg duration-75 pb-worksAll 
+                        sm:flex-WhySM sm:max-w-full block
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div>
                           <a
@@ -335,52 +381,40 @@ function TabsWorks() {
                         </div>
                       </div>
 
-                      <div
-                        className="lg:flex-FooterBigRow lg:max-w-worksAll
-                        bg-white hover:shadow-lg duration-75 pb-worksAll 
-                        sm:flex-WhySM sm:max-w-full block
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
-                      >
-                        <div>
-                          <a
-                            href=""
-                            className="
-                           mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
-                          >
-                            <Image
-                              width={958}
-                              height={623}
-                              alt="Works Photo"
-                              src={"/images/layout/works-1.jpg"}
-                              className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
-                            />
-                          </a>
-                          <div className="md:mb-4 sm:mb-[16]">
-                            <a
-                              href=""
-                              className="md:font-bold text-[20px] sm:font-[500]"
-                            >
-                              Employees & Contractor Portals (CPM)
-                            </a>
-                          </div>
-                          <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
-                            A custom construction management system (CPM) which
-                            helps to manage employees, contractors, equipment
-                            and also streamline operation and inspection
-                            processes.
-                          </div>
-                          <div className="bottom-[16px] left-[16px] absolute">
-                            <a
-                              href=""
-                              className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
-                            >
-                              Read more →
-                            </a>
-                          </div>
-                        </div>
-                      </div>
                       {/* Clone nội dung ở đây */}
                     </div>
+                    <p className=" text-center mt-[44px] mb-[80px] block">
+                      <span
+                        className="{`mr-6 bg-[#00aeef] border-[#00aeef] 
+                        lg:px-[40px] lg:leading-[52px]
+            lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
+            inline-block text-center text-white border-2 rounded-[32px] relative
+            z-10 font-bold overflow-hidden transition-all outline-0 isolate cursor-pointer
+            before:z-[-1]
+            before:content['']
+            before:absolute
+            before:w-full
+            before:h-full
+            before:bg-white
+            before:left-[-100%]
+            before:top-0
+            before:transition-all
+            before:duration-[0.4s]
+            hover:before:left-0
+            hover:text-black
+            sm:min-w-[34vw]
+            sm:text-[3.8vw]
+            sm:leading-[10vw]
+            sm:px-[5vw]
+            md:min-w-[10vw]
+            md:text-[2.8vw]
+            md:leading-[8vw]
+            md:px-[5vw]
+                     `}"
+                      >
+                        Load more
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -394,11 +428,11 @@ function TabsWorks() {
               <div className="flex flex-wrap mx-[-15px]">
                 <div className="basis-[0%] flex-grow max-w-full relative w-full px-[15px]">
                   <div className="p-tabsWorksInside2 relative min-h-[150px]">
-                    <div className="flex flex-wrap justify-between px-0">
+                    <div className="flex flex-wrap px-0 justify-between">
                       {/* Clone nội dung ở đây */}
                       <div
                         className="md:p-12 flex-WhySM max-w-full bg-white hover:shadow-lg duration-75 
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div className="md:relative md:min-h-[350px] lg:pl-ServicesP2">
                           <a
@@ -441,7 +475,7 @@ function TabsWorks() {
 
                       <div
                         className="md:p-12 flex-WhySM max-w-full bg-white hover:shadow-lg duration-75 
-                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] sm:p-ServicesP3 text-[#222428]"
+                      shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div className="md:relative md:min-h-[350px] lg:pl-ServicesP2">
                           <a

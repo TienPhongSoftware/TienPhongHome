@@ -2,10 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-import AOS from "./aos";
-
 function Footer() {
-  AOS.init({});
   return (
     <footer>
       <div className="relative">

@@ -1,12 +1,15 @@
 "use client";
 import React from "react";
+import dynamic from "next/dynamic";
 import Header from "./Header";
 import Footer from "./Footer";
 import HeaderPages from "./HeaderPages";
 import FooterBig from "./FooterBig";
 import AOS from "./aos";
 
-AOS.init();
+const DynamicAOS = dynamic(() => Promise.resolve(AOS), {
+  ssr: false,
+});
 
 type HeaderType = "default" | "pages";
 type FooterType = "default" | "footerBig";
@@ -38,6 +41,7 @@ function PageWrapper({
 
   return (
     <>
+      <DynamicAOS />
       {HeaderComponent && <HeaderComponent />}
       {children}
       {FooterComponent && <FooterComponent />}
