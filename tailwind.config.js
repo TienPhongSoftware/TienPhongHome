@@ -30,6 +30,10 @@ module.exports = {
           "linear-gradient(143.38deg,#00aeef 0,#005195 100%),linear-gradient(323.42deg,#130086 0,#96013c 101.12%)",
         filterBannerPages:
           "linear-gradient(180deg,rgba(12,21,42,.7) 48.85%,rgba(12,21,42,.7) 100%)",
+        QuoteTech:
+          "linear-gradient(0deg,#f8f9fb 0,#f8f9fb 50%,#fff 51%,#fff 100%)",
+        CareersAfter:
+          "linear-gradient(0deg,rgba(12,21,42,.7),rgba(12,21,42,.7))",
       },
       padding: {
         "16px24px": "16px 24px",
@@ -56,6 +60,16 @@ module.exports = {
         tabsWorksInside2: "15px 0",
         worksAll: "calc(16px + 16px + 16px);",
         loadMoreButton: "10px 25px",
+        QuoteTech: "10px 16px",
+        QuoteTechIn: "48px 74px",
+        TechDomain: "24px 10px",
+        TechWhySM: "24px 0",
+        CareerStartSM: "2.8vw 3.2vw",
+        CareerStartLG: "42px 48px",
+        CareerStartLGRight: "calc(48px * 2)",
+        InputContact: "5px 10px",
+        ContactButton: "1px 6px",
+        ContactIcon: "10px 0",
       },
       transitionProperty: {
         bg: "background-color",
@@ -71,6 +85,9 @@ module.exports = {
         maxFooterLGs: "calc(50% - 8px)",
         maxAboutUsPartners: "calc(33.3% - 50px)",
         worksAll: "calc(33.3% - 24px)",
+        CareersWhyUs: "calc(50% - 70px)",
+        CareersOurCore: "calc(25% - 32px)",
+        ContainerContact: "calc(1140px + 32px)",
       },
       colors: {
         zero: "0 0",
@@ -86,6 +103,8 @@ module.exports = {
         NavDropDown: ".125rem 0 0",
         amFull: "0 -100px",
         FooterBigRow: "40px 12px",
+        CheckContact: "0 0 0 1em",
+        GetInContact: "calc(-24px / 2)",
       },
       flex: {
         partner: "0 0 25%",
@@ -100,6 +119,11 @@ module.exports = {
         flexFooter: "0 0 calc(50% - 8px)",
         noneAuto: "0 0 auto",
         AboutUsRowFlex: "0 0 calc(50% - 70px)",
+        TechnologiesUse: "0 0 calc(25% - 18px)",
+        TechUseSM: "0 0 calc(50% - 10px)",
+        TechDomain: "0 0 calc(25% - 36px)",
+        TechDomainMD: "0 0 calc(33.33% - 10px)",
+        CareersOurCore: "0 0 calc(25% - 32px)",
       },
       height: {
         heightOTWorks: "calc(100% - 16px - 32px)",
@@ -125,18 +149,25 @@ module.exports = {
       backgroundPosition: {
         listIcon: "left top 7px",
         listFooterBig: "left top 3px",
+        CareerStartSM: "center right 3.2vw",
+        CareerStartLG: "center right 48px",
       },
       transformOrigin: {
         toggleNav: "50%",
       },
       backgroundSize: {
         sauMuoi: "60px",
+        CareerStartSM: "2vw",
+        CareerStartLG: "32px",
+        ContactCheckBox: "20px",
       },
       width: {
         AboutUsRowWidth: "calc(50% - 70px)",
         ServicePhoto: "calc(50% - 48px)",
         FooterBigRow: "calc(60vw + 60vw + 60vw + 24px * 3)",
         WorkTabsAfter: "calc(33.3% - 24px)",
+        CareersWhyWork: "calc(100% + 96px)",
+        CareersWhyWorkMD: "calc(100% + 40px)",
       },
     },
   },

@@ -59,7 +59,7 @@ function Home() {
             <div
               className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
             max-w-maxContainer 
-          mx-auto max-w-[calc(1664px + 32px)] "
+          mx-auto"
             >
               <div className="lg:max-w-[50%] sm:max-w-[100%]">
                 <h2
@@ -98,7 +98,7 @@ function Home() {
                 </div>
                 <div className="sm:flex lg:flex">
                   <a
-                    href=""
+                    href="contact-us"
                     className="mr-6 bg-[#00aeef] border-[#00aeef] 
                   lg:px-[40px] lg:leading-[52px]
       lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap

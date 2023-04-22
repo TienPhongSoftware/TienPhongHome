@@ -816,7 +816,7 @@ mx-auto max-w-maxContainer
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="careers"
                         className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
@@ -840,7 +840,7 @@ mx-auto max-w-maxContainer
                     </li>
                     <li>
                       <a
-                        href=""
+                        href="contact-us"
                         className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 

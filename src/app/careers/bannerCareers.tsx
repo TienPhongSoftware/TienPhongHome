@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-function BannerWorks() {
+function BannerCareers() {
   const [pageLoaded, setPageLoaded] = useState(false);
   const [isScrollCus, setIsScrollCus] = useState(false);
 
@@ -34,10 +34,10 @@ function BannerWorks() {
       `}
       >
         <Image
-          src="/images/layout/banner-4.jpg"
+          src="/images/layout/banner-3.jpg"
           className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-contain xl:object-cover
-          align-middle border-none bg-center bg-cover
+          absolute sm:h-[560px] lg:h-[638px] sm:w-[1351px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
+          align-middle border-none bg-center bg-cover sm:translate-x-[-480px] lg:translate-x-0
           "
           alt="Banner"
           width={2000}
@@ -61,7 +61,7 @@ function BannerWorks() {
           leading-[1.2]"
             data-aos="fade-up"
           >
-            How we meet <br /> our client’s demand
+            Farm the future. <br /> Onward and Upward.
           </h1>
           <div
             className="lg:text-[1.2vw] sm:text-[5vw] 
@@ -69,12 +69,15 @@ function BannerWorks() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>Explore every detail of our success stories</p>
+            <p>
+              We strive to design a great workplace where people go to work{" "}
+              <br /> to make a life, not just a living.
+            </p>
           </div>
           <a
             data-aos="fade-up"
             data-aos-delay="200"
-            href="contact-us"
+            href=""
             className="mr-6 bg-[#00aeef] border-[#00aeef] 
                   lg:px-[40px] lg:leading-[52px]
       lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
@@ -102,7 +105,7 @@ function BannerWorks() {
       md:leading-[8vw]
       md:px-[5vw]"
           >
-            Contact Us
+            Jobs @ Enlab
           </a>
         </div>
       </div>
@@ -110,4 +113,4 @@ function BannerWorks() {
   );
 }
 
-export default BannerWorks;
+export default BannerCareers;

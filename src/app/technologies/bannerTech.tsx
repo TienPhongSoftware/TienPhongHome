@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-function BannerWorks() {
+function BannerTech() {
   const [pageLoaded, setPageLoaded] = useState(false);
   const [isScrollCus, setIsScrollCus] = useState(false);
 
@@ -26,29 +26,10 @@ function BannerWorks() {
   return (
     <div className="overflow-hidden">
       <div
-        className={`visible z-[-10000]  top-0 left-0
-      overflow-hidden transform translate-x-0 
-      translate-y-0 translate-z-0 h-full lg:w-full 
-      sm:w-full md:w-[820px] bg-center bg-cover
-      ${isScrollCus ? "" : "fixed"}
-      `}
-      >
-        <Image
-          src="/images/layout/banner-4.jpg"
-          className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-contain xl:object-cover
-          align-middle border-none bg-center bg-cover
-          "
-          alt="Banner"
-          width={2000}
-          height={2000}
-        />
-      </div>
-      <div
         className="pt-[80px] text-left justify-start h-[560px]
       relative z-10 flex items-center after:bg-filterBannerPages
       after:z-[-10] after:absolute after:object-cover after:h-full
-      after:w-full after:left-0 after:top-0 after:text-left"
+      after:w-full after:left-0 after:top-0 after:text-left bg-[url(/images/layout/technologies-1.jpg)] bg-cover bg-center"
       >
         <div
           className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
@@ -57,11 +38,11 @@ function BannerWorks() {
         >
           <h1
             className="text-white font-bold mb-[0.5rem]
-            lg:text-[56px] sm:text-[10vw] md:text-[6vw]
+            lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
           leading-[1.2]"
             data-aos="fade-up"
           >
-            How we meet <br /> our client’s demand
+            Key Technologies
           </h1>
           <div
             className="lg:text-[1.2vw] sm:text-[5vw] 
@@ -69,7 +50,9 @@ function BannerWorks() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>Explore every detail of our success stories</p>
+            <p>
+              Accelerate your development journey with the latest technologies
+            </p>
           </div>
           <a
             data-aos="fade-up"
@@ -110,4 +93,4 @@ function BannerWorks() {
   );
 }
 
-export default BannerWorks;
+export default BannerTech;

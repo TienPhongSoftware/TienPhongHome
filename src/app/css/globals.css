@@ -115,7 +115,25 @@ body {
   }
 }
 
+iframe {
+  width: 100%;
+}
+
 /* Thêm hiệu ứng cho circle */
 .line-animation circle {
   animation: circle-animation 1.5s ease-in-out 1;
+}
+
+.slide {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

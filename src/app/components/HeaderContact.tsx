@@ -18,7 +18,7 @@ import "swiper/swiper.min.css";
 
 library.add(faComputer, faMobile, faScrewdriverWrench, faCaretDown);
 
-function Header() {
+function HeaderContact() {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
@@ -39,16 +39,28 @@ function Header() {
   const isActiveDropNav = (index: number) => {
     return activeDropNav.includes(index);
   };
-  //Nav Responsive
+  //Scroll effects
+  const [pageLoaded, setPageLoaded] = useState(false);
+  const [isScrolledDefault, setIsScrolledDefault] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrollCus, setIsScrollCus] = useState(false);
+
+  const handleScroll = () => {
+    const offsetHeight = document.documentElement.offsetHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollPercent = scrollTop / (offsetHeight - window.innerHeight);
+
+    setIsScrolledDefault(scrollTop === 0);
+    setIsScrolled(scrollTop > 0 && scrollPercent < 0.1);
+    setIsScrollCus(scrollPercent >= 0.1);
+  };
 
   useEffect(() => {
-    function handleScroll() {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+    if (!pageLoaded) {
+      setIsScrolledDefault(true);
+      setPageLoaded(true);
+    } else {
+      setIsScrolledDefault(window.pageYOffset === 0);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -56,7 +68,9 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [pageLoaded]);
+
+  //Scroll effects
 
   const [isHovered, setIsHovered] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -137,11 +151,15 @@ function Header() {
         <nav
           className={`sm:min-h-[60px] sm:overflow-[unset]
       fixed w-full min-h-[80px] top-0 left-0
-      transition-bg ${
-        isScrolled
-          ? "bg-white shadow-lg bg-opacity-80"
-          : "sm:bg-[#545b69] lg:bg-transparent bg-opacity-100"
-      } z-50`}
+      transition-bg 
+      ${
+        isScrolledDefault
+          ? "sm:bg-[#545b69] lg:bg-transparent bg-opacity-100 text-white"
+          : ""
+      }
+      ${isScrolled ? "bg-black shadow-lg bg-opacity-80" : ""}
+      ${isScrollCus ? "bg-white bg-opacity-100" : ""}
+      z-50`}
         >
           <div
             className="lg:mx-auto 
@@ -164,7 +182,7 @@ function Header() {
                 sm:fixed lg:static
                 sm:w-full
                 sm:z-10
-                ${isScrolled ? "text-black" : "text-white"}
+                ${isScrolled ? "text-black" : ""}
                  `}
                 >
                   <Image
@@ -186,14 +204,20 @@ function Header() {
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold ${
-                            isScrolled ? "text-black" : "text-white"
-                          }`}
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          ${isScrolledDefault ? "text-black" : ""}
+                          ${isScrolled ? "text-black" : ""}`}
                         >
                           Services
                         </a>
                         <ul
-                          className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
+                          className={`pointer-events transition-all absolute 
+                          border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] 
+                          rounded-[24px] overflow-hidden shadow-lg float-none 
+                          top-[100%] min-w-[10rem] text-black text-left 
+                          list-none before:absolute before:bg-white 
+                          before:z-[-20] 
+                          ${
                             isDropdownOpen
                               ? "mt-[-20px] opacity-100 visible block"
                               : "invisible opacity-0 mt-[15px]"
@@ -201,48 +225,52 @@ function Header() {
                           onMouseEnter={handleMouseEnter}
                           onMouseLeave={handleMouseLeave}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="pl-16 m-0 p-16px24px
+                               bg-white block transition-all duration-300 
+                               relative text-black 
+                               hover:text-white hover:bg-[#00aeef]"
                             >
                               Web Application Development
                               <FontAwesomeIcon
                                 icon={faComputer}
                                 className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none text-[#00aeef]"
+                            w-[24px] left-[24px] pointer-events-none text-[#00aeef] duration-300 group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Enterprise applications maximize your efficiency
                               </span>
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="pl-16 m-0 p-16px24px bg-white block transition-all 
+                              duration-300 relative text-black group-hover:text-white hover:bg-[#e2127a]"
                             >
                               Flutter App Development
                               <FontAwesomeIcon
                                 icon={faMobile}
-                                className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none text-[#ca1780]"
+                                className="bg-center bg-no-repeat absolute h-[24px] duration-300
+                            w-[24px] left-[24px] pointer-events-none text-[#ca1780] group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Building the next-gen mobile app that rocks
                               </span>
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="pl-16 m-0 p-16px24px bg-white block transition-all duration-300 relative text-black group-hover:text-white hover:bg-[#fd9f24]"
                             >
                               Software Customization & Enhancement
                               <FontAwesomeIcon
                                 icon={faScrewdriverWrench}
-                                className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none  text-[#f7a233]"
+                                className="bg-center bg-no-repeat absolute h-[24px] duration-300
+                            w-[24px] left-[24px] pointer-events-none  text-[#f7a233] group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Make your existing software better
@@ -261,14 +289,21 @@ function Header() {
                       >
                         <a
                           href="works"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
-                            isScrolled ? "text-black" : "text-white"
-                          }`}
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
+                          inline-flex text-[16px] font-bold  
+                          ${isScrolledDefault ? "text-black" : ""}
+                          ${isScrolled ? "text-black" : ""}`}
                         >
                           Works
                         </a>
                         <ul
-                          className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
+                          className={`pointer-events transition-all absolute 
+                          border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] 
+                          rounded-[24px] overflow-hidden shadow-lg 
+                          float-none top-[100%] min-w-[10rem] text-black 
+                          text-left list-none before:absolute before:bg-white 
+                          before:z-[-20] 
+                          ${
                             isDropdownOpenWorks
                               ? "mt-[-20px] opacity-100 visible block"
                               : "invisible opacity-0 mt-[15px]"
@@ -276,74 +311,74 @@ function Header() {
                           onMouseEnter={handleMouseEnterWorks}
                           onMouseLeave={handleMouseLeaveWorks}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Real Estate
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Construction
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Education
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Marketplace
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Data Management
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Procurement
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Marketing
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Recruitment
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               ERP
                             </a>
@@ -360,9 +395,10 @@ function Header() {
                       >
                         <a
                           href="technologies"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
-                            isScrolled ? "text-black" : "text-white"
-                          }`}
+                          className={`hover:text-[#00aeef] transition-all 
+                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          ${isScrolledDefault ? "text-black" : ""}
+                          ${isScrolled ? "text-black" : ""}`}
                         >
                           Technologies
                         </a>
@@ -375,58 +411,58 @@ function Header() {
                           onMouseEnter={handleMouseEnterTech}
                           onMouseLeave={handleMouseLeaveTech}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               .Net
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               C#
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Microservices
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Angular
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Python
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Node.js
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Vue.js
                             </a>
@@ -437,9 +473,11 @@ function Header() {
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="about-us"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
-                          isScrolled ? "text-black" : "text-white"
-                        }`}
+                        className={`hover:text-[#00aeef] 
+                        transition-all pr-0 pl-0 inline-flex 
+                        text-[16px] font-bold  
+                        ${isScrolledDefault ? "text-black" : ""}
+                        ${isScrolled ? "text-black" : ""}`}
                       >
                         About us
                       </a>
@@ -447,9 +485,11 @@ function Header() {
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="careers"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
-                          isScrolled ? "text-black" : "text-white"
-                        }`}
+                        className={`hover:text-[#00aeef] 
+                        transition-all pr-0 pl-0 inline-flex 
+                        text-[16px] font-bold 
+                        ${isScrolledDefault ? "text-black" : ""}
+                        ${isScrolled ? "text-black" : ""}`}
                       >
                         Careers
                       </a>
@@ -462,9 +502,10 @@ function Header() {
                       >
                         <a
                           href="#"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
-                            isScrolled ? "text-black" : "text-white"
-                          }`}
+                          className={`hover:text-[#00aeef] transition-all 
+                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          ${isScrolledDefault ? "text-black" : ""}
+                          ${isScrolled ? "text-black" : ""}`}
                         >
                           Think with Enlab
                         </a>
@@ -477,18 +518,18 @@ function Header() {
                           onMouseEnter={handleMouseEnterThinkWith}
                           onMouseLeave={handleMouseLeaveThinkWith}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Blog
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Whitepaper
                             </a>
@@ -611,15 +652,16 @@ function Header() {
              after:transition-all
              after:duration-[0.3s]
              after:ease-out 
+             ${isScrolledDefault ? "before:bg-white after:bg-white" : ""}
              ${
                isActive
-                 ? "after:rotate-[-45deg] after:translate-y-[3px] before:translate-y-[2px] before:rotate-[45deg]"
+                 ? "after:rotate-[-45deg] after:translate-y-[2px] before:translate-y-[1px] before:rotate-[45deg]"
                  : "after:rotate-0 before:rotate-0"
              }
              ${
                isScrolled
-                 ? "after:bg-black before:bg-black"
-                 : "after:bg-white before:bg-white"
+                 ? "before:bg-white after:bg-white"
+                 : "after:bg-black before:bg-black"
              } z-50`}
               ></span>
             </span>
@@ -1045,7 +1087,7 @@ function Header() {
               >
                 <li
                   className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
+                transition-all duration-3s ease-in-out text-left "
                 >
                   <a
                     href=""
@@ -1137,6 +1179,6 @@ function Header() {
   );
 }
 
-export default dynamic(() => Promise.resolve(Header), {
+export default dynamic(() => Promise.resolve(HeaderContact), {
   ssr: false,
 });

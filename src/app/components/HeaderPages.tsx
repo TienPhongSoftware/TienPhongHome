@@ -225,51 +225,52 @@ function HeaderPages() {
                           onMouseEnter={handleMouseEnter}
                           onMouseLeave={handleMouseLeave}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
                               className="pl-16 m-0 p-16px24px
-                               bg-white block transition-all 
+                               bg-white block transition-all duration-300 
                                relative text-black 
-                               hover:text-[#00aeef]"
+                               hover:text-white hover:bg-[#00aeef]"
                             >
                               Web Application Development
                               <FontAwesomeIcon
                                 icon={faComputer}
                                 className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none text-[#00aeef]"
+                            w-[24px] left-[24px] pointer-events-none text-[#00aeef] duration-300 group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Enterprise applications maximize your efficiency
                               </span>
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="pl-16 m-0 p-16px24px bg-white block transition-all 
+                              duration-300 relative text-black group-hover:text-white hover:bg-[#e2127a]"
                             >
                               Flutter App Development
                               <FontAwesomeIcon
                                 icon={faMobile}
-                                className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none text-[#ca1780]"
+                                className="bg-center bg-no-repeat absolute h-[24px] duration-300
+                            w-[24px] left-[24px] pointer-events-none text-[#ca1780] group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Building the next-gen mobile app that rocks
                               </span>
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="pl-16 m-0 p-16px24px bg-white block transition-all duration-300 relative text-black group-hover:text-white hover:bg-[#fd9f24]"
                             >
                               Software Customization & Enhancement
                               <FontAwesomeIcon
                                 icon={faScrewdriverWrench}
-                                className="bg-center bg-no-repeat absolute h-[24px]
-                            w-[24px] left-[24px] pointer-events-none  text-[#f7a233]"
+                                className="bg-center bg-no-repeat absolute h-[24px] duration-300
+                            w-[24px] left-[24px] pointer-events-none  text-[#f7a233] group-hover:text-white"
                               />
                               <span className="block text-[12px] font-thin">
                                 Make your existing software better
@@ -310,74 +311,74 @@ function HeaderPages() {
                           onMouseEnter={handleMouseEnterWorks}
                           onMouseLeave={handleMouseLeaveWorks}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Real Estate
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Construction
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Education
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Marketplace
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Data Management
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Procurement
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Marketing
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Recruitment
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               ERP
                             </a>
@@ -393,7 +394,7 @@ function HeaderPages() {
                         onMouseLeave={handleMouseLeaveTech}
                       >
                         <a
-                          href="#"
+                          href="technologies"
                           className={`hover:text-[#00aeef] transition-all 
                           pr-0 pl-0 inline-flex text-[16px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
@@ -410,58 +411,58 @@ function HeaderPages() {
                           onMouseEnter={handleMouseEnterTech}
                           onMouseLeave={handleMouseLeaveTech}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               .Net
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               C#
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Microservices
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Angular
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Python
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               Node.js
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Vue.js
                             </a>
@@ -483,7 +484,7 @@ function HeaderPages() {
                     </li>
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
-                        href="#"
+                        href="careers"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
                         text-[16px] font-bold 
@@ -517,18 +518,18 @@ function HeaderPages() {
                           onMouseEnter={handleMouseEnterThinkWith}
                           onMouseLeave={handleMouseLeaveThinkWith}
                         >
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Blog
                             </a>
                           </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all">
+                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
                               href=""
-                              className="m-0 p-16px24px bg-white block transition-all relative text-black hover:text-[#00aeef]"
+                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Whitepaper
                             </a>
@@ -570,7 +571,7 @@ function HeaderPages() {
                   </li>
                   <li className="inline-block ml-4">
                     <a
-                      href=""
+                      href="contact-us"
                       className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
                      w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
                      align-middle font-bold cursor-pointer bg-[#00aeef]
@@ -654,7 +655,7 @@ function HeaderPages() {
              ${isScrolledDefault ? "before:bg-white after:bg-white" : ""}
              ${
                isActive
-                 ? "after:rotate-[-45deg] after:translate-y-[1px] before:translate-y-[1px] before:rotate-[45deg]"
+                 ? "after:rotate-[-45deg] after:translate-y-[2px] before:translate-y-[1px] before:rotate-[45deg]"
                  : "after:rotate-0 before:rotate-0"
              }
              ${
@@ -914,7 +915,7 @@ function HeaderPages() {
                 <FontAwesomeIcon icon={faCaretDown} width={10} />
               </span>
               <a
-                href=""
+                href="technologies"
                 className="block text-[16px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
@@ -1044,7 +1045,7 @@ function HeaderPages() {
              h-[inherit] text-left transition-all duration-[3s]"
             >
               <a
-                href=""
+                href="careers"
                 className="block text-[16px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
@@ -1086,7 +1087,7 @@ function HeaderPages() {
               >
                 <li
                   className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
+                transition-all duration-3s ease-in-out text-left "
                 >
                   <a
                     href=""
@@ -1120,7 +1121,7 @@ function HeaderPages() {
         >
           <li className="ml-[24px]">
             <a
-              href=""
+              href="contact-us"
               className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
                      w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
                      align-middle font-bold cursor-pointer bg-[#00aeef]
