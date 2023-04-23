@@ -422,9 +422,10 @@ w-full p-InputContact overflow-visible m-0"
                           Get in touch for more information
                         </div>
                         <div
-                          className="mx-auto font-ThinCus md:table-row
+                          className="mx-auto font-ThinCus md:table
                           sm:block
                         sm:max-w-[425px] md:max-w-full
+                        text-center
                         "
                         >
                           <div

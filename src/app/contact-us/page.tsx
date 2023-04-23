@@ -1,6 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import dynamic from "next/dynamic";
+import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import ContactForm from "./ContactForm";
 import MapComponent from "./Map";
