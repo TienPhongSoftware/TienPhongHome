@@ -58,6 +58,6 @@ export const MenuItems = [
     title: "Careers",
   },
   {
-    title: "Think with Enlab",
+    title: "Think with Tien Phong",
   },
 ];

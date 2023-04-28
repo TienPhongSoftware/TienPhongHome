@@ -25,7 +25,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             data-aos-offset="-300"
             data-aos="fade-up"
           >
-            Enlab Software is a young and enthusiastic tech company based in
+            Tien Phong Software is a young and enthusiastic tech company based in
             Danang, Vietnam. At our core, we provide Agile Offshore Software
             Development for enterprises, startups, IT consulting vendors,
             digital agencies across the sea.
@@ -47,7 +47,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               mb-[32px] text-center font-bold leading-[1.2]
               "
             >
-              Quick facts about Enlab
+              Quick facts about Tien Phong
             </h3>
             <div
               className="flex justify-between mb-[56px]
@@ -136,7 +136,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 md:text-[2.5vw] font-bold
                 "
               >
-                And the fact about the name {"Enlab"}
+                And the fact about the name {"Tien Phong"}
               </h4>
               <div
                 className="

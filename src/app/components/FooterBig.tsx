@@ -338,7 +338,7 @@ mx-auto max-w-maxContainer
               sm:text-[2vw] md:text-[14px]
               "
               >
-                27 Che Viet Tan Street, Da Nang City, Viet Nam
+                423 Hai Phong Street, Da Nang City, Viet Nam
               </p>
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
@@ -346,7 +346,7 @@ mx-auto max-w-maxContainer
               sm:text-[2vw] md:text-[14px]
               "
               >
-                Enlab Software Copyright © 2023.
+                Tien Phong Software Copyright © 2023.
               </p>
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
@@ -835,7 +835,7 @@ mx-auto max-w-maxContainer
                         md:text-[2vw]
                         sm:text-[3vw]"
                       >
-                        Think with Enlab
+                        Think with Tien Phong
                       </a>
                     </li>
                     <li>

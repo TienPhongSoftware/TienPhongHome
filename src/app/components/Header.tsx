@@ -172,11 +172,11 @@ function Header() {
                  `}
                 >
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/logo9.png"
                     className="hover:scale-110 transition-all"
                     alt="My Icon"
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                   />
                 </a>
 
@@ -470,7 +470,7 @@ function Header() {
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
-                          Think with Enlab
+                          Think with Tien Phong
                         </a>
                         <ul
                           className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
@@ -1033,7 +1033,7 @@ function Header() {
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
-                Think with Enlab
+                Think with Tien Phong
               </a>
               <ul
                 className={`p-navDropdown overflow-hidden mx-[-24px]
