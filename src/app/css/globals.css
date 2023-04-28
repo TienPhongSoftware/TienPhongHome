@@ -20,6 +20,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  color: #000000;
 }
 
 h1,
