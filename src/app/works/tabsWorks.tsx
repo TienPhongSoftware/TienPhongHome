@@ -255,7 +255,7 @@ function TabsWorks() {
                                   {item.tittle}
                                 </a>
                               </div>
-                              <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
+                              <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
                                 {item.textIntro}
                               </div>
                               <div className="bottom-[16px] left-[16px] absolute">
@@ -343,12 +343,12 @@ function TabsWorks() {
                           <div className="md:mb-4 sm:mb-[16]">
                             <a
                               href=""
-                              className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.1vw] sm:font-[500]"
+                              className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.2vw] sm:font-[500]"
                             >
                               Employees & Contractor Portals (CPM)
                             </a>
                           </div>
-                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
+                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
                             A custom construction management system (CPM) which
                             helps to manage employees, contractors, equipment
                             and also streamline operation and inspection
@@ -386,12 +386,12 @@ function TabsWorks() {
                           <div className="md:mb-4 sm:mb-[16]">
                             <a
                               href=""
-                              className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.1vw] sm:font-[500]"
+                              className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.2vw] sm:font-[500]"
                             >
                               Employees & Contractor Portals (CPM)
                             </a>
                           </div>
-                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[1vw]">
+                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
                             A custom construction management system (CPM) which
                             helps to manage employees, contractors, equipment
                             and also streamline operation and inspection

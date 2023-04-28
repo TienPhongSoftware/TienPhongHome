@@ -23,8 +23,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM  sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -43,8 +43,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -62,8 +62,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -81,8 +81,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -100,8 +100,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -119,8 +119,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -138,8 +138,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -157,8 +157,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -176,8 +176,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -195,8 +195,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -214,8 +214,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -233,8 +233,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -252,8 +252,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -271,8 +271,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -290,8 +290,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -309,8 +309,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM
@@ -328,8 +328,8 @@ mx-auto"
             <a
               href=""
               className="text-black 
-            lg:flex-flexThinkWE sm:flex-WhySM
-            lg:max-w-maxOTWorks sm:max-w-full
+            xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
+            lg:max-w-full xl:max-w-maxOTWorks sm:max-w-full
             sm:whitespace-break-spaces
             sm:bg-CareerStartSM lg:bg-CareerStartLG
             lg:p-CareerStartLG sm:p-CareerStartSM

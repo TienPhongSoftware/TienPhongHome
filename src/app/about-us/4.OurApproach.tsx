@@ -10,7 +10,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
       >
         <h2
           className="mb-[56px] font-bold
-        lg:text-[3vw] sm:text-[9vw] md:text-[6vw]"
+        lg:text-[4.1vw] xl:text-[3vw] sm:text-[9vw] md:text-[6vw]"
         >
           Our Approach
         </h2>
@@ -23,14 +23,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Result-driven
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 We’re obsessed with driving business value for our clients. In
@@ -44,14 +44,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Continuous delivery
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 Continuous delivery is enabled through our deployment pipeline
@@ -69,14 +69,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Strive to gain testing and customer feedback early
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 Customer feedback is a critical part of the delivery lifecycle,
@@ -96,14 +96,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Establish a collaborative environment
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 Poor communication can result in poor artifact handoffs,
@@ -117,14 +117,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Build trust through each iteration
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 We work at our best to deliver the excellent outcomes that meet
@@ -136,14 +136,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Improve the speed of application delivery
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 As agile development entered the mainstream and evolved, this
@@ -162,14 +162,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <div className="mb-[48px] w-full">
               <h3
                 className="font-bold 
-                    lg:text-[1.5vw] sm:text-[4vw] 
+                    lg:text-[2vw] xl:text-[1.5vw] sm:text-[4vw] 
                     md:text-[2.5vw] mb-[24px]"
               >
                 Keep improving
               </h3>
               <p
                 className="font-LightCus mb-[32px]
-              lg:text-[1.1vw] sm:text-[4vw] 
+              lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[4vw] 
               md:text-[2.5vw]"
               >
                 The world of technology is moving fast. The business expects us

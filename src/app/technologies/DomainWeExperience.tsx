@@ -26,7 +26,7 @@ function DomainWeExperience() {
         </div>
       </div>
       <div
-        className="w-full lg:max-w-[984px] m-autoWWD lg:px-0 md:mt-[96px] mt-32px sm:px-[1rem] md:px-[24px]"
+        className="w-full lg:max-w-[984px] m-autoWWD lg:px-[24px] xl:px-0 md:mt-[96px] mt-32px sm:px-[1rem] md:px-[24px]"
         data-aos="fade-up"
         data-aos-delay="300"
       >

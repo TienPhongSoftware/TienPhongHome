@@ -133,7 +133,6 @@ function Header() {
   return (
     <div>
       <header className="relative z-40 block bg-white">
-        <div className="nax-area"></div>
         <nav
           className={`sm:min-h-[60px] sm:overflow-[unset]
       fixed w-full min-h-[80px] top-0 left-0
@@ -145,14 +144,13 @@ function Header() {
         >
           <div
             className="lg:mx-auto 
-        lg:px-[120px] 
+            xl:px-[120px] sm:px-[24px] lg:px-[64px] 
         max-w-maxContainer"
           >
-            <div className="container lg:flex lg:justify-between lg:items-center">
+            <div className="lg:flex lg:justify-unset lg:items-center xl:justify-between text-white">
               <div className="lg:flex lg:justify-start">
-                <a
-                  href="/"
-                  className={`min-h[80px] transition-all m-0
+                <div
+                  className="min-h[80px] transition-all m-0
                 flex 
                 lg:justify-center items-center
                 lg:scale-100
@@ -161,22 +159,28 @@ function Header() {
                 sm:justify-start
                 sm:pl-[24px] lg:pl-0
                 sm:pr-[24px] lg:pr-0
+                sm:top-0 sm:left-0
                 sm:fixed lg:static
                 sm:w-full
-                sm:z-10
+                sm:z-10"
+                >
+                  <a
+                    href="/"
+                    className={`
                 ${isScrolled ? "text-black" : "text-white"}
                  `}
-                >
-                  <Image
-                    src="/images/logo/logo.svg"
-                    className="hover:scale-110 transition-all"
-                    alt="My Icon"
-                    width={100}
-                    height={100}
-                  />
-                </a>
+                  >
+                    <Image
+                      src="/images/logo/logo.svg"
+                      className="hover:scale-110 transition-all w-[106px] h-[41px] max-w-none"
+                      alt="My Icon"
+                      width={100}
+                      height={100}
+                    />
+                  </a>
+                </div>
 
-                <div className="sm:hidden lg:flex space-x-6 max-w-full ml-[1.7vw]">
+                <div className="sm:hidden lg:flex space-x-6 max-w-full md:ml-[1.7vw] lg:ml-[1.7vw]">
                   <ul className="flex-nowrap whitespace-nowrap webkit-box-orient-horizontal flex-row inline-flex pl-0 mb-0 list-none">
                     <li className="ml-[1.7vw] flex justify-center relative min-h-[80px] transition-all text-center">
                       <div
@@ -186,7 +190,7 @@ function Header() {
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -261,7 +265,7 @@ function Header() {
                       >
                         <a
                           href="works"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -360,7 +364,7 @@ function Header() {
                       >
                         <a
                           href="technologies"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -437,7 +441,7 @@ function Header() {
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="about-us"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                           isScrolled ? "text-black" : "text-white"
                         }`}
                       >
@@ -447,7 +451,7 @@ function Header() {
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="careers"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                           isScrolled ? "text-black" : "text-white"
                         }`}
                       >
@@ -462,7 +466,7 @@ function Header() {
                       >
                         <a
                           href="#"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -499,7 +503,7 @@ function Header() {
                   </ul>
                 </div>
               </div>
-              <div className="flex justify-end sm:hidden lg:block">
+              <div className="flex justify-end sm:hidden lg:flex md:ml-[10px]">
                 <ul className="mb-0 flex items-center p-0 break-words">
                   <li className="inline-block">
                     <a
@@ -511,6 +515,17 @@ function Header() {
                      max-w-[244px] overflow-x-hidden
                      whitespace-nowrap border-[2px] outline-0
                      relative isolate
+
+                     lg:text-[12px]
+                     lg:h-[30px]
+                     lg:leading-[28px]
+                     lg:px-[16px]
+
+                     xl:text-[14px]
+                     xl:h-[40px]
+                     xl:leading-[36px]
+                     xl:px-[20px]
+
                      before:z-[-1]
                      before:content['']
                      before:duration-[0.5s]
@@ -538,6 +553,17 @@ function Header() {
                      max-w-[244px] overflow-x-hidden
                      whitespace-nowrap border-[2px] outline-0
                      relative isolate
+
+                     lg:text-[12px]
+                     lg:h-[30px]
+                     lg:leading-[28px]
+                     lg:px-[16px]
+
+                     xl:text-[14px]
+                     xl:h-[40px]
+                     xl:leading-[36px]
+                     xl:px-[20px]
+
                      before:z-[-1]
                      before:content['']
                      before:absolute
@@ -650,7 +676,7 @@ function Header() {
               </span>
               <a
                 href="services"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -674,7 +700,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -687,7 +713,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -700,7 +726,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -723,7 +749,7 @@ function Header() {
               </span>
               <a
                 href="works"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -747,7 +773,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -760,7 +786,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -773,7 +799,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -786,7 +812,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -799,7 +825,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -812,7 +838,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -825,7 +851,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -838,7 +864,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -851,7 +877,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -874,7 +900,7 @@ function Header() {
               </span>
               <a
                 href="technologies"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -898,7 +924,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -911,7 +937,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -924,7 +950,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -937,7 +963,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -950,7 +976,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -963,7 +989,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -976,7 +1002,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -991,7 +1017,7 @@ function Header() {
             >
               <a
                 href="about-us"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1004,7 +1030,7 @@ function Header() {
             >
               <a
                 href="careers"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1025,7 +1051,7 @@ function Header() {
               </span>
               <a
                 href=""
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1049,7 +1075,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -1062,7 +1088,7 @@ function Header() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >

@@ -20,7 +20,7 @@ mx-auto max-w-maxContainer"
           </h3>
         </div>
         <div
-          className="xl:px-[120px] sm:px-[24px]lg:px-[64px]
+          className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
 mx-auto max-w-maxContainer 
 "
           data-aos="fade-up"
@@ -321,6 +321,7 @@ mx-auto max-w-maxContainer
               sm:flex-WhySM
               sm:my-[24px]
               sm:max-w-full
+              sm:order-3 md:order-[unset]
                 lg:pr-[50px] md:mb-[24px] sm:pr-[24px]"
             >
               <a href="" className="mb-[24px] inline-block">
@@ -335,7 +336,7 @@ mx-auto max-w-maxContainer
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
                 27 Che Viet Tan Street, Da Nang City, Viet Nam
@@ -343,7 +344,7 @@ mx-auto max-w-maxContainer
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
                 Enlab Software Copyright © 2023.
@@ -351,7 +352,7 @@ mx-auto max-w-maxContainer
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
                 <a href="" className="mr-[-3px]">
@@ -485,7 +486,8 @@ mx-auto max-w-maxContainer
               className="sm:flex sm:my-[24px] lg:my-0
             sm:flex-wrap
             sm:w-full
-             lg:flex-noneAuto xl:w-auto max-w-none xl:flex-nowrap"
+            lg:flex-1 
+            xl:flex-noneAuto xl:w-auto max-w-none xl:flex-nowrap"
             >
               <div
                 className="flex xl:flex-nowrap
@@ -496,11 +498,11 @@ mx-auto max-w-maxContainer
                 sm:justify-between lg:justify-[unset]"
               >
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
-                
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-WhySM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -521,7 +523,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Web Application Development
                       </a>
@@ -533,7 +535,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Flutter App Development
                       </a>
@@ -545,7 +547,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Software Customization & Enhancement
                       </a>
@@ -553,10 +555,11 @@ mx-auto max-w-maxContainer
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-partnerSM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -577,7 +580,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Real Estate
                       </a>
@@ -589,7 +592,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Construction
                       </a>
@@ -601,7 +604,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Education
                       </a>
@@ -613,7 +616,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Marketplace
                       </a>
@@ -625,7 +628,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Data Management
                       </a>
@@ -637,7 +640,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Procurement
                       </a>
@@ -649,7 +652,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Marketing
                       </a>
@@ -661,7 +664,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Recruitment
                       </a>
@@ -673,7 +676,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         ERP
                       </a>
@@ -681,10 +684,11 @@ mx-auto max-w-maxContainer
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-partnerSM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -705,7 +709,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         .NET
                       </a>
@@ -717,7 +721,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         C#
                       </a>
@@ -729,7 +733,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Microservices
                       </a>
@@ -741,7 +745,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Angular
                       </a>
@@ -753,7 +757,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Python
                       </a>
@@ -765,7 +769,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Node.js
                       </a>
@@ -777,7 +781,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Vue.js
                       </a>
@@ -785,10 +789,11 @@ mx-auto max-w-maxContainer
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:m-0 lg:p-0
+                  className="xl:pr-[50px] xl:max-w-full lg:m-0 lg:p-0
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-WhySM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -809,7 +814,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         About us
                       </a>
@@ -821,7 +826,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Careers
                       </a>
@@ -833,7 +838,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Think with Enlab
                       </a>
@@ -845,7 +850,7 @@ mx-auto max-w-maxContainer
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Contact us
                       </a>

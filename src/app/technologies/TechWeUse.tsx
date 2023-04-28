@@ -13,7 +13,7 @@ function TechWeUse() {
         </h2>
       </div>
       <div
-        className="w-full sm:px-[1rem] md:px-[24px] lg:px-[122px] max-w-[1696px] m-autoWWD"
+        className="w-full sm:px-[1rem] md:px-[24px] lg:px-[24px] xl:px-[122px] max-w-[1696px] m-autoWWD"
         data-aos="fade-up"
         data-aos-delay="300"
       >

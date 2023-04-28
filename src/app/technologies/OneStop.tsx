@@ -3,7 +3,7 @@ import React from "react";
 function OneStop() {
   return (
     <section className="py-[128px] sm:py-[48px] bg-[#f8f9fb] block">
-      <div className="sm:px-[1rem] md:px-[24px] lg:px-[64px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD">
+      <div className="sm:px-[1rem] md:px-[24px] lg:px-[24px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD">
         <h2
           className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2]"
           data-aos="fade-up"

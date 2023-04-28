@@ -6,7 +6,7 @@ function Introduction() {
     <section className="p-ServicesP1">
       <div
         className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
-mx-auto max-w-maxContainer"
+mx-auto max-w-maxContainer overflow-hidden"
       >
         <div
           className="mb-[25px] lg:p-[48px] bg-white rounded-[16px] text-white

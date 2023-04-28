@@ -45,8 +45,8 @@ function BannerTech() {
             Key Technologies
           </h1>
           <div
-            className="lg:text-[1.2vw] sm:text-[5vw] 
-          md:text-[3vw] text-white font-ThinCus mb-[44px]"
+            className="xl:text-[1.2vw] sm:text-[5vw] 
+          md:text-[3vw] lg:text-[1.7vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"
           >

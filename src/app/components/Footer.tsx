@@ -38,7 +38,7 @@ function Footer() {
               <a
                 href="contact-us"
                 className="md:absolute md:mt-[-24] sm:right-0 
-                lg:mt-0
+                lg:mt-[24px]
                 leading-[52px]
               md:top-[30%] bg-[#faa61a] border-[#faa61a]
               max-w-[244px] min-w-[184px] whitespace-nowrap
@@ -86,6 +86,7 @@ function Footer() {
               sm:flex-WhySM
               sm:my-[24px]
               sm:max-w-full
+              sm:order-3 md:order-[unset]
                 lg:pr-[50px] md:mb-[24px] sm:pr-[24px]"
             >
               <a href="" className="mb-[24px] inline-block">
@@ -100,7 +101,7 @@ function Footer() {
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
                 27 Che Viet Tan Street, Da Nang City, Viet Nam
@@ -108,15 +109,16 @@ function Footer() {
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
-                Enlab Software Copyright © 2023.
+                Enlab Software Copyright © 2023. <br className="md:hidden" />
+                All Rights Reserved
               </p>
               <p
                 className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
-              sm:text-[2vw] md:text-[14px]
+              sm:text-[3.4vw] md:text-[14px]
               "
               >
                 <a href="" className="mr-[-3px]">
@@ -250,7 +252,8 @@ function Footer() {
               className="sm:flex sm:my-[24px] lg:my-0
             sm:flex-wrap
             sm:w-full
-             lg:flex-noneAuto xl:w-auto max-w-none xl:flex-nowrap"
+            lg:flex-1 
+            xl:flex-noneAuto xl:w-auto max-w-none xl:flex-nowrap"
             >
               <div
                 className="flex xl:flex-nowrap
@@ -261,11 +264,11 @@ function Footer() {
                 sm:justify-between lg:justify-[unset]"
               >
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
-                
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-WhySM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -286,7 +289,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Web Application Development
                       </a>
@@ -298,7 +301,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Flutter App Development
                       </a>
@@ -310,7 +313,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Software Customization & Enhancement
                       </a>
@@ -318,10 +321,11 @@ function Footer() {
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-partnerSM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -342,7 +346,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Real Estate
                       </a>
@@ -354,7 +358,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Construction
                       </a>
@@ -366,7 +370,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Education
                       </a>
@@ -378,7 +382,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Marketplace
                       </a>
@@ -390,7 +394,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Data Management
                       </a>
@@ -402,7 +406,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Procurement
                       </a>
@@ -414,7 +418,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Marketing
                       </a>
@@ -426,7 +430,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Recruitment
                       </a>
@@ -438,7 +442,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         ERP
                       </a>
@@ -446,10 +450,11 @@ function Footer() {
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:mt-0
+                  className="xl:pr-[50px] xl:max-w-full lg:mt-[24px]
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-partnerSM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -470,7 +475,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         .NET
                       </a>
@@ -482,7 +487,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         C#
                       </a>
@@ -494,7 +499,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Microservices
                       </a>
@@ -506,7 +511,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Angular
                       </a>
@@ -518,7 +523,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Python
                       </a>
@@ -530,7 +535,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Node.js
                       </a>
@@ -542,7 +547,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Vue.js
                       </a>
@@ -550,10 +555,11 @@ function Footer() {
                   </ul>
                 </div>
                 <div
-                  className="pr-[50px] xl:max-w-full lg:m-0 lg:p-0
+                  className="xl:pr-[50px] xl:max-w-full lg:m-0 lg:p-0
+                  lg:pr-[24px]
                 md:my-[24px] md:flex-none
                 sm:flex-WhySM sm:max-w-full sm:my-[24px] 
-                md:max-w-[50%] sm:pr-[24px]]"
+                md:max-w-[50%] sm:pr-[24px]"
                 >
                   <span
                     className="font-bold mb-[20px] block
@@ -574,7 +580,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         About us
                       </a>
@@ -586,7 +592,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Careers
                       </a>
@@ -598,7 +604,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Think with Enlab
                       </a>
@@ -610,7 +616,7 @@ function Footer() {
                         font-LightCus px-0 text-white p-padNaxFoot
                         lg:text-[14px] 
                         md:text-[2vw]
-                        sm:text-[3vw]"
+                        sm:text-[3.4vw]"
                       >
                         Contact us
                       </a>

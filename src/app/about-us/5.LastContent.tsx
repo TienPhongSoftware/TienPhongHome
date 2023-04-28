@@ -23,7 +23,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
             <p
               className="font-ThinCus italic
                 sm:text-[5.5vw] md:text-[2.5vw]
-                lg:text-[1.5vw]"
+                lg:text-[2vw] xl:text-[1.5vw]"
             >
               “All in all, we put our mind, our heart, our instinct, and our
               philosophy to bring you the highest-quality software with the most

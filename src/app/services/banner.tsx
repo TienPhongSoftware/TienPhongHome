@@ -36,7 +36,7 @@ function Banner() {
         <Image
           src="/images/layout/banner-2.jpg"
           className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
+          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] max-w-none sm:object-cover xl:object-cover
           align-middle border-none
           "
           alt="Banner"
@@ -57,14 +57,14 @@ function Banner() {
         >
           <h1
             className="text-white font-bold mb-[0.5rem]
-            lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
+            lg:text-[4.7vw] sm:text-[10vw] md:text-[6vw]
           leading-[1.2]"
             data-aos="fade-up"
           >
             A reliable one-stop source for <br /> your software development
           </h1>
           <div
-            className="lg:text-[1.2vw] sm:text-[5vw] 
+            className="lg:text-[1.7vw] sm:text-[5vw] 
           md:text-[3vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"

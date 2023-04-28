@@ -36,6 +36,27 @@ div {
   display: block;
 }
 
+html {
+  color: #0c152a;
+}
+
+/* Tạo màu cho scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+/* Tạo kiểu cho thanh nằm trong scrollbar */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #424242;
+}
+
+/* Tạo hover cho scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1a1a25;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("/fonts/SVN-Gilroy.ttf") format("truetype");

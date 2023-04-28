@@ -15,7 +15,7 @@ function Technologies() {
     <div>
       <PageWrapper headerType="pages">
         <BannerCareers />
-        <div className="min-h-[80vh] bg-white">
+        <div className="min-h-[80vh] bg-white overflow-hidden">
           <TheDefinition />
           <TheWhy />
           <Besides />

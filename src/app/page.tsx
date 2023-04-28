@@ -48,8 +48,8 @@ function Home() {
         <section
           className="sm:min-h-[568px] sm:overflow-hidden sm:h-auto
         md:min-h-[100vh]
-      lg:overflow-visible bg-[url('/images/layout/cover-work.jpg')] relative
-      bg-no-repeat text-white z-10 h-[100vh] min-h-[740px] 
+      relative
+       text-white z-10 h-[100vh] md:min-h-[740px] 
       block"
         >
           <div
@@ -61,7 +61,7 @@ function Home() {
             max-w-maxContainer 
           mx-auto"
             >
-              <div className="lg:max-w-[50%] sm:max-w-[100%]">
+              <div className="lg:max-w-[50%] sm:max-w-[100%] select-none">
                 <h2
                   className="lg:text-[60px] sm:text-[8vw] 
                 md:text-[6vw]
@@ -101,9 +101,12 @@ function Home() {
                     href="contact-us"
                     className="mr-6 bg-[#00aeef] border-[#00aeef] 
                   lg:px-[40px] lg:leading-[52px]
-      lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
+      lg:min-w-[184px] xl:text-[16px] sm:text-[12px] max-w-[244px] whitespace-nowrap
       inline-block text-center text-white border-2 rounded-[32px] relative
       z-10 font-bold overflow-hidden transition-all outline-0 isolate
+      
+      lg:text-[16px]
+
       before:z-[-1]
       before:content['']
       before:absolute
@@ -117,7 +120,7 @@ function Home() {
       hover:before:left-0
       hover:text-black
       sm:min-w-[34vw]
-      sm:text-[3.8vw]
+      
       sm:leading-[10vw]
       sm:px-[5vw]
       md:min-w-[10vw]
@@ -131,10 +134,13 @@ function Home() {
                     href=""
                     className="mr-6 bg-[0 0] border-[#00aeef] text-[#00aeef]
                   lg:px-[40px] lg:leading-[52px]
-                  lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
+                  lg:min-w-[184px] xl:text-[16px] sm:text-[12px] sm:text-[12px] max-w-[244px] whitespace-nowrap
       inline-block text-center border-2 rounded-[32px] relative
       z-10 font-bold overflow-hidden transition-all outline-0
       isolate
+
+      lg:text-[16px]
+      
       before:z-[-1]
       before:content['']
       before:absolute
@@ -148,7 +154,7 @@ function Home() {
       hover:before:left-0
       hover:text-black
       sm:min-w-[34vw]
-      sm:text-[3.8vw]
+      
       sm:leading-[10vw]
       sm:px-[5vw]
       md:min-w-[10vw]
@@ -178,6 +184,7 @@ function Home() {
             />
           </div>
         </section>
+
         <section className="block">
           <div className="text-center pb-[180px] bg-[#f8f9fb]">
             <div
@@ -440,6 +447,7 @@ function Home() {
               </div>
             </div>
           </div>
+
           <div className="lg:max-w-IntroMem lg:pr-[120px] lg:pl-[120px] mx-auto">
             <div
               className="mt-[-140px] pb-[120px] text-[18px] 
@@ -465,7 +473,7 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p>
+                        <p className="text-[18px] font-ThinCus">
                           Enlab Software is a truly awesome team, and we will{" "}
                           <span className="text-[#00aeef]">
                             <strong>
@@ -487,7 +495,7 @@ function Home() {
                           </span>
                         </p>
                       </div>
-                      <div className="font-bold">
+                      <div className="font-bold text-[18px] text-center">
                         Chris Mahoney{" "}
                         <span className="text-[#818181]">
                           - CEO of Anasoft Consulting Pty Ltd.
@@ -498,7 +506,7 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p>
+                        <p className="text-[18px] font-ThinCus">
                           Enlab Software has exceptional resources to work with.{" "}
                           <span className="text-[#ed145b]">
                             <strong>
@@ -527,7 +535,7 @@ function Home() {
                           </span>
                         </p>
                       </div>
-                      <div className="font-bold">
+                      <div className="font-bold text-[18px] text-center">
                         Scott Prince{" "}
                         <span className="text-[#818181]">
                           - CEO of Sedna Inc.
@@ -538,7 +546,7 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p>
+                        <p className="text-[18px] font-ThinCus">
                           Enlab Software is incredible. Great work and
                           coordination with his team. Able to{" "}
                           <span className="text-[#faa61a]">
@@ -565,7 +573,7 @@ function Home() {
                           development.
                         </p>
                       </div>
-                      <div className="font-bold">
+                      <div className="font-bold text-[18px] text-center">
                         Matt Klusas{" "}
                         <span className="text-[#818181]">
                           - CEO of Cryogenic Control
@@ -576,12 +584,12 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p>
+                        <p className="text-[18px] font-ThinCus">
                           I’ve worked with Enlab on numerous projects, and each
                           time, he has{" "}
                           <span className="text-[#00aeef]">
                             <span className="text-black">
-                              thoroughly understood my requirements and
+                              thoroughly understood my requirements and{" "}
                             </span>
                             <strong>
                               delivered on-time and superior products
@@ -600,7 +608,7 @@ function Home() {
                           projects.
                         </p>
                       </div>
-                      <div className="font-bold">
+                      <div className="font-bold text-[18px] text-center">
                         Scott Yewell{" "}
                         <span className="text-[#818181]">
                           - CEO of Purpose Built Software
@@ -628,7 +636,7 @@ function Home() {
             </p>
             <div className="pb-[48px]">
               <div
-                className="lg:px-[120px] sm:px-[24px] 
+                className="xl:px-[120px] sm:px-[24px] 
             md:px-[64px] mx-auto"
               >
                 <div
@@ -742,7 +750,7 @@ function Home() {
             </div>
             <div className="py-[48px]">
               <div
-                className="lg:px-[120px] sm:px-[24px] md:px-[64px]
+                className="xl:px-[120px] sm:px-[24px] md:px-[64px]
             max-w-maxWWD mx-auto"
               >
                 <h2

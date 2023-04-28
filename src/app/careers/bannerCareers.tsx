@@ -37,7 +37,7 @@ function BannerCareers() {
           src="/images/layout/banner-3.jpg"
           className="
           absolute sm:h-[560px] lg:h-[638px] sm:w-[1351px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
-          align-middle border-none bg-center bg-cover sm:translate-x-[-480px] lg:translate-x-0
+          align-middle border-none bg-center bg-cover sm:translate-x-[-480px] xl:translate-x-0
           "
           alt="Banner"
           width={2000}

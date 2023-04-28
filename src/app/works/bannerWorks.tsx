@@ -36,7 +36,7 @@ function BannerWorks() {
         <Image
           src="/images/layout/banner-4.jpg"
           className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-contain xl:object-cover
+          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-cover xl:object-cover
           align-middle border-none bg-center bg-cover
           "
           alt="Banner"
@@ -64,8 +64,8 @@ function BannerWorks() {
             How we meet <br /> our client’s demand
           </h1>
           <div
-            className="lg:text-[1.2vw] sm:text-[5vw] 
-          md:text-[3vw] text-white font-ThinCus mb-[44px]"
+            className="xl:text-[1.2vw] sm:text-[5vw] 
+          md:text-[3vw] lg:text-[1.7vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"
           >

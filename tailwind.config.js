@@ -124,6 +124,7 @@ module.exports = {
         TechDomain: "0 0 calc(25% - 36px)",
         TechDomainMD: "0 0 calc(33.33% - 10px)",
         CareersOurCore: "0 0 calc(25% - 32px)",
+        unset: "unset",
       },
       height: {
         heightOTWorks: "calc(100% - 16px - 32px)",
@@ -168,6 +169,9 @@ module.exports = {
         WorkTabsAfter: "calc(33.3% - 24px)",
         CareersWhyWork: "calc(100% + 96px)",
         CareersWhyWorkMD: "calc(100% + 40px)",
+      },
+      justifyContent: {
+        unset: "unset",
       },
     },
   },

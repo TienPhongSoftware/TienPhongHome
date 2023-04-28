@@ -9,7 +9,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
       >
         <h2
           className="mb-[56px] font-bold
-        lg:text-[3vw] sm:text-[9vw] md:text-[6vw]"
+        lg:text-[4.1vw] xl:text-[3vw] sm:text-[9vw] md:text-[6vw]"
         >
           Our quality standards
         </h2>
@@ -18,7 +18,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 md:text-[2.5vw] font-LightCus"
         >
           <p
-            className="mb-[10px] lg:text-[1.1vw] sm:text-[5vw] 
+            className="mb-[10px] lg:text-[1.5vw] xl:text-[1.1vw] sm:text-[5vw] 
               md:text-[2.5vw]"
           >
             From vision to implementation, our team works closely to translate

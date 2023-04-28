@@ -147,7 +147,6 @@ function HeaderContact() {
   return (
     <div>
       <header className="relative z-40 block bg-white">
-        <div className="nax-area"></div>
         <nav
           className={`sm:min-h-[60px] sm:overflow-[unset]
       fixed w-full min-h-[80px] top-0 left-0
@@ -162,15 +161,16 @@ function HeaderContact() {
       z-50`}
         >
           <div
-            className="lg:mx-auto 
-        lg:px-[120px] 
+            className="lg:mx-auto mx-auto
+            xl:px-[120px] sm:px-[24px] lg:px-[64px] 
         max-w-maxContainer"
           >
-            <div className="container lg:flex lg:justify-between lg:items-center">
+            <div className="lg:flex lg:justify-unset xl:justify-between lg:items-center text-white">
               <div className="lg:flex lg:justify-start">
-                <a
-                  href="/"
-                  className={`min-h[80px] transition-all m-0
+                <div className="flex m-0 justify-start items-center sm:top-0 sm:left-0">
+                  <a
+                    href="/"
+                    className={`min-h[80px] transition-all m-0
                 flex 
                 lg:justify-center items-center
                 lg:scale-100
@@ -179,20 +179,22 @@ function HeaderContact() {
                 sm:justify-start
                 sm:pl-[24px] lg:pl-0
                 sm:pr-[24px] lg:pr-0
+                sm:top-0 sm:left-0
                 sm:fixed lg:static
                 sm:w-full
                 sm:z-10
                 ${isScrolled ? "text-black" : ""}
                  `}
-                >
-                  <Image
-                    src="/images/logo/logo.svg"
-                    className="hover:scale-110 transition-all"
-                    alt="My Icon"
-                    width={100}
-                    height={100}
-                  />
-                </a>
+                  >
+                    <Image
+                      src="/images/logo/logo.svg"
+                      className="hover:scale-110 transition-all"
+                      alt="My Icon"
+                      width={100}
+                      height={100}
+                    />
+                  </a>
+                </div>
 
                 <div className="sm:hidden lg:flex space-x-6 max-w-full ml-[1.7vw]">
                   <ul className="flex-nowrap whitespace-nowrap webkit-box-orient-horizontal flex-row inline-flex pl-0 mb-0 list-none">
@@ -204,9 +206,9 @@ function HeaderContact() {
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
-                          ${isScrolledDefault ? "text-black" : ""}
-                          ${isScrolled ? "text-black" : ""}`}
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          ${isScrolledDefault ? "text-black" : "text-black"}
+                          ${isScrolled ? "text-black" : "text-black"}`}
                         >
                           Services
                         </a>
@@ -290,9 +292,9 @@ function HeaderContact() {
                         <a
                           href="works"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
-                          inline-flex text-[16px] font-bold  
-                          ${isScrolledDefault ? "text-black" : ""}
-                          ${isScrolled ? "text-black" : ""}`}
+                          inline-flex text-[14px] font-bold  
+                          ${isScrolledDefault ? "text-black" : "text-black"}
+                          ${isScrolled ? "text-black" : "text-black"}`}
                         >
                           Works
                         </a>
@@ -396,9 +398,9 @@ function HeaderContact() {
                         <a
                           href="technologies"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
-                          ${isScrolledDefault ? "text-black" : ""}
-                          ${isScrolled ? "text-black" : ""}`}
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          ${isScrolledDefault ? "text-black" : "text-black"}
+                          ${isScrolled ? "text-black" : "text-black"}`}
                         >
                           Technologies
                         </a>
@@ -475,9 +477,9 @@ function HeaderContact() {
                         href="about-us"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
-                        text-[16px] font-bold  
-                        ${isScrolledDefault ? "text-black" : ""}
-                        ${isScrolled ? "text-black" : ""}`}
+                        text-[14px] font-bold  
+                        ${isScrolledDefault ? "text-black" : "text-black"}
+                        ${isScrolled ? "text-black" : "text-black"}`}
                       >
                         About us
                       </a>
@@ -487,9 +489,9 @@ function HeaderContact() {
                         href="careers"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
-                        text-[16px] font-bold 
-                        ${isScrolledDefault ? "text-black" : ""}
-                        ${isScrolled ? "text-black" : ""}`}
+                        text-[14px] font-bold 
+                        ${isScrolledDefault ? "text-black" : "text-black"}
+                        ${isScrolled ? "text-black" : "text-black"}`}
                       >
                         Careers
                       </a>
@@ -503,9 +505,9 @@ function HeaderContact() {
                         <a
                           href="#"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
-                          ${isScrolledDefault ? "text-black" : ""}
-                          ${isScrolled ? "text-black" : ""}`}
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          ${isScrolledDefault ? "text-black" : "text-black"}
+                          ${isScrolled ? "text-black" : "text-black"}`}
                         >
                           Think with Enlab
                         </a>
@@ -540,7 +542,7 @@ function HeaderContact() {
                   </ul>
                 </div>
               </div>
-              <div className="flex justify-end sm:hidden lg:block">
+              <div className="flex justify-end sm:hidden lg:flex md:ml-[10px]">
                 <ul className="mb-0 flex items-center p-0 break-words">
                   <li className="inline-block">
                     <a
@@ -552,6 +554,17 @@ function HeaderContact() {
                      max-w-[244px] overflow-x-hidden
                      whitespace-nowrap border-[2px] outline-0
                      relative isolate
+
+                     lg:text-[12px]
+                     lg:h-[30px]
+                     lg:leading-[28px]
+                     lg:px-[16px]
+
+                     xl:text-[14px]
+                     xl:h-[40px]
+                     xl:leading-[36px]
+                     xl:px-[20px]
+
                      before:z-[-1]
                      before:content['']
                      before:duration-[0.5s]
@@ -579,6 +592,17 @@ function HeaderContact() {
                      max-w-[244px] overflow-x-hidden
                      whitespace-nowrap border-[2px] outline-0
                      relative isolate
+
+                     lg:text-[12px]
+                     lg:h-[30px]
+                     lg:leading-[28px]
+                     lg:px-[16px]
+
+                     xl:text-[14px]
+                     xl:h-[40px]
+                     xl:leading-[36px]
+                     xl:px-[20px]
+
                      before:z-[-1]
                      before:content['']
                      before:absolute
@@ -692,7 +716,7 @@ function HeaderContact() {
               </span>
               <a
                 href="services"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -716,7 +740,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -729,7 +753,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -742,7 +766,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -765,7 +789,7 @@ function HeaderContact() {
               </span>
               <a
                 href="works"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -789,7 +813,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -802,7 +826,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -815,7 +839,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -828,7 +852,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -841,7 +865,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -854,7 +878,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -867,7 +891,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -880,7 +904,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -893,7 +917,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -916,7 +940,7 @@ function HeaderContact() {
               </span>
               <a
                 href="technologies"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -940,7 +964,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -953,7 +977,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -966,7 +990,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -979,7 +1003,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -992,7 +1016,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -1005,7 +1029,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -1018,7 +1042,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -1033,7 +1057,7 @@ function HeaderContact() {
             >
               <a
                 href="about-us"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1046,7 +1070,7 @@ function HeaderContact() {
             >
               <a
                 href="careers"
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1067,7 +1091,7 @@ function HeaderContact() {
               </span>
               <a
                 href=""
-                className="block text-[16px] font-bold
+                className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
@@ -1091,7 +1115,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
@@ -1104,7 +1128,7 @@ function HeaderContact() {
                 >
                   <a
                     href=""
-                    className="block text-[16px] font-bold
+                    className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                   >
