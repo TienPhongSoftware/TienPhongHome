@@ -469,7 +469,7 @@ w-full p-InputContact overflow-visible m-0"
                             sm:pl-[30px] md:pl-0
                             "
                             >
-                              <a href="tel:+84983757506">+84 983757506</a>
+                              <a href="tel:+84983757506">(+84) 905 666 770</a>
                             </div>
                             <div
                               className="md:pr-[14px] font-ThinCus p-ContactIcon
@@ -487,10 +487,10 @@ w-full p-InputContact overflow-visible m-0"
                             >
                               <span className="relative inline-block">
                                 <a
-                                  href="mailto:info@enlabsoftware.com"
+                                  href="mailto:info@Tien Phongsoftware.com"
                                   className="hover:text-sky-400"
                                 >
-                                  info@enlabsoftware.com
+                                  info@tienphong.it
                                 </a>
                               </span>
                             </div>
@@ -536,7 +536,7 @@ w-full p-InputContact overflow-visible m-0"
                               sm:pl-[30px] md:pl-0
                               "
                             >
-                              <a href="tel:+84983757506">+84 983757506</a>
+                              <a href="tel:+84983757506">(+84) 905 666 770</a>
                             </div>
                             <div
                               className="md:pr-[14px] font-ThinCus p-ContactIcon
@@ -554,10 +554,10 @@ w-full p-InputContact overflow-visible m-0"
                             >
                               <span className="relative inline-block">
                                 <a
-                                  href="mailto:info@enlabsoftware.com"
+                                  href="mailto:info@Tien Phongsoftware.com"
                                   className="hover:text-sky-400"
                                 >
-                                  marketing@enlabsoftware.com
+                                  info@tienphong.it
                                 </a>
                               </span>
                             </div>
@@ -603,7 +603,7 @@ w-full p-InputContact overflow-visible m-0"
                               sm:pl-[30px] md:pl-0
                               "
                             >
-                              <a href="tel:+84983757506">+84 905747050</a>
+                              <a href="tel:+84983757506">(+84) 905 666 770</a>
                             </div>
                             <div
                               className="md:pr-[14px] font-ThinCus p-ContactIcon
@@ -621,10 +621,10 @@ w-full p-InputContact overflow-visible m-0"
                             >
                               <span className="relative inline-block">
                                 <a
-                                  href="mailto:info@enlabsoftware.com"
+                                  href="mailto:info@Tien Phongsoftware.com"
                                   className="hover:text-sky-400"
                                 >
-                                  career@enlabsoftware.com
+                                  info@tienphong.it
                                 </a>
                               </span>
                             </div>

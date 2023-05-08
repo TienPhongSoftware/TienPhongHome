@@ -255,7 +255,7 @@ function TabsWorks() {
                                   {item.tittle}
                                 </a>
                               </div>
-                              <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
+                              <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                                 {item.textIntro}
                               </div>
                               <div className="bottom-[16px] left-[16px] absolute">
@@ -348,7 +348,7 @@ function TabsWorks() {
                               Employees & Contractor Portals (CPM)
                             </a>
                           </div>
-                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
+                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                             A custom construction management system (CPM) which
                             helps to manage employees, contractors, equipment
                             and also streamline operation and inspection
@@ -391,7 +391,7 @@ function TabsWorks() {
                               Employees & Contractor Portals (CPM)
                             </a>
                           </div>
-                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw]">
+                          <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                             A custom construction management system (CPM) which
                             helps to manage employees, contractors, equipment
                             and also streamline operation and inspection

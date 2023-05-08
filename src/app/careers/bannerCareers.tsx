@@ -105,7 +105,7 @@ function BannerCareers() {
       md:leading-[8vw]
       md:px-[5vw]"
           >
-            Jobs @ Enlab
+            Jobs @ Tien Phong
           </a>
         </div>
       </div>

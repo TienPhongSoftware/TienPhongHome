@@ -46,7 +46,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-15.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -55,7 +55,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-16.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -64,7 +64,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-17.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -73,7 +73,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-18.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -82,7 +82,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-19.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -91,7 +91,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-20.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -100,7 +100,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-15.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -109,7 +109,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-21.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />
@@ -118,7 +118,7 @@ const SlideShow: React.FC = () => {
           <Image
             width={280}
             height={280}
-            alt="Life@enlab"
+            alt="Life@Tien Phong"
             src={"/images/layout/careers-22.jpg"}
             className="object-cover h-full w-full block absolute top-0 left-0 max-w-full align-middle"
           />

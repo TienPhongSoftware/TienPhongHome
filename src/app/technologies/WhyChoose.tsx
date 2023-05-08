@@ -10,7 +10,7 @@ function WhyChoose() {
           data-aos="fade-up"
           data-aos-offset="-300"
         >
-          Why Should You Choose Enlab?
+          Why Should You Choose Tien Phong?
         </h2>
         <div
           className="sm:text-[18px] md:text-[18px] leading-[1.6]"
@@ -40,9 +40,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092504/1-High-quality-comes-first.svg"
-                }
+                src={"images/icons/tech-why-us-1.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -64,9 +62,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092507/2consult.svg"
-                }
+                src={"images/icons/tech-why-us-2.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -87,9 +83,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092508/3.svg"
-                }
+                src={"images/icons/tech-why-us-3.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">Transparent costs</span>
@@ -109,9 +103,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092518/4.svg"
-                }
+                src={"images/icons/tech-why-us-4.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -133,9 +125,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092520/5.svg"
-                }
+                src={"images/icons/tech-why-us-5.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -157,9 +147,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092523/6.svg"
-                }
+                src={"images/icons/tech-why-us-6.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -181,9 +169,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092525/7.svg"
-                }
+                src={"images/icons/tech-why-us-7.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -205,9 +191,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092528/8.svg"
-                }
+                src={"images/icons/tech-why-us-8.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -228,9 +212,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092530/9.svg"
-                }
+                src={"images/icons/tech-why-us-9.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">
@@ -252,9 +234,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={
-                  "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17092532/10.svg"
-                }
+                src={"images/icons/tech-why-us-10.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px]">

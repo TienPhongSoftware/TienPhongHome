@@ -16,12 +16,6 @@
   }
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -36,10 +30,6 @@ div {
   display: block;
 }
 
-html {
-  color: #0c152a;
-}
-
 /* Tạo màu cho scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -48,7 +38,7 @@ html {
 
 /* Tạo kiểu cho thanh nằm trong scrollbar */
 ::-webkit-scrollbar-thumb {
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #424242;
 }
 

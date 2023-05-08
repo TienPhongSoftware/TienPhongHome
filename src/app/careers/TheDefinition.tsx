@@ -19,7 +19,7 @@ function TheDefinition() {
           <p className="text-center font-ThinCus">
             For many of us, a great workplace could be beautiful offices,
             premium benefits, grand parties. Of course, it should be included
-            but not limited. At Enlab, we strive to build a company where
+            but not limited. At Tien Phong, we strive to build a company where
             amazing people like you could do your best work, inspired by
             professional but warm colleagues. {"It’s"} where you could foster
             your professional growth and build a healthy personal life. In the

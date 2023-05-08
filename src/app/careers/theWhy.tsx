@@ -33,12 +33,12 @@ function TheWhy() {
                   and success.
                 </p>
                 <p className="mb-[24px] mt-0">
-                  At Enlab, we seek fabulous people who align with this vision.
-                  We communicate openly to find out your real career purpose and
-                  support you to achieve it. We value an environment where you
-                  can unleash your potential. That could be a challenge, but
-                  let’s challenge ourselves, and together we could reach the
-                  next level of software engineering.
+                  At Tien Phong, we seek fabulous people who align with this
+                  vision. We communicate openly to find out your real career
+                  purpose and support you to achieve it. We value an environment
+                  where you can unleash your potential. That could be a
+                  challenge, but let’s challenge ourselves, and together we
+                  could reach the next level of software engineering.
                 </p>
               </div>
             </div>

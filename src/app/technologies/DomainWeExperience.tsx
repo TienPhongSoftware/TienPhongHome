@@ -43,9 +43,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091608/domain-we-experience-v2-01.svg"
-              }
+              src={"images/icons/tech-domain-1.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Real Estate</span>
@@ -62,9 +60,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091611/domain-we-experience-v2-02.svg"
-              }
+              src={"images/icons/tech-domain-2.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Marketing</span>
@@ -81,9 +77,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091613/domain-we-experience-v2-03.svg"
-              }
+              src={"images/icons/tech-domain-3.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Education</span>
@@ -100,9 +94,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091615/domain-we-experience-v2-04.svg"
-              }
+              src={"images/icons/tech-domain-4.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">
@@ -121,9 +113,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091617/domain-we-experience-v2-05.svg"
-              }
+              src={"images/icons/tech-domain-5.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Marketplace</span>
@@ -140,9 +130,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091619/domain-we-experience-v2-06.svg"
-              }
+              src={"images/icons/tech-domain-6.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Recruitment</span>
@@ -159,9 +147,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091622/domain-we-experience-v2-07.svg"
-              }
+              src={"images/icons/tech-domain-7.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">
@@ -180,9 +166,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091624/domain-we-experience-v2-08.svg"
-              }
+              src={"images/icons/tech-domain-8.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">ERP</span>
@@ -199,9 +183,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091626/domain-we-experience-v2-09.svg"
-              }
+              src={"images/icons/tech-domain-9.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Procurement</span>
@@ -218,9 +200,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091643/domain-we-experience-v2-10.svg"
-              }
+              src={"images/icons/tech-domain-10.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Hospitality</span>
@@ -237,9 +217,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091645/domain-we-experience-v2-11.svg"
-              }
+              src={"images/icons/tech-domain-11.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Healthcare</span>
@@ -256,9 +234,7 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091648/domain-we-experience-v2-12.svg"
-              }
+              src={"images/icons/tech-domain-12.svg"}
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold">Others</span>

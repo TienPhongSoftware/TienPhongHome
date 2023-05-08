@@ -76,8 +76,8 @@ function Home() {
               max-w-[622px] lg:text-[18px]"
                 >
                   <p className="m-0 break-words">
-                    Enlab Software is a dedicated offshore software development
-                    company, providing{" "}
+                    Tien Phong Software is a dedicated offshore software
+                    development company, providing{" "}
                     <strong>
                       <span className="text-[#00aeef]">
                         enterprise applications
@@ -176,7 +176,7 @@ function Home() {
          before:to-slate-900 before:opacity-50 before:z-10"
           >
             <video
-              src="https://media.enlabsoftware.com/wp-content/uploads/2022/05/27085756/File-final-up-banner-website.mp4"
+              src="https://media.Tien Phongsoftware.com/wp-content/uploads/2022/05/27085756/File-final-up-banner-website.mp4"
               autoPlay
               loop
               muted
@@ -473,8 +473,9 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p className="text-[18px] font-ThinCus">
-                          Enlab Software is a truly awesome team, and we will{" "}
+                        <p className="text-[18px] font-ThinCus text-black">
+                          Tien Phong Software is a truly awesome team, and we
+                          will{" "}
                           <span className="text-[#00aeef]">
                             <strong>
                               definitely call on them again in the future
@@ -495,7 +496,7 @@ function Home() {
                           </span>
                         </p>
                       </div>
-                      <div className="font-bold text-[18px] text-center">
+                      <div className="font-bold text-[18px] text-center text-black">
                         Chris Mahoney{" "}
                         <span className="text-[#818181]">
                           - CEO of Anasoft Consulting Pty Ltd.
@@ -506,8 +507,9 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p className="text-[18px] font-ThinCus">
-                          Enlab Software has exceptional resources to work with.{" "}
+                        <p className="text-[18px] font-ThinCus text-black">
+                          Tien Phong Software has exceptional resources to work
+                          with.{" "}
                           <span className="text-[#ed145b]">
                             <strong>
                               I recommend them to anyone needing Web or SQL
@@ -526,8 +528,8 @@ function Home() {
                           always available to answer questions and make
                           suggestions. Additionally, the team is able to work
                           without constant supervision. I continue to utilize
-                          Enlab Software team for ongoing support and future
-                          development.
+                          Tien Phong Software team for ongoing support and
+                          future development.
                           <span className="text-[#ed145b]">
                             <strong>
                               <br />
@@ -535,7 +537,7 @@ function Home() {
                           </span>
                         </p>
                       </div>
-                      <div className="font-bold text-[18px] text-center">
+                      <div className="font-bold text-[18px] text-center text-black">
                         Scott Prince{" "}
                         <span className="text-[#818181]">
                           - CEO of Sedna Inc.
@@ -546,8 +548,8 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p className="text-[18px] font-ThinCus">
-                          Enlab Software is incredible. Great work and
+                        <p className="text-[18px] font-ThinCus text-black">
+                          Tien Phong Software is incredible. Great work and
                           coordination with his team. Able to{" "}
                           <span className="text-[#faa61a]">
                             <strong>
@@ -569,11 +571,11 @@ function Home() {
                           always available to answer questions and make
                           suggestions. Additionally, the team is able to work
                           without constant supervision. I continue to utilize
-                          Enlab Software team for ongoing support and future
-                          development.
+                          Tien Phong Software team for ongoing support and
+                          future development.
                         </p>
                       </div>
-                      <div className="font-bold text-[18px] text-center">
+                      <div className="font-bold text-[18px] text-center text-black">
                         Matt Klusas{" "}
                         <span className="text-[#818181]">
                           - CEO of Cryogenic Control
@@ -584,9 +586,9 @@ function Home() {
                   <SwiperSlide>
                     <div className="px-[48px] p-[5%] pt-[1%] sm:text-[3.2vw] lg:text-[1.2vw]">
                       <div className="mb-[24px]">
-                        <p className="text-[18px] font-ThinCus">
-                          I’ve worked with Enlab on numerous projects, and each
-                          time, he has{" "}
+                        <p className="text-[18px] font-ThinCus text-black">
+                          I’ve worked with Tien Phong on numerous projects, and
+                          each time, he has{" "}
                           <span className="text-[#00aeef]">
                             <span className="text-black">
                               thoroughly understood my requirements and{" "}
@@ -604,11 +606,11 @@ function Home() {
                               get the job done right the first time
                             </strong>
                           </span>
-                          . I recommend Enlab as a reliable software vendor for
-                          projects.
+                          . I recommend Tien Phong as a reliable software vendor
+                          for projects.
                         </p>
                       </div>
-                      <div className="font-bold text-[18px] text-center">
+                      <div className="font-bold text-[18px] text-center text-black">
                         Scott Yewell{" "}
                         <span className="text-[#818181]">
                           - CEO of Purpose Built Software
@@ -997,7 +999,7 @@ function Home() {
                     className="font-bold md:text-[64px] mb-[32px] 
                 leading-[1.2] sm:text-[7vw]"
                   >
-                    Why Enlab?
+                    Why Tien Phong?
                   </h2>
                   <div className="block">
                     <div className="mb-[44px]">
@@ -1118,8 +1120,8 @@ function Home() {
                           that plays the role of cost reduction, we have a dream
                           of building the lab for smart software that empowers
                           businesses to thrive digitally. That’s why we named us
-                          Enlab, which is an abbreviation of Enterprise Lab.
-                          We’ve started small, but we do little things with
+                          Tien Phong, which is an abbreviation of Enterprise
+                          Lab. We’ve started small, but we do little things with
                           great love. How does great love transform into a
                           customer’s credit?
                         </p>
@@ -1335,7 +1337,7 @@ function Home() {
                 <iframe
                   id="iframe-0.08710385408125387"
                   width="100%"
-                  src="https://widget.clutch.co/widgets/get/3?ref_domain=enlabsoftware.com&amp;uid=1469288&amp;ref_path=/"
+                  src="https://widget.clutch.co/widgets/get/3?ref_domain=Tien Phongsoftware.com&amp;uid=1469288&amp;ref_path=/"
                   height="380px"
                   title="bcEmpty3"
                 ></iframe>
@@ -1370,7 +1372,7 @@ function Home() {
               sm:text-[8vw]
               font-bold"
                 >
-                  Think with Enlab
+                  Think with Tien Phong
                 </h2>
                 <p
                   className="font-LightCus mb-[10px]
@@ -1409,7 +1411,7 @@ bg-[#c4c4c4] rounded-ThinkWithERa overflow-hidden mb-[24px]"
                         src="/images/layout/think-1.jpeg"
                         className="transition-all object-cover absolute
                       h-full w-full top-0 left-0 max-w-full align-middle"
-                        alt="Enlab - How to manage a dedicated team 
+                        alt="Tien Phong - How to manage a dedicated team 
                       effectively with our best practices"
                         width={800}
                         height={60}
@@ -1465,7 +1467,7 @@ bg-[#c4c4c4] rounded-ThinkWithERa overflow-hidden mb-[24px]"
                         src="/images/layout/think-2.jpg"
                         className="transition-all object-cover absolute
                       h-full w-full top-0 left-0 max-w-full align-middle"
-                        alt="Enlab - How to manage a dedicated team 
+                        alt="Tien Phong - How to manage a dedicated team 
                       effectively with our best practices"
                         width={800}
                         height={60}
@@ -1488,7 +1490,7 @@ bg-[#c4c4c4] rounded-ThinkWithERa overflow-hidden mb-[24px]"
                   "
                     >
                       <a href="">
-                        Enlab Software recognized by GoodFirms as the Best
+                        Tien Phong Software recognized by GoodFirms as the Best
                         Company to Work With
                       </a>
                     </h3>

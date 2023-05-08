@@ -14,7 +14,7 @@ function LifeEnlab() {
         lg:text-[48px] sm:text-[10.3vw] md:text-[5.2vw]
          leading-[1.2] break-words"
         >
-          #Life@Enlab
+          #Life@Tien Phong
         </h3>
       </div>
       <div className="mt-[48px]">

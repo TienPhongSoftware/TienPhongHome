@@ -29,9 +29,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091219/tech-we-use-10.svg"
-              }
+              src={"images/logo/tech-we-use-1.svg"}
             />
           </a>
           <a
@@ -45,9 +43,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091343/key-technology-python.svg"
-              }
+              src={"images/logo/tech-we-use-2.svg"}
             />
           </a>
           <a
@@ -61,9 +57,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091224/tech-we-use-12.svg"
-              }
+              src={"images/logo/tech-we-use-3.svg"}
             />
           </a>
           <a
@@ -77,9 +71,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091226/tech-we-use-13.svg"
-              }
+              src={"images/logo/tech-we-use-4.svg"}
             />
           </a>
           <a
@@ -93,9 +85,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091229/tech-we-use-14.svg"
-              }
+              src={"images/logo/tech-we-use-5.svg"}
             />
           </a>
           <a
@@ -109,9 +99,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/20114947/logo-Nodejs-development-services.svg"
-              }
+              src={"images/logo/tech-we-use-6.svg"}
             />
           </a>
           <a
@@ -125,9 +113,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091231/tech-we-use-16.svg"
-              }
+              src={"images/logo/tech-we-use-7.svg"}
             />
           </a>
           <a
@@ -141,9 +127,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={
-                "https://media.enlabsoftware.com/wp-content/uploads/2022/12/17091234/tech-we-use-17.svg"
-              }
+              src={"images/logo/tech-we-use-8.svg"}
             />
           </a>
         </div>
