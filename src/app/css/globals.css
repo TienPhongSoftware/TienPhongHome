@@ -49,21 +49,21 @@ div {
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/SVN-Gilroy.ttf") format("truetype");
+  src: url("/fonts/SVN-Gilroy.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy-Light";
-  src: url("/fonts/SVN-Gilroy-Xlight.ttf") format("truetype");
+  src: url("/fonts/SVN-Gilroy-Xlight.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy-Thin";
-  src: url("/fonts/SVN-Gilroy-Thin.ttf") format("truetype");
+  src: url("/fonts/SVN-Gilroy-Thin.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

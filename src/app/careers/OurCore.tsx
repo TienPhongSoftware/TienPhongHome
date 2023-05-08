@@ -10,7 +10,7 @@ function OurCore() {
           mx-auto"
       >
         <h3
-          className="mb-[24px] font-bold 
+          className="mb-[24px] font-bold text-black 
         lg:text-[48px] sm:text-[10.3vw] md:text-[5.2vw]
          leading-[1.2] break-words"
           data-aos="fade-up"
@@ -44,7 +44,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Excellence
               </h4>
             </div>
@@ -63,7 +63,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Integrity
               </h4>
             </div>
@@ -82,7 +82,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Humanity
               </h4>
             </div>
@@ -103,7 +103,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Empathy
               </h4>
             </div>
@@ -122,7 +122,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Gratefulness
               </h4>
             </div>
@@ -141,7 +141,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Playfulness
               </h4>
             </div>
@@ -160,7 +160,7 @@ function OurCore() {
                   className="max-w-full h-[64px] inline-block"
                 />
               </div>
-              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center">
+              <h4 className="font-bold lg:text-[20px] whitespace-nowrap leading-[1.2] break-words text-center text-black ">
                 Solidarity
               </h4>
             </div>

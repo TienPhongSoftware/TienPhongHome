@@ -119,7 +119,7 @@ function TabsWorks() {
       >
         <TabList
           className={
-            "m-0 p-0 list-none overflow-hidden inline-flex flex-nowrap max-w-full overflow-x-auto"
+            "m-0 p-0 list-none overflow-hidden inline-flex flex-nowrap max-w-full overflow-x-auto text-black"
           }
         >
           <Tab

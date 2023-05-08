@@ -177,7 +177,8 @@ function Header() {
                       height="1184.000000pt"
                       viewBox="0 0 525.000000 1184.000000"
                       preserveAspectRatio="xMidYMid meet"
-                      className="sm:max-h-[41px] lg:max-h-[80px] max-w-[41px]"
+                      className="sm:max-h-[40px] sm:max-w-[40px]
+                      lg:max-h-[120px] lg:max-w-[80px]"
                     >
                       <g
                         transform="translate(0.000000,1184.000000) scale(0.100000,-0.100000)"
@@ -380,7 +381,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -455,7 +456,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="works"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -554,7 +555,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="technologies"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >
@@ -631,7 +632,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="about-us"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                           isScrolled ? "text-black" : "text-white"
                         }`}
                       >
@@ -641,7 +642,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="careers"
-                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                        className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                           isScrolled ? "text-black" : "text-white"
                         }`}
                       >
@@ -656,7 +657,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="#"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold  ${
                             isScrolled ? "text-black" : "text-white"
                           }`}
                         >

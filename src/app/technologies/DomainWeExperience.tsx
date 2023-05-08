@@ -6,7 +6,7 @@ function DomainWeExperience() {
     <section className="py-[128px] sm:py-[48px] bg-[#f8f9fb] block">
       <div className="sm:px-[1rem] md:px-[24px] lg:px-[64px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD md:mb-[96px] mb-[48px]">
         <h2
-          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2]"
+          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2] text-black"
           data-aos="fade-up"
           data-aos-offset="-300"
         >
@@ -17,7 +17,7 @@ function DomainWeExperience() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <p className="text-center font-ThinCus">
+          <p className="text-center font-ThinCus text-black">
             After years of working in offshore custom software development, we
             keep our effort consciously and continuously build up our knowledge
             base and competencies across domains and in a wide range of <br />{" "}
@@ -30,7 +30,7 @@ function DomainWeExperience() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <div className="flex flex-wrap lg:justify-between sm:justify-between md:justify-start">
+        <div className="flex flex-wrap lg:justify-between sm:justify-between md:justify-start text-black">
           <a
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
@@ -46,7 +46,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-1.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Real Estate</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Real Estate
+            </span>
           </a>
           <a
             href=""
@@ -63,7 +65,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-2.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Marketing</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Marketing
+            </span>
           </a>
           <a
             href=""
@@ -80,7 +84,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-3.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Education</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Education
+            </span>
           </a>
           <a
             href=""
@@ -97,7 +103,7 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-4.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">
+            <span className="mt-[24px] text-[18px] font-bold text-black">
               Data Management
             </span>
           </a>
@@ -116,7 +122,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-5.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Marketplace</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Marketplace
+            </span>
           </a>
           <a
             href=""
@@ -133,7 +141,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-6.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Recruitment</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Recruitment
+            </span>
           </a>
           <a
             href=""
@@ -150,7 +160,7 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-7.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">
+            <span className="mt-[24px] text-[18px] font-bold text-black">
               Construction
             </span>
           </a>
@@ -169,7 +179,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-8.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">ERP</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              ERP
+            </span>
           </a>
           <a
             href=""
@@ -186,7 +198,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-9.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Procurement</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Procurement
+            </span>
           </a>
           <a
             href=""
@@ -203,7 +217,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-10.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Hospitality</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Hospitality
+            </span>
           </a>
           <a
             href=""
@@ -220,7 +236,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-11.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Healthcare</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Healthcare
+            </span>
           </a>
           <a
             href=""
@@ -237,7 +255,9 @@ function DomainWeExperience() {
               src={"images/icons/tech-domain-12.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold">Others</span>
+            <span className="mt-[24px] text-[18px] font-bold text-black">
+              Others
+            </span>
           </a>
         </div>
       </div>

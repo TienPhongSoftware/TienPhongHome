@@ -11,7 +11,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
           <h2
             className="mb-[48px]
             lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
-            font-bold"
+            font-bold text-black"
             data-aos="fade-up"
             data-aos-offset="-300"
           >
@@ -20,7 +20,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
           <div
             className="
               xl:text-[1.2vw] lg:text-[1.6vw] sm:text-[5vw] 
-          md:text-[3vw] font-ThinCus"
+          md:text-[3vw] font-ThinCus text-black"
             data-aos-delay="100"
             data-aos-offset="-300"
             data-aos="fade-up"
@@ -44,7 +44,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             <h3
               className="
               lg:text-[2.7vw] xl:text-[2vw] sm:text-[6vw] md:text-[3vw]
-              mb-[32px] text-center font-bold leading-[1.2]
+              mb-[32px] text-center font-bold leading-[1.2] text-black
               "
             >
               Quick facts about Tien Phong
@@ -133,7 +133,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               <h4
                 className="
                 lg:text-[1.6vw] xl:text-[1.2vw] sm:text-[3.5vw] 
-                md:text-[2.5vw] font-bold mb-[16px]
+                md:text-[2.5vw] font-bold mb-[16px] text-black
                 "
               >
                 And the fact about the name {"Tien Phong"}
@@ -141,7 +141,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               <div
                 className="
                 lg:text-[1.4vw] xl:text-[1vw] sm:text-[3.5vw] 
-                md:text-[2.5vw] font-LightCus
+                md:text-[2.5vw] font-LightCus text-black
                 "
               >
                 {"It's"} the abbreviation of Enterprise Lab. Our mission is to

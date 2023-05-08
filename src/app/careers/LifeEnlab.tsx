@@ -10,7 +10,7 @@ function LifeEnlab() {
           mx-auto"
       >
         <h3
-          className="mb-[24px] font-bold 
+          className="mb-[24px] font-bold text-black 
         lg:text-[48px] sm:text-[10.3vw] md:text-[5.2vw]
          leading-[1.2] break-words"
         >

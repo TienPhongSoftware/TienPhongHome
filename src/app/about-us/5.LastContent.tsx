@@ -7,7 +7,7 @@ function LastContent() {
       <div
         className="relative z-10
       after:bg-[#f8f9fb] after:h-[50%] after:w-full after:bottom-0 
-      after:absolute after:-z-10
+      after:absolute after:-z-10 text-black
       "
       >
         <div
@@ -21,7 +21,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
             mx-auto"
           >
             <p
-              className="font-ThinCus italic
+              className="font-ThinCus italic text-black
                 sm:text-[5.5vw] md:text-[2.5vw]
                 lg:text-[2vw] xl:text-[1.5vw]"
             >
@@ -39,7 +39,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
 "
         >
           <h3
-            className="font-bold mb-[40px] text-[32px]
+            className="font-bold mb-[40px] text-[32px] text-black
             "
           >
             Great partners who trust us

@@ -6,7 +6,7 @@ function WhyChoose() {
     <section className="py-[128px] sm:py-[48px] bg-[#f8f9fb] block">
       <div className="sm:px-[1rem] md:px-[24px] lg:px-[64px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD ">
         <h2
-          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2]"
+          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2] text-black"
           data-aos="fade-up"
           data-aos-offset="-300"
         >
@@ -17,7 +17,7 @@ function WhyChoose() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <p className="text-center font-LightCus text-[19px]">
+          <p className="text-center font-LightCus text-[19px] text-black">
             Over the years of working in this offshore software industry, we
             truly understand its pros and cons. Instead of acquiring as many
             clients as possible and letting them go with frustration and poor
@@ -43,11 +43,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-1.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 High quality comes first
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               To ensure the highest code quality and appropriate functioning of
               the end solution, we use a traceability matrix, regular code
               reviews, and cross-reviews. Our teams always follow quality
@@ -65,11 +65,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-2.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 30-min free consultation
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               We are always willing to help you. By sharing your project details
               – like scope, timeframes, or business challenges, our team will
               provide you with a tailored consultation. We constantly strive to
@@ -86,9 +86,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-3.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">Transparent costs</span>
+              <span className="font-bold text-[20px] text-black">
+                Transparent costs
+              </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               Clients always know their total costs, for what, when the project
               will be delivered, and who is working on it. The price depends on
               the project scope and complexity, the required features, licenses
@@ -106,11 +108,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-4.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 High quality comes first
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               All developers pass a series of interviews with HR, technical
               leads, and project managers before joining our teams. They share
               the same passion for leveraging cutting-edge technologies to build
@@ -128,11 +130,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-5.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 On-time project delivery
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               Clients always know their total costs, for what, when the project
               will be delivered, and who is working on it. The price depends on
               the project scope and complexity, the required features, licenses
@@ -150,11 +152,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-6.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 Strict data security
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               To ensure the security of your data, we will sign Non-disclosure
               agreements (NDA) at the outset. Appropriate security policies,
               methodologies, and protection procedures are implemented and
@@ -172,11 +174,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-7.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 Complete transparency and integrity
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               By leveraging the latest technologies to accelerate the software
               development process, we ensure you complete your project on
               schedule, per specification, and within budget. The Work Breakdown
@@ -194,11 +196,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-8.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 Flexible engagement models
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               We provide our clients with three types of contracts for software
               development projects: Fixed Price, Time & Material, and Dedicated
               Team. Our team can consult and help you choose the best model for
@@ -215,11 +217,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-9.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 Effective Agile methodologies
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               We put Agile at the heart of our management to prioritize our
               clients’ participation from the beginning of the development
               cycle. Open involvement allows us to quickly catch defects and
@@ -237,11 +239,11 @@ function WhyChoose() {
                 src={"images/icons/tech-why-us-10.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
-              <span className="font-bold text-[20px]">
+              <span className="font-bold text-[20px] text-black">
                 90-day maintenance and support
               </span>
             </h3>
-            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus">
+            <div className="sm:text-[14px] md:text-[18px] lg:text-[16px] font-LightCus text-black">
               We treasure long-lasting relationships, so our partnership{" "}
               {"doesn't"}
               end after delivery. We are ready to support you with minor issues.

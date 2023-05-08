@@ -3,9 +3,9 @@ import React from "react";
 function OneStop() {
   return (
     <section className="py-[128px] sm:py-[48px] bg-[#f8f9fb] block">
-      <div className="sm:px-[1rem] md:px-[24px] lg:px-[24px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD">
+      <div className="sm:px-[1rem] md:px-[24px] lg:px-[24px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD text-black">
         <h2
-          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2]"
+          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2] text-black"
           data-aos="fade-up"
           data-aos-offset="-300"
         >
@@ -16,7 +16,7 @@ function OneStop() {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <p className="text-center font-ThinCus">
+          <p className="text-center font-ThinCus text-black">
             Digital solutions are omnipresent in businesses nowadays. We utilize
             many up-to-date technologies, frameworks, and platforms to turn your
             ideas into great digital products. You can solve your business

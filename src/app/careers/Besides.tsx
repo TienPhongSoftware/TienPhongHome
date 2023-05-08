@@ -9,7 +9,7 @@ function Besides() {
   max-w-maxContainer 
 mx-auto"
       >
-        <div className="mb-[96px] leading-[1.3] font-bold lg:text-[48px] sm:text-[10.3vw] md:text-[4vw]">
+        <div className="mb-[96px] leading-[1.3] font-bold lg:text-[48px] sm:text-[10.3vw] md:text-[4vw] text-black">
           Besides, we prepare some other <br /> things for your comfort at work.
         </div>
       </div>
@@ -31,7 +31,7 @@ mx-auto"
               src={"/images/icons/careers-1.svg"}
               className="h-[80px] mb-[24px] align-middle text-center max-w-full inline"
             />
-            <h3 className="lg:text-[24px] sm:text-[5.2vw] md:text-[2vw] mb-[24px] font-bold leading-[1.2]">
+            <h3 className="lg:text-[24px] sm:text-[5.2vw] md:text-[2vw] mb-[24px] font-bold leading-[1.2] ">
               Flexible timings
             </h3>
             <div className="text-white lg:text-[15px] md:text-[2vw] sm:text-[4vw] leading-[1.8] font-ThinCus">

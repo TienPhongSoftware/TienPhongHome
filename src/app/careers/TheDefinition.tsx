@@ -5,18 +5,18 @@ function TheDefinition() {
     <section className="py-[96px] bg-[#f8f9fb] block text-center">
       <div className="sm:px-[1rem] md:px-[24px] lg:px-[64px] xl:px-[238px] w-full max-w-[1696px] m-autoWWD">
         <h2
-          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2]"
+          className="sm:text-[32px] md:text-[48px] font-bold mb-[48px] text-center break-words leading-[1.2] text-black"
           data-aos="fade-up"
           data-aos-offset="-300"
         >
           The definition of the great workplace
         </h2>
         <div
-          className="sm:text-[16px] md:text-[18px] sm:text-[4vw] leading-[1.6]"
+          className="md:text-[18px] sm:text-[4vw] leading-[1.6]"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <p className="text-center font-ThinCus">
+          <p className="text-center font-ThinCus text-black">
             For many of us, a great workplace could be beautiful offices,
             premium benefits, grand parties. Of course, it should be included
             but not limited. At Tien Phong, we strive to build a company where

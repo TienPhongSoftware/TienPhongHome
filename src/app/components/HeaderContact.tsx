@@ -698,7 +698,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           ${isScrolledDefault ? "text-black" : "text-black"}
                           ${isScrolled ? "text-black" : "text-black"}`}
                         >
-                          Think with Enlab
+                          Think with Tien Phong
                         </a>
                         <ul
                           className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
@@ -1284,7 +1284,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
-                Think with Enlab
+                Think with Tien Phong
               </a>
               <ul
                 className={`p-navDropdown overflow-hidden mx-[-24px]

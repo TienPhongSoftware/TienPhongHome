@@ -12,10 +12,10 @@ function TheWhy() {
         <div className="py-[64px]">
           <div className="flex justify-between items-center flex-wrap">
             <div className="lg:max-w-CareersWhyUs lg:flex-AboutUsRowFlex sm:max-w-full sm:flex-WhySM">
-              <h3 className="font-bold leading-[1.2] mb-[16px] sm:text-[7vw] md:text-[3vw] lg:text-[32px]">
+              <h3 className="font-bold leading-[1.2] mb-[16px] sm:text-[7vw] md:text-[3vw] lg:text-[32px] text-black">
                 The “WHY” of work
               </h3>
-              <div className="font-ThinCus leading-[1.8] sm:text-[4vw] md:text-[2vw] lg:text-[15px]">
+              <div className="font-ThinCus leading-[1.8] sm:text-[4vw] md:text-[2vw] lg:text-[15px] text-black">
                 <p className="mb-[24px] mt-0">
                   Studies reveal that when you work with a purpose, it could
                   boost your productivity and contribute to your overall
@@ -167,10 +167,10 @@ function TheWhy() {
               </div>
             </div>
             <div className="lg:max-w-CareersWhyUs lg:flex-AboutUsRowFlex sm:max-w-full sm:flex-WhySM">
-              <h3 className="font-bold leading-[1.2] mb-[16px] sm:text-[7vw] md:text-[3vw] lg:text-[32px]">
+              <h3 className="font-bold leading-[1.2] mb-[16px] sm:text-[7vw] md:text-[3vw] lg:text-[32px] text-black">
                 Happiness is a science.
               </h3>
-              <div className="font-ThinCus leading-[1.8] sm:text-[4vw] md:text-[2vw] lg:text-[15px]">
+              <div className="font-ThinCus leading-[1.8] sm:text-[4vw] md:text-[2vw] lg:text-[15px] text-black">
                 <p className="mb-[24px] mt-0">
                   Life is short, and work is a big part of life. So, the
                   work-life should be fulfilling and joyful.

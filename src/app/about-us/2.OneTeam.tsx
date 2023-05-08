@@ -33,7 +33,7 @@ function OneTeam() {
 mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
       >
         <h2
-          className="mb-[56px] font-bold
+          className="mb-[56px] font-bold text-black
   lg:text-[4.1vw] xl:text-[3vw] sm:text-[9vw] md:text-[6vw]"
         >
           One Team. One Dream.
@@ -41,7 +41,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
         <div
           className="
                 lg:text-[1.5vw] xl:text-[1vw] sm:text-[3.5vw] 
-                md:text-[2.5vw] font-LightCus
+                md:text-[2.5vw] font-LightCus text-black
                 "
         >
           We are engineers coming from different experiences and backgrounds –

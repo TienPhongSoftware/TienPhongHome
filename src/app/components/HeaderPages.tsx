@@ -422,7 +422,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
@@ -508,7 +508,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="works"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
-                          inline-flex text-[16px] font-bold  
+                          inline-flex text-[14px] font-bold  
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
@@ -614,7 +614,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="technologies"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
@@ -721,7 +721,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="#"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
