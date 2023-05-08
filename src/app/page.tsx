@@ -49,7 +49,7 @@ function Home() {
           className="sm:min-h-[568px] sm:overflow-hidden sm:h-auto
         md:min-h-[100vh]
       relative
-       text-white z-10 h-[100vh] md:min-h-[740px] 
+       text-white z-10 h-[100vh] 
       block"
         >
           <div
@@ -134,7 +134,7 @@ function Home() {
                     href=""
                     className="mr-6 bg-[0 0] border-[#00aeef] text-[#00aeef]
                   lg:px-[40px] lg:leading-[52px]
-                  lg:min-w-[184px] xl:text-[16px] sm:text-[12px] sm:text-[12px] max-w-[244px] whitespace-nowrap
+                  lg:min-w-[184px] xl:text-[16px] sm:text-[12px] max-w-[244px] whitespace-nowrap
       inline-block text-center border-2 rounded-[32px] relative
       z-10 font-bold overflow-hidden transition-all outline-0
       isolate

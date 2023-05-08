@@ -51,8 +51,7 @@ function HeaderContact() {
     const scrollPercent = scrollTop / (offsetHeight - window.innerHeight);
 
     setIsScrolledDefault(scrollTop === 0);
-    setIsScrolled(scrollTop > 0 && scrollPercent < 0.1);
-    setIsScrollCus(scrollPercent >= 0.1);
+    setIsScrolled(scrollTop > 0);
   };
 
   useEffect(() => {
@@ -156,7 +155,7 @@ function HeaderContact() {
           ? "sm:bg-[#545b69] lg:bg-transparent bg-opacity-100 text-white"
           : ""
       }
-      ${isScrolled ? "bg-black shadow-lg bg-opacity-80" : ""}
+      ${isScrolled ? "bg-white  bg-opacity-80" : ""}
       ${isScrollCus ? "bg-white bg-opacity-100" : ""}
       z-50`}
         >
@@ -202,7 +201,7 @@ function HeaderContact() {
                       >
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M3314 11815 c-67 -14 -130 -43 -183 -83 l-33 -25 -62 22 c-85 29
 -142 35 -212 21 -143 -30 -255 -131 -295 -267 -11 -40 -15 -43 -67 -58 -77
@@ -217,13 +216,13 @@ function HeaderContact() {
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M1970 10165 l0 -65 585 0 585 0 0 65 0 65 -585 0 -585 0 0 -65z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M1730 9984 c-94 -25 -175 -84 -168 -120 5 -27 68 -72 133 -95 40 -15
 94 -23 163 -27 58 -3 102 -9 102 -15 0 -5 -34 -54 -75 -108 -41 -53 -75 -100
@@ -233,7 +232,7 @@ function HeaderContact() {
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-[#449fdb]"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M530 8745 l0 -575 753 -2 752 -3 3 -1752 c1 -964 -1 -1753 -5 -1753
 -5 0 -35 16 -68 36 -383 231 -616 639 -618 1084 -1 160 13 255 59 398 63 201
@@ -259,7 +258,7 @@ l-48 -29 -47 29 c-48 30 -48 30 -51 90 l-3 61 43 26 c53 32 61 32 115 0z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M442 4088 c-22 -22 -13 -46 38 -101 28 -30 50 -59 50 -65 0 -5 -56
 -63 -125 -127 -101 -95 -125 -123 -125 -145 0 -27 20 -52 51 -63 27 -9 70 25
@@ -268,7 +267,7 @@ l-48 -29 -47 29 c-48 30 -48 30 -51 90 l-3 61 43 26 c53 32 61 32 115 0z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M4735 4010 c-55 -13 -115 -50 -171 -107 -65 -67 -98 -120 -115 -186
 -36 -147 92 -295 236 -273 113 18 253 134 318 265 52 103 50 127 -14 179 -29
@@ -279,14 +278,14 @@ l-48 -29 -47 29 c-48 30 -48 30 -51 90 l-3 61 43 26 c53 32 61 32 115 0z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M730 3541 c-135 -166 -148 -192 -112 -224 28 -25 65 -21 94 11 58 62
 228 300 228 319 0 11 -8 27 -18 36 -39 36 -56 24 -192 -142z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M4205 3596 c-20 -30 -20 -29 82 -177 41 -60 70 -109 64 -109 -12 0
 -273 86 -353 117 -46 17 -48 17 -75 -3 -15 -12 -29 -31 -31 -43 -5 -29 176
@@ -296,7 +295,7 @@ l-48 -29 -47 29 c-48 30 -48 30 -51 90 l-3 61 43 26 c53 32 61 32 115 0z"
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M935 3393 c-60 -87 -110 -167 -112 -178 -7 -34 61 -84 289 -209 75
 -41 123 -46 123 -11 0 13 -21 30 -70 58 -38 22 -105 59 -148 84 l-77 45 20 36
@@ -307,7 +306,7 @@ c12 21 29 48 39 60 l17 24 117 -67 c122 -69 159 -78 165 -39 3 18 -15 32 -105
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M1502 3297 c-20 -24 -162 -359 -162 -382 0 -28 26 -45 68 -45 28 0
 32 5 62 77 18 43 38 94 45 113 39 106 32 109 84 -40 87 -245 109 -280 177
@@ -317,7 +316,7 @@ c12 21 29 48 39 60 l17 24 117 -67 c122 -69 159 -78 165 -39 3 18 -15 32 -105
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M3568 3265 c-148 -41 -227 -125 -228 -244 0 -121 61 -209 162 -231
 136 -31 329 53 379 165 39 85 11 195 -69 267 -63 57 -143 71 -244 43z m139
@@ -326,7 +325,7 @@ c12 21 29 48 39 60 l17 24 117 -67 c122 -69 159 -78 165 -39 3 18 -15 32 -105
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M500 2736 l0 -434 -246 -367 c-135 -201 -244 -368 -242 -369 1 -2 35
 -21 73 -43 39 -22 619 -359 1290 -748 671 -390 1228 -710 1237 -713 10 -2 526
@@ -364,7 +363,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M3110 3135 c-12 -15 -10 -72 6 -152 l6 -30 -79 -11 c-43 -7 -101 -14
 -130 -18 l-51 -6 -7 68 c-4 38 -9 77 -11 87 -8 27 -38 39 -70 27 l-27 -11 8
@@ -374,7 +373,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         />
                         <path
                           className={`${
-                            isScrolled ? "fill-[#015ea3]" : "fill-white"
+                            isScrolled ? "fill-[#015ea3]" : "fill-[#015ea3]"
                           }`}
                           d="M2257 3098 c-13 -10 -23 -53 -42 -188 -35 -249 -34 -260 31 -260 43
 0 53 16 62 101 l7 73 115 1 c126 0 158 10 193 57 25 34 27 106 4 142 -35 53
@@ -396,7 +395,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       >
                         <a
                           href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-black" : "text-black"}
                           ${isScrolled ? "text-black" : "text-black"}`}
                         >
@@ -482,7 +481,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="works"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
-                          inline-flex text-[16px] font-bold  
+                          inline-flex text-[14px] font-bold  
                           ${isScrolledDefault ? "text-black" : "text-black"}
                           ${isScrolled ? "text-black" : "text-black"}`}
                         >
@@ -588,7 +587,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="technologies"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-black" : "text-black"}
                           ${isScrolled ? "text-black" : "text-black"}`}
                         >
@@ -695,11 +694,11 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         <a
                           href="#"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[16px] font-bold 
+                          pr-0 pl-0 inline-flex text-[14px] font-bold 
                           ${isScrolledDefault ? "text-black" : "text-black"}
                           ${isScrolled ? "text-black" : "text-black"}`}
                         >
-                          Think with Tien Phong
+                          Think with Enlab
                         </a>
                         <ul
                           className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
@@ -1285,7 +1284,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
               >
-                Think with Tien Phong
+                Think with Enlab
               </a>
               <ul
                 className={`p-navDropdown overflow-hidden mx-[-24px]
