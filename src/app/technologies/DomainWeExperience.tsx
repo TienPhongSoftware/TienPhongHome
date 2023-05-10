@@ -43,10 +43,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-1.svg"}
+              src={"/images/icons/tech-domain-1.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Real Estate
             </span>
           </a>
@@ -62,10 +62,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-2.svg"}
+              src={"/images/icons/tech-domain-2.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Marketing
             </span>
           </a>
@@ -81,10 +81,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-3.svg"}
+              src={"/images/icons/tech-domain-3.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Education
             </span>
           </a>
@@ -100,10 +100,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-4.svg"}
+              src={"/images/icons/tech-domain-4.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Data Management
             </span>
           </a>
@@ -119,10 +119,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-5.svg"}
+              src={"/images/icons/tech-domain-5.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Marketplace
             </span>
           </a>
@@ -138,10 +138,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-6.svg"}
+              src={"/images/icons/tech-domain-6.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Recruitment
             </span>
           </a>
@@ -157,10 +157,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-7.svg"}
+              src={"/images/icons/tech-domain-7.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Construction
             </span>
           </a>
@@ -176,10 +176,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-8.svg"}
+              src={"/images/icons/tech-domain-8.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               ERP
             </span>
           </a>
@@ -195,10 +195,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-9.svg"}
+              src={"/images/icons/tech-domain-9.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Procurement
             </span>
           </a>
@@ -214,10 +214,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-10.svg"}
+              src={"/images/icons/tech-domain-10.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Hospitality
             </span>
           </a>
@@ -233,10 +233,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-11.svg"}
+              src={"/images/icons/tech-domain-11.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Healthcare
             </span>
           </a>
@@ -252,10 +252,10 @@ function DomainWeExperience() {
               width={64}
               height={64}
               className="max-w-full align-middle"
-              src={"images/icons/tech-domain-12.svg"}
+              src={"/images/icons/tech-domain-12.svg"}
               alt={"Domain We Experience"}
             />
-            <span className="mt-[24px] text-[18px] font-bold text-black">
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Others
             </span>
           </a>

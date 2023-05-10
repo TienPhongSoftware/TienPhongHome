@@ -15,6 +15,7 @@ import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/swiper.min.css";
+import HeaderContentMobile from "./HeaderContentMobile";
 
 library.add(faComputer, faMobile, faScrewdriverWrench, faCaretDown);
 
@@ -51,8 +52,8 @@ function HeaderPages() {
     const scrollPercent = scrollTop / (offsetHeight - window.innerHeight);
 
     setIsScrolledDefault(scrollTop === 0);
-    setIsScrolled(scrollTop > 0 && scrollPercent < 0.1);
-    setIsScrollCus(scrollPercent >= 0.1);
+    setIsScrolled(scrollTop > 0 && scrollPercent < 0.3);
+    setIsScrollCus(scrollPercent >= 0.3);
   };
 
   useEffect(() => {
@@ -421,8 +422,8 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseLeave={handleMouseLeave}
                       >
                         <a
-                          href="services"
-                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          href="/services"
+                          className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
@@ -445,7 +446,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         >
                           <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
+                              href="/services/web-application-development-outsourcing"
                               className="pl-16 m-0 p-16px24px
                                bg-white block transition-all duration-300 
                                relative text-black 
@@ -457,42 +458,19 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                                 className="bg-center bg-no-repeat absolute h-[24px]
                             w-[24px] left-[24px] pointer-events-none text-[#00aeef] duration-300 group-hover:text-white"
                               />
-                              <span className="block text-[12px] font-thin">
-                                Enterprise applications maximize your efficiency
-                              </span>
                             </a>
                           </li>
                           <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
-                              className="pl-16 m-0 p-16px24px bg-white block transition-all 
-                              duration-300 relative text-black group-hover:text-white hover:bg-[#e2127a]"
-                            >
-                              Flutter App Development
-                              <FontAwesomeIcon
-                                icon={faMobile}
-                                className="bg-center bg-no-repeat absolute h-[24px] duration-300
-                            w-[24px] left-[24px] pointer-events-none text-[#ca1780] group-hover:text-white"
-                              />
-                              <span className="block text-[12px] font-thin">
-                                Building the next-gen mobile app that rocks
-                              </span>
-                            </a>
-                          </li>
-                          <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
+                              href="/services/custom-enterprise-software-development-outsourcing"
                               className="pl-16 m-0 p-16px24px bg-white block transition-all duration-300 relative text-black group-hover:text-white hover:bg-[#fd9f24]"
                             >
-                              Software Customization & Enhancement
+                              Software Optimization & Enhancement
                               <FontAwesomeIcon
                                 icon={faScrewdriverWrench}
                                 className="bg-center bg-no-repeat absolute h-[24px] duration-300
                             w-[24px] left-[24px] pointer-events-none  text-[#f7a233] group-hover:text-white"
                               />
-                              <span className="block text-[12px] font-thin">
-                                Make your existing software better
-                              </span>
                             </a>
                           </li>
                         </ul>
@@ -506,7 +484,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseLeave={handleMouseLeaveWorks}
                       >
                         <a
-                          href="works"
+                          href="/works"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
                           inline-flex text-[14px] font-bold  
                           ${isScrolledDefault ? "text-white" : ""}
@@ -531,71 +509,39 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         >
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
+                              href="/services/web-application-development-outsourcing"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
-                              Real Estate
+                              Production Inventory
                             </a>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
+                              href="/services/custom-enterprise-software-development-outsourcing"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
-                              Construction
+                              Flexible Budget
                             </a>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
-                            >
-                              Education
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              Marketplace
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
+                              href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
-                              Data Management
+                              Poster Delivery
                             </a>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
-                            >
-                              Procurement
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              Marketing
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
+                              href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
-                              Recruitment
+                              Health Care
                             </a>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
                             <a
-                              href=""
+                              href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               ERP
@@ -612,85 +558,19 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseLeave={handleMouseLeaveTech}
                       >
                         <a
-                          href="technologies"
+                          href="/technologies"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          pr-0 pl-0 inline-flex text-[16px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Technologies
                         </a>
-                        <ul
-                          className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
-                            isDropdownOpenTech
-                              ? "mt-[-20px] opacity-100 visible block"
-                              : "invisible opacity-0 mt-[15px]"
-                          }`}
-                          onMouseEnter={handleMouseEnterTech}
-                          onMouseLeave={handleMouseLeaveTech}
-                        >
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              .Net
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
-                            >
-                              C#
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
-                            >
-                              Microservices
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              Angular
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
-                            >
-                              Python
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
-                            >
-                              Node.js
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              Vue.js
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </li>
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
-                        href="about-us"
+                        href="/about-us"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
                         text-[14px] font-bold  
@@ -702,7 +582,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     </li>
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
-                        href="careers"
+                        href="/careers"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
                         text-[14px] font-bold 
@@ -719,40 +599,14 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseLeave={handleMouseLeaveThinkWith}
                       >
                         <a
-                          href="#"
+                          href="/#"
                           className={`hover:text-[#00aeef] transition-all 
-                          pr-0 pl-0 inline-flex text-[14px] font-bold 
+                          pr-0 pl-0 inline-flex text-[16px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Think with Tien Phong
                         </a>
-                        <ul
-                          className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
-                            isDropdownOpenThinkWith
-                              ? "mt-[-20px] opacity-100 visible block"
-                              : "invisible opacity-0 mt-[15px]"
-                          }`}
-                          onMouseEnter={handleMouseEnterThinkWith}
-                          onMouseLeave={handleMouseLeaveThinkWith}
-                        >
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
-                            >
-                              Blog
-                            </a>
-                          </li>
-                          <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
-                              href=""
-                              className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
-                            >
-                              Whitepaper
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </li>
                   </ul>
@@ -760,47 +614,9 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               </div>
               <div className="flex justify-end sm:hidden lg:flex md:ml-[10px]">
                 <ul className="mb-0 flex items-center p-0 break-words">
-                  <li className="inline-block">
-                    <a
-                      href=""
-                      className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
-                      w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
-                      align-middle font-bold cursor-pointer bg-[#faa61a]
-                      text-white border-transparent 
-                      max-w-[244px] overflow-x-hidden
-                      whitespace-nowrap border-[2px] outline-0
-                      relative isolate
- 
-                      lg:text-[12px]
-                      lg:h-[30px]
-                      lg:leading-[28px]
-                      lg:px-[16px]
- 
-                      xl:text-[14px]
-                      xl:h-[40px]
-                      xl:leading-[36px]
-                      xl:px-[20px]
- 
-                      before:z-[-1]
-                      before:content['']
-                      before:duration-[0.5s]
-                      before:absolute
-                      before:w-full
-                      before:h-full
-                      before:bg-white
-                      before:left-[-100%]
-                      before:top-0
-                      before:transition-all
-                      hover:before:left-0
-                      hover:text-black
-                     `}
-                    >
-                      Schedule a Call
-                    </a>
-                  </li>
                   <li className="inline-block ml-4">
                     <a
-                      href="contact-us"
+                      href="/contact-us"
                       className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
                       w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
                       align-middle font-bold cursor-pointer bg-[#00aeef]
@@ -861,7 +677,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               <span
                 onClick={handleClick}
                 className={`block absolute h-[3px]
-             top-[8px] w-full
+             top-[8px] w-full z-[90]
              
              before:content-[' ']
              before:transform 
@@ -877,6 +693,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
              before:transition-all
              before:duration-[0.3s]
              before:ease-out
+             before:z-[100]
              
              after:content-[' ']
              
@@ -892,6 +709,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
              after:transition-all
              after:duration-[0.3s]
              after:ease-out 
+             after:z-[100]
              ${isScrolledDefault ? "before:bg-white after:bg-white" : ""}
              ${
                isActive
@@ -908,513 +726,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
           </div>
         </nav>
       </header>
-      <div
-        className={`transition-all duration-[0.5s] ease-in-out fixed
-  h-[100vh] bg-white w-full z-30 top-0 pt-[84px] pb-[24px]
-  overflow-hidden overflow-y-auto lg:hidden transform
-  ${isActive ? "translate-x-0 opacity-100" : "translate-x-[100%] opacity-0"}`}
-      >
-        <div className="sm:w-full sm:pb-[24px]">
-          <ul className="block ml-auto mr-auto px-[24px] mb-0 list-none">
-            <li
-              className={`translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[0.5s]
-             overflow-hidden
-             `}
-              onClick={() => handleClickDropNav(0)}
-            >
-              <span
-                className="absolute top-0 right-0 w-[56px] h-[56px]
-              bg-transparent color-[transparent]
-               cursor-pointer text-right flex items-center justify-end"
-              >
-                <FontAwesomeIcon icon={faCaretDown} width={10} />
-              </span>
-              <a
-                href="services"
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                Services
-              </a>
-              <ul
-                className={`p-navDropdown overflow-hidden mx-[-24px]
-    rounded-none border-0 bg-[#fafafa] static float-none
-    min-w-[10rem] m-NavDropDown text-[1rem] text-[#212529]
-    text-left list-none pt-3  duration-[1s] delay-0 
-    ${
-      isActiveDropNav(0)
-        ? "opacity-100 h-auto visible block"
-        : " opacity-0 duration-0 hidden"
-    }
-  `}
-              >
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Web Application Development
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Flutter App Development
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Software Customization & Enhancement
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[3s]"
-              onClick={() => handleClickDropNav(1)}
-            >
-              <span
-                className="absolute top-0 right-0 w-[56px] h-[56px]
-              bg-transparent color-[transparent]
-               cursor-pointer text-right flex items-center justify-end"
-              >
-                <FontAwesomeIcon icon={faCaretDown} width={10} />
-              </span>
-              <a
-                href="works"
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                Works
-              </a>
-              <ul
-                className={`p-navDropdown overflow-hidden mx-[-24px]
-    rounded-none border-0 bg-[#fafafa] static float-none
-    min-w-[10rem] m-NavDropDown text-[1rem] text-[#212529]
-    text-left list-none pt-3  duration-[1s] delay-0 
-    ${
-      isActiveDropNav(1)
-        ? "opacity-100 h-auto visible block"
-        : " opacity-0 duration-0 hidden"
-    }
-  `}
-              >
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Real Estate
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Construction
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Education
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Marketplace
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Data Management
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Procurement
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Marketing
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Recruitment
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    ERP
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[3s]"
-              onClick={() => handleClickDropNav(3)}
-            >
-              <span
-                className="absolute top-0 right-0 w-[56px] h-[56px]
-              bg-transparent color-[transparent]
-               cursor-pointer text-right flex items-center justify-end"
-              >
-                <FontAwesomeIcon icon={faCaretDown} width={10} />
-              </span>
-              <a
-                href="technologies"
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                Technologies
-              </a>
-              <ul
-                className={`p-navDropdown overflow-hidden mx-[-24px]
-    rounded-none border-0 bg-[#fafafa] static float-none
-    min-w-[10rem] m-NavDropDown text-[1rem] text-[#212529]
-    text-left list-none pt-3  duration-[1s] delay-0 
-    ${
-      isActiveDropNav(3)
-        ? "opacity-100 h-auto visible block"
-        : " opacity-0 duration-0 hidden"
-    }
-  `}
-              >
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    .NET
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    C#
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Microservices
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Angular
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Python
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Node.js
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Vue.js
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[3s]"
-            >
-              <a
-                href="about-us"
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                About us
-              </a>
-            </li>
-            <li
-              className="translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[3s]"
-            >
-              <a
-                href="careers"
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                Careers
-              </a>
-            </li>
-            <li
-              className="translate-x-0 delay-0 block w-full
-             h-[inherit] text-left transition-all duration-[3s]"
-              onClick={() => handleClickDropNav(4)}
-            >
-              <span
-                className="absolute top-0 right-0 w-[56px] h-[56px]
-              bg-transparent color-[transparent]
-               cursor-pointer text-right flex items-center justify-end"
-              >
-                <FontAwesomeIcon icon={faCaretDown} width={10} />
-              </span>
-              <a
-                href=""
-                className="block text-[14px] font-bold
-              text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
-              px-0"
-              >
-                Think with Tien Phong
-              </a>
-              <ul
-                className={`p-navDropdown overflow-hidden mx-[-24px]
-    rounded-none border-0 bg-[#fafafa] static float-none
-    min-w-[10rem] m-NavDropDown text-[1rem] text-[#212529]
-    text-left list-none pt-3  duration-[1s] delay-0 
-    ${
-      isActiveDropNav(4)
-        ? "opacity-100 h-auto visible block"
-        : " opacity-0 duration-0 hidden"
-    }
-  `}
-              >
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left "
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li
-                  className="block w-full min-h-[inherit]
-                transition-all duration-3s ease-in-out text-left"
-                >
-                  <a
-                    href=""
-                    className="block text-[14px] font-bold
-                  text-[#212529] py-0 px-0 
-                  leading-[56px] whitespace-nowrap"
-                  >
-                    Whitepaper
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <ul
-          className="flex translate-x-0 transition-all
-        w-full"
-        >
-          <li className="ml-[24px]">
-            <a
-              href="contact-us"
-              className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
-                     w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
-                     align-middle font-bold cursor-pointer bg-[#00aeef]
-                     text-white border-transparent 
-                     max-w-[244px] overflow-x-hidden
-                     whitespace-nowrap border-[2px] outline-0
-                     relative isolate
-                     before:z-[-1]
-                     before:content['']
-                     before:absolute
-                     before:duration-[0.5s]
-                     before:w-full
-                     before:h-full
-                     before:bg-white
-                     before:left-[-100%]
-                     before:top-0
-                     before:transition-all
-                     hover:before:left-0
-                     hover:text-black
-                     `}
-            >
-              Contact Us
-            </a>
-          </li>
-          <li className="ml-[24px]">
-            <a
-              href=""
-              className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
-                     w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
-                     align-middle font-bold cursor-pointer bg-[#faa61a]
-                     text-white border-transparent 
-                     max-w-[244px] overflow-x-hidden
-                     whitespace-nowrap border-[2px] outline-0
-                     relative isolate
-                     before:z-[-1]
-                     before:content['']
-                     before:duration-[0.5s]
-                     before:absolute
-                     before:w-full
-                     before:h-full
-                     before:bg-white
-                     before:left-[-100%]
-                     before:top-0
-                     before:transition-all
-                     hover:before:left-0
-                     hover:text-black
-                     `}
-            >
-              Schedule a Call
-            </a>
-          </li>
-        </ul>
-      </div>
+      <HeaderContentMobile isActive={isActive} />
     </div>
   );
 }

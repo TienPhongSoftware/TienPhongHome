@@ -34,7 +34,7 @@ function Banner() {
       `}
       >
         <Image
-          src="/images/layout/banner-2.jpg"
+          src="/images/layout/banner-video-Tien-Phong-software.png"
           className="
           absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] max-w-none sm:object-cover xl:object-cover
           align-middle border-none

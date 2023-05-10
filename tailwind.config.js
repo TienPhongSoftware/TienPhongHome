@@ -78,6 +78,9 @@ module.exports = {
         maxContainer: "calc(1664px + 32px)",
         maxPartner: "calc(982px + 120px * 2)",
         maxPartnerSM: "calc(982px + 24px * 2)",
+        maxEnterprise: "calc(982px + 64px * 2)",
+        maxEnterpriseLG: "calc(982px + 120px * 2)",
+        maxEnterpriseMiddle: "calc(50% - 60px)",
         IntroMem: "calc(982px + 120px * 2)",
         maxWWD: "calc(1664px + 32px)",
         maxOTWorks: "calc(50% - 24px)",
@@ -88,6 +91,9 @@ module.exports = {
         CareersWhyUs: "calc(50% - 70px)",
         CareersOurCore: "calc(25% - 32px)",
         ContainerContact: "calc(1140px + 32px)",
+        Projects: "calc(100% - 48px)",
+        AlmostLast: "calc(50% - 48px)",
+        AlmostLastMD: "calc(50% - 24px)",
       },
       colors: {
         zero: "0 0",
@@ -95,6 +101,7 @@ module.exports = {
         filterBanner:
           "linear-gradient(180deg,rgba(12,21,42,.5) 48.85%,rgba(12,21,42,.5) 100%)",
         TechWeLove: "linear-gradient(90deg,#fff 0,rgba(255,255,255,0) 100%)",
+        WePut: "rgba(12,21,42,.7)",
       },
       margin: {
         autoWWD: "0 auto",
@@ -121,10 +128,14 @@ module.exports = {
         AboutUsRowFlex: "0 0 calc(50% - 70px)",
         TechnologiesUse: "0 0 calc(25% - 18px)",
         TechUseSM: "0 0 calc(50% - 10px)",
+        flexEnterprise: "0 0 calc(50% - 60px)",
         TechDomain: "0 0 calc(25% - 36px)",
         TechDomainMD: "0 0 calc(33.33% - 10px)",
         CareersOurCore: "0 0 calc(25% - 32px)",
+        Projects: "0 0 calc(100% - 48px)",
         unset: "unset",
+        AlmostLast: "0 0 calc(50% - 48px)",
+        AlmostLastMD: "0 0 calc(50% - 24px)",
       },
       height: {
         heightOTWorks: "calc(100% - 16px - 32px)",
@@ -146,6 +157,7 @@ module.exports = {
         imageMemTL: "0 50% 50% 50%",
         ServicesPhoto: "16px 0 0 16px",
         ServicesPhotoSM: "16px 16px 0 0;",
+        Projects: "0 8px 8px 0",
       },
       backgroundPosition: {
         listIcon: "left top 7px",

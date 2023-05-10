@@ -119,7 +119,7 @@ function TabsWorks() {
       >
         <TabList
           className={
-            "m-0 p-0 list-none overflow-hidden inline-flex flex-nowrap max-w-full overflow-x-auto text-black"
+            "m-0 p-0 list-none overflow-hidden inline-flex flex-nowrap max-w-full overflow-x-auto text-black w-full justify-center"
           }
         >
           <Tab
@@ -136,7 +136,7 @@ function TabsWorks() {
             }
             selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
           >
-            Real Estate
+            Production Inventory
           </Tab>
           <Tab
             className={
@@ -144,55 +144,7 @@ function TabsWorks() {
             }
             selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
           >
-            Construction
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Education
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Marketplace
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Data Management
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Procurement
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Marketing
-          </Tab>
-          <Tab
-            className={
-              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
-            }
-            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
-          >
-            Recruitment
+            Flexible Budget
           </Tab>
           <Tab
             className={

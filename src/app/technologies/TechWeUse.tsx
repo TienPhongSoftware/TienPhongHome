@@ -29,7 +29,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-1.svg"}
+              src={"/images/logo/tech-we-use-1.svg"}
             />
           </a>
           <a
@@ -43,7 +43,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-2.svg"}
+              src={"/images/logo/tech-we-use-2.svg"}
             />
           </a>
           <a
@@ -57,7 +57,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-3.svg"}
+              src={"/images/logo/tech-we-use-3.svg"}
             />
           </a>
           <a
@@ -71,7 +71,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-4.svg"}
+              src={"/images/logo/tech-we-use-4.svg"}
             />
           </a>
           <a
@@ -85,7 +85,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-5.svg"}
+              src={"/images/logo/tech-we-use-5.svg"}
             />
           </a>
           <a
@@ -99,7 +99,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-6.svg"}
+              src={"/images/logo/tech-we-use-6.svg"}
             />
           </a>
           <a
@@ -113,7 +113,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-7.svg"}
+              src={"/images/logo/tech-we-use-7.svg"}
             />
           </a>
           <a
@@ -127,7 +127,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"images/logo/tech-we-use-8.svg"}
+              src={"/images/logo/tech-we-use-8.svg"}
             />
           </a>
         </div>

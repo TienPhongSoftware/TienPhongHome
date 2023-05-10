@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
-function BannerTech() {
+function Banner() {
   const [pageLoaded, setPageLoaded] = useState(false);
   const [isScrollCus, setIsScrollCus] = useState(false);
 
@@ -26,10 +26,29 @@ function BannerTech() {
   return (
     <div className="overflow-hidden">
       <div
+        className={`visible z-[-10000]  top-0 left-0
+      overflow-hidden transform translate-x-0 
+      translate-y-0 translate-z-0 h-full lg:w-full 
+      sm:w-full md:w-[820px] bg-center bg-cover
+      ${isScrollCus ? "" : "fixed"}
+      `}
+      >
+        <Image
+          src="/images/layout/banner-3.jpg"
+          className="
+          absolute sm:h-[560px] lg:h-[638px] sm:w-[1351px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
+          align-middle border-none bg-center bg-cover sm:translate-x-[-480px] xl:translate-x-0
+          "
+          alt="Banner"
+          width={2000}
+          height={2000}
+        />
+      </div>
+      <div
         className="pt-[80px] text-left justify-start h-[560px]
       relative z-10 flex items-center after:bg-filterBannerPages
       after:z-[-10] after:absolute after:object-cover after:h-full
-      after:w-full after:left-0 after:top-0 after:text-left bg-[url(/images/layout/banner-video-Tien-Phong-software.png)] bg-cover bg-center"
+      after:w-full after:left-0 after:top-0 after:text-left"
       >
         <div
           className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
@@ -38,26 +57,24 @@ function BannerTech() {
         >
           <h1
             className="text-white font-bold mb-[0.5rem]
-            lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
+            lg:text-[56px] sm:text-[10vw] md:text-[6vw]
           leading-[1.2]"
             data-aos="fade-up"
           >
-            Key Technologies
+            Web Application <br /> Development
           </h1>
           <div
-            className="xl:text-[1.2vw] sm:text-[5vw] 
-          md:text-[3vw] lg:text-[1.7vw] text-white font-ThinCus mb-[44px]"
+            className="lg:text-[1.2vw] sm:text-[5vw] 
+          md:text-[3vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>
-              Accelerate your development journey with the latest technologies
-            </p>
+            <p>Enterprise applications maximize your efficiency</p>
           </div>
           <a
             data-aos="fade-up"
             data-aos-delay="200"
-            href="contact-us"
+            href=""
             className="mr-6 bg-[#00aeef] border-[#00aeef] 
                   lg:px-[40px] lg:leading-[52px]
       lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
@@ -93,4 +110,4 @@ function BannerTech() {
   );
 }
 
-export default BannerTech;
+export default Banner;

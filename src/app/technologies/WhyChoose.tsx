@@ -40,7 +40,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-1.svg"}
+                src={"/images/icons/tech-why-us-1.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -62,7 +62,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-2.svg"}
+                src={"/images/icons/tech-why-us-2.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -83,7 +83,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-3.svg"}
+                src={"/images/icons/tech-why-us-3.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -105,7 +105,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-4.svg"}
+                src={"/images/icons/tech-why-us-4.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -127,7 +127,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-5.svg"}
+                src={"/images/icons/tech-why-us-5.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -149,7 +149,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-6.svg"}
+                src={"/images/icons/tech-why-us-6.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -171,7 +171,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-7.svg"}
+                src={"/images/icons/tech-why-us-7.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -193,7 +193,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-8.svg"}
+                src={"/images/icons/tech-why-us-8.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -214,7 +214,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-9.svg"}
+                src={"/images/icons/tech-why-us-9.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">
@@ -236,7 +236,7 @@ function WhyChoose() {
                 width={64}
                 height={64}
                 alt={"Why Should You Choose"}
-                src={"images/icons/tech-why-us-10.svg"}
+                src={"/images/icons/tech-why-us-10.svg"}
                 className="max-w-full w-[64px] h-[64px] mr-[24px] align-middle"
               />
               <span className="font-bold text-[20px] text-black">

@@ -34,7 +34,7 @@ function BannerWorks() {
       `}
       >
         <Image
-          src="/images/layout/banner-4.jpg"
+          src="/images/layout/banner-video-Tien-Phong-software.png"
           className="
           absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-cover xl:object-cover
           align-middle border-none bg-center bg-cover
@@ -61,7 +61,8 @@ function BannerWorks() {
           leading-[1.2]"
             data-aos="fade-up"
           >
-            How we meet <br /> our client’s demand
+            Unveiling
+            <br /> our client-centric approach
           </h1>
           <div
             className="xl:text-[1.2vw] sm:text-[5vw] 
@@ -69,7 +70,10 @@ function BannerWorks() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>Explore every detail of our success stories</p>
+            <p>
+              Delve into the intricacies of our triumphs and unravel the stories
+              behind our success.
+            </p>
           </div>
           <a
             data-aos="fade-up"

@@ -14,6 +14,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 SwiperCore.use([Autoplay, Pagination]);
 
 function Home() {
+  //Thêm dữ liệu click button để Scroll tới mục gắn id
+  const ourServicesRef = useRef<HTMLDivElement>(null);
+  const scrollToOurServices = () => {
+    const headerHeight = 140; // Chiều cao Header (px)
+    const ourServicesElement = document.getElementById("our-services");
+    if (ourServicesElement) {
+      const topOffset = ourServicesElement.offsetTop - headerHeight;
+      window.scrollTo({ top: topOffset, behavior: "smooth" });
+    }
+  };
+
+  //
+
   const TechWeLikeCount = 15;
 
   const [visibleThinkB, setvisibleThinkB] = useState(false);
@@ -47,7 +60,7 @@ function Home() {
       <main className="min-h-[80vh] bg-white block">
         <section
           className="sm:min-h-[568px] sm:overflow-hidden sm:h-auto
-        md:min-h-[100vh] lg:min-h-[130vh] xl:min-h-[100vh]
+        md:min-h-[100vh] lg:min-h-[150vh] xl:min-h-[100vh]
       relative
        text-white z-10 h-[100vh] 
       block"
@@ -68,7 +81,7 @@ function Home() {
                 font-bold mb-4 text-white"
                   data-aos="fade-right"
                 >
-                  The lab for your digital transformation
+                  Empowering Innovation, Driving Digital Transformation
                 </h2>
                 <div
                   className="lg:mb-[48px] sm:mb-[10vw] 
@@ -76,23 +89,19 @@ function Home() {
               max-w-[622px] lg:text-[18px]"
                 >
                   <p className="m-0 break-words">
-                    Tien Phong Software is a dedicated offshore software
-                    development company, providing{" "}
+                    A leading software company, providing{" "}
                     <strong>
                       <span className="text-[#00aeef]">
-                        enterprise applications
+                        cutting-edge technology services
                       </span>
                     </strong>{" "}
-                    with
                     <strong>
-                      <span className="text-[#ed145b]">
-                        {" "}
-                        top-notch quality{" "}
-                      </span>
+                      <span className="text-[#ed145b]"> across borders. </span>
                     </strong>
-                    in every Agile delivery. All done with complete
+                    Collaborate with us to unleash the power of our technology
+                    solutions, paving the way for a prosperous voyage of
                     <span className="text-[#faa61a]">
-                      <strong> transparency and integrity.</strong>
+                      <strong> innovation and growth.</strong>
                     </span>
                   </p>
                 </div>
@@ -130,8 +139,9 @@ function Home() {
                   >
                     Contact Us
                   </a>
-                  <a
-                    href=""
+                  <button
+                    onClick={scrollToOurServices}
+                    type="button"
                     className="mr-6 bg-[0 0] border-[#00aeef] text-[#00aeef]
                   lg:px-[40px] lg:leading-[52px]
                   lg:min-w-[184px] xl:text-[16px] sm:text-[12px] max-w-[244px] whitespace-nowrap
@@ -163,7 +173,7 @@ function Home() {
       md:px-[5vw]"
                   >
                     Our Services
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -176,7 +186,7 @@ function Home() {
          before:to-slate-900 before:opacity-50 before:z-10"
           >
             <video
-              src="images/videos/video.mp4"
+              src="/images/videos/video-Tien-Phong-software.mp4"
               autoPlay
               loop
               muted
@@ -624,7 +634,7 @@ function Home() {
           </div>
         </section>
 
-        <section>
+        <section ref={ourServicesRef} id="our-services">
           <div className="overflow-x-hidden">
             <h2
               className="md:text-[64px] font-bold text-center mb-[0.5rem]
@@ -633,8 +643,7 @@ function Home() {
               What we do
             </h2>
             <p className="text-[18px] font-bold mb-[80px] text-center">
-              Enterprise Application Solutions. Designed for Your Modern
-              Business.
+              Transforming Businesses, Empowering Growth.
             </p>
             <div className="pb-[48px]">
               <div
@@ -642,7 +651,7 @@ function Home() {
             md:px-[64px] mx-auto"
               >
                 <div
-                  className="flex flex-wrap justify-between 
+                  className="flex flex-wrap justify-evenly 
               sm:max-w-[425px] sm:m-autoWWD md:max-w-none lg:m-0"
                 >
                   <a
@@ -674,40 +683,6 @@ function Home() {
                       Refresh experiences on desktop/web applications that
                       operate seamlessly, securely, and scalable with .Net,
                       Python, Angular, ReactJS, Vue.js. On-premises or on cloud.
-                    </div>
-                    <div className="absolute bottom-0 left-0 text-[#00aeef]">
-                      <span className="font-bold">Learn more</span>
-                    </div>
-                  </a>
-                  <a
-                    href=""
-                    className="lg:flex-flexWWD sm:flex-WhySM relative z-10
-                 text-[#0c152a] pb-[40px] max-w-full sm:mb-[64px]
-                 lg:mb-0"
-                  >
-                    <div
-                      className="relative h-0 block pb-[56%] bg-[#c4c4c4]
-                  rounded-radiusWWD overflow-hidden mb-6"
-                    >
-                      <Image
-                        src="/images/WWD/photo-2.png"
-                        className="transition-all object-cover absolute h-full
-                      w-full left-0 top-0 max-w-full align-middle"
-                        alt="Service-Web-app-development"
-                        width={616}
-                        height={408}
-                      />
-                    </div>
-                    <h3
-                      className="text-[20px] font-bold mb-[18px] leading-[1.2]
-                  break-words"
-                    >
-                      Flutter App Development
-                    </h3>
-                    <div className="font-LightCus">
-                      Designed for your “everywhere” brand presence. Intuitive,
-                      functional, delightful experience, and cross-platform
-                      apps.
                     </div>
                     <div className="absolute bottom-0 left-0 text-[#00aeef]">
                       <span className="font-bold">Learn more</span>
@@ -788,7 +763,7 @@ function Home() {
                           className="block opacity-100 max-w-[70px]
                     align-middle w-[100px] h-[100px]"
                           alt="Vantage-point15year-blackWhite"
-                          width={200}
+                          width={70}
                           height={100}
                         />
                         <span
@@ -842,14 +817,14 @@ function Home() {
                   </h2>
                   <div
                     className="lg:text-[18px] mb-[48px] font-ThinCus
-                text-white leading-[1.8] sm:text-[3vw]"
+                text-white leading-[1.8] sm:text-[4vw]"
                   >
                     Let’s discover how we make customers happy in detail!
                   </div>
                   <a
                     href=""
                     className="text-white decoration-0 
-                leading-0 sm:text-[3vw] lg:text-[18px]"
+                leading-0 sm:text-[4vw] lg:text-[18px]"
                   >
                     View all works →
                   </a>
@@ -1007,7 +982,7 @@ function Home() {
                         className="lg:text-[40px] sm:text-[6.3vw] font-bold 
                     block text-[#ed145b]"
                       >
-                        +9 Years
+                        +4 Years
                       </span>
                       <span
                         className="lg:text-[20px] sm:text-[4vw]
@@ -1022,7 +997,7 @@ function Home() {
                         className="lg:text-[40px] sm:text-[6.3vw] font-bold 
                     block text-[#00aeef]"
                       >
-                        +25 Clients
+                        +10 Clients
                       </span>
                       <span
                         className="lg:text-[20px] sm:text-[4vw]
@@ -1037,7 +1012,7 @@ function Home() {
                         className="lg:text-[40px] sm:text-[6.3vw] font-bold 
                     block text-[#faa61a]"
                       >
-                        +50 Projects
+                        +15 Projects
                       </span>
                       <span
                         className="lg:text-[20px] sm:text-[4vw]
@@ -1112,18 +1087,19 @@ function Home() {
                         className="lg:text-[32px] font-bold mb-[16px]
                   sm:text-[6vw] text-black"
                       >
-                        Think big, Start small
+                        Dream big, Begin with humility
                       </div>
                       <div className="text-[16px] leading-[1.8] font-LightCus text-black">
                         <p>
-                          Going beyond ordinary offshore software development
-                          that plays the role of cost reduction, we have a dream
-                          of building the lab for smart software that empowers
-                          businesses to thrive digitally. That’s why we named us
-                          Tien Phong, which is an abbreviation of Enterprise
-                          Lab. We’ve started small, but we do little things with
-                          great love. How does great love transform into a
-                          customer’s credit?
+                          Transcending the conventional boundaries of offshore
+                          software development focused solely on cost reduction,
+                          we aspire to create a transformative software
+                          laboratory that empowers businesses to flourish in the
+                          digital realm. Though we started small, our dedication
+                          knows no bounds. It is through this unwavering passion
+                          that we strive to earn our customers{"'"} trust,
+                          forging a lasting bond built on exceptional service
+                          and unwavering commitment.
                         </p>
                       </div>
                     </div>
@@ -1179,18 +1155,20 @@ function Home() {
                         className="lg:text-[32px] font-bold mb-[16px]
                   sm:text-[6vw] text-black"
                       >
-                        Lean and reliable
+                        Efficient and trustworthy
                       </div>
                       <div className="text-[16px] leading-[1.8] font-LightCus text-black">
                         <p className="mb-[10px] text-black">
-                          We are a lean and agile development team focused on
-                          delivering high-quality software. Over the years of
-                          working in the offshore software development industry,
-                          we truly understand its pros and cons. Instead of
-                          acquiring as many clients as possible and letting them
-                          go with frustration and poor deliveries, we try our
-                          best to establish a long-term relationship based on a
-                          strong commitment to transparency and integrity:
+                          We are a nimble and adaptable development team
+                          dedicated to delivering top-tier software solutions.
+                          Drawing from our extensive experience in the offshore
+                          software development industry, we have gained
+                          invaluable insights into its advantages and
+                          challenges. We place a strong emphasis on fostering
+                          enduring partnerships rooted in unwavering
+                          transparency and unwavering integrity, nurturing
+                          relationships that stand the test of time. Central to
+                          our approach are key principles:
                         </p>
                         <ul
                           className="mt-[24px] list-none pl-0 mb-[1rem]
@@ -1201,37 +1179,49 @@ function Home() {
                        bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
                        bg-listIcon"
                           >
-                            Open and honest communication
+                            Innovation and Adaptability
                           </li>
                           <li
                             className="mb-[12px] pl-[30px]
                        bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
                        bg-listIcon"
                           >
-                            Reasonable promises
+                            Quality and Reliability
                           </li>
                           <li
                             className="mb-[12px] pl-[30px]
                        bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
                        bg-listIcon"
                           >
-                            Do not use shareable resources or replacements
-                            without your permission
+                            Customer Focus
                           </li>
                           <li
                             className="mb-[12px] pl-[30px]
                        bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
                        bg-listIcon"
                           >
-                            Engage customers throughout the process of delivery
+                            Strong Partnerships
                           </li>
                           <li
                             className="mb-[12px] pl-[30px]
                        bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
                        bg-listIcon"
                           >
-                            Secure NDA and SLA around data risk and security
-                            protocols
+                            Effective Project Management
+                          </li>
+                          <li
+                            className="mb-[12px] pl-[30px]
+                       bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
+                       bg-listIcon"
+                          >
+                            Continuous Improvement
+                          </li>
+                          <li
+                            className="mb-[12px] pl-[30px]
+                       bg-[url(/images/icons/list-icon.svg)] bg-no-repeat
+                       bg-listIcon"
+                          >
+                            Market Understanding
                           </li>
                         </ul>
                       </div>
@@ -1286,226 +1276,20 @@ function Home() {
                         className="lg:text-[32px] font-bold mb-[16px]
                   sm:text-[6vw] text-black"
                       >
-                        Happy customers, happy developers
+                        Satisfied customers, fulfilled developers
                       </div>
                       <div className="text-[16px] leading-[1.8] font-LightCus text-black">
                         <p>
-                          Through every project, we strive to deliver
-                          diligently, on time to the specs, and with excellent
-                          quality. We hope to be a reliable tech partner,
-                          contributing to your success on the road to digital
-                          transformation. In this challenging journey, together,
-                          we grow and are happy is the solid foundation for a
-                          long-lasting relationship.
+                          With each project, our unwavering commitment is to
+                          deliver diligently, on schedule, and with exceptional
+                          quality. We aspire to be your trusted technology
+                          partner, propelling your success in the path of
+                          digital transformation. In this challenging journey,
+                          mutual growth and shared happiness form the bedrock of
+                          a lasting partnership. Together, we thrive and forge
+                          an enduring bond.
                         </p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          className="text-center bg-[#fafafa] py-[80px]
-      overflow-hidden"
-        >
-          <div
-            className="mx-auto xl:px-[120px] sm:px-[24px] 
-        lg:px-[64px] max-w-maxContainer box-border"
-          >
-            <div
-              className="font-bold mb-[80px] text-[32px] 
-          leading-[1.2] text-black
-          "
-            >
-              <p>
-                Don’t just take our word for it.
-                <br />
-                Hear what our clients say.
-              </p>
-            </div>
-            <div
-              className="flex justify-center flex-nowrap 
-            items-center
-          m-autoWWD text-center"
-            >
-              <div
-                className="max-w-[284px] m-0 border-0
-            block pt-[1.5rem]"
-              >
-                <iframe
-                  id="iframe-0.6906051977361798"
-                  width="100%"
-                  src="https://widget.clutch.co/widgets/get/3?ref_domain=enlabsoftware.com&amp;uid=1469288&amp;ref_path=/"
-                  height="380px"
-                  title="bcEmpty3"
-                ></iframe>
-              </div>
-              <div className="max-w-[320px] ">
-                <iframe
-                  id="iframe-0.8927804928938616"
-                  width="100%"
-                  height="380px"
-                  scrolling="no"
-                  src="https://widget.goodfirms.co?cid=55629&amp;wt=goodfirms-widget-t7&amp;wp=carousel-basic"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="bg-white py-[80px] overflow-x-hidden text-black">
-          <div
-            className="mx-auto xl:px-[120px] sm:px-[24px] 
-        lg:px-[64px] max-w-maxContainer box-border"
-          >
-            <div className="flex flex-wrap">
-              <div
-                className="lg:flex-flexOTWorks lg:max-w-[33.3%]
-                lg:pr-pThinkWithE
-                sm:text-center sm:flex-WhySM sm:max-w-full
-                sm:mb-[80px] sm:pr-0
-                lb:mb-0 lg:text-left"
-              >
-                <h2
-                  className="lg:text-[48px]
-              sm:text-[8vw] text-black
-              font-bold"
-                >
-                  Think with Tien Phong
-                </h2>
-                <p
-                  className="font-LightCus mb-[10px]
-              lg:text-[1rem] text-black
-              sm:text-[6vw]"
-                >
-                  Diving deep into the ocean of technology!
-                </p>
-                <a
-                  href=""
-                  className="font-bold text-[#00aeef]
-              lg:text-[1rem]
-              sm:text-[4vw]"
-                >
-                  View all blog posts →
-                </a>
-              </div>
-              <div className="basis-[0%] grow-[1] max-w-full">
-                <div
-                  className="flex flex-wrap justify-between
-                sm:max-w-full sm:m-autoWWD
-                lg:max-w-none lg:m-0"
-                >
-                  <div
-                    className="lg:flex-flexThinkWE relative z-10
-                  md:flex-flexThinkWEMD
-                pb-pThinkWithEPic text-[#0c152a] max-w-full
-                sm:mb-[48px] sm:max-w-full sm:flex-WhySM"
-                  >
-                    <a
-                      href=""
-                      className="relative h-0 block pb-[56%]
-bg-[#c4c4c4] rounded-ThinkWithERa overflow-hidden mb-[24px]"
-                    >
-                      <Image
-                        src="/images/layout/think-1.jpeg"
-                        className="transition-all object-cover absolute
-                      h-full w-full top-0 left-0 max-w-full align-middle"
-                        alt="Tien Phong - How to manage a dedicated team 
-                      effectively with our best practices"
-                        width={800}
-                        height={60}
-                      />
-                    </a>
-                    <div
-                      className="text-[14px] mb-[10px] font-LightCus
-                  lg:text-[1rem]
-                  sm:text-[2vw]"
-                    >
-                      March 07,2023 by
-                      <a href="" className="text-[#00aeef]">
-                        {" "}
-                        Hien Dang
-                      </a>
-                    </div>
-                    <h3
-                      className="lg:text-[18px] font-bold mb-[18px]
-                  sm:text-[4vw] md:text-[2vw]
-                  "
-                    >
-                      <a href="">
-                        How to manage a dedicated team effectively with our
-                        practical strategies
-                      </a>
-                    </h3>
-                    <div className="font-LightCus">
-                      Project management is similar to a circus balancing act.
-                      However, achieving balance does not require magic, just
-                      focus, ...
-                    </div>
-                    <div
-                      className="absolute bottom-0 left-0
-                  text-[#00aeef] font-bold"
-                    >
-                      <a href="" className="font-bold text-[#00aeef]">
-                        Read more →
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    className="lg:flex-flexThinkWE relative z-10
-                  md:flex-flexThinkWEMD
-                pb-pThinkWithEPic text-[#0c152a] max-w-full
-                sm:mb-[48px] sm:max-w-full sm:flex-WhySM"
-                  >
-                    <a
-                      href=""
-                      className="relative h-0 block pb-[56%]
-bg-[#c4c4c4] rounded-ThinkWithERa overflow-hidden mb-[24px]"
-                    >
-                      <Image
-                        src="/images/layout/think-2.jpg"
-                        className="transition-all object-cover absolute
-                      h-full w-full top-0 left-0 max-w-full align-middle"
-                        alt="Tien Phong - How to manage a dedicated team 
-                      effectively with our best practices"
-                        width={800}
-                        height={60}
-                      />
-                    </a>
-                    <div
-                      className="text-[14px] mb-[10px] font-LightCus
-                  lg:text-[1rem]
-                  sm:text-[2vw]"
-                    >
-                      January 17,2023 by
-                      <a href="" className="text-[#00aeef]">
-                        {" "}
-                        Hien Dang
-                      </a>
-                    </div>
-                    <h3
-                      className="lg:text-[18px] font-bold mb-[18px]
-                  sm:text-[4vw] md:text-[2vw]
-                  "
-                    >
-                      <a href="">
-                        Tien Phong Software recognized by GoodFirms as the Best
-                        Company to Work With
-                      </a>
-                    </h3>
-                    <div className="font-LightCus">
-                      Leveraging the latest technologies, trending programming
-                      languages, and advanced development frameworks help build
-                      innovative software solutions. This enables businesses ...
-                    </div>
-                    <div
-                      className="absolute bottom-0 left-0
-                  text-[#00aeef] font-bold"
-                    >
-                      <a href="" className="font-bold text-[#00aeef]">
-                        Read more →
-                      </a>
                     </div>
                   </div>
                 </div>
