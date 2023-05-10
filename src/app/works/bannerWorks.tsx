@@ -39,6 +39,7 @@ function BannerWorks() {
           absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-cover xl:object-cover
           align-middle border-none bg-center bg-cover
           "
+          priority={true}
           alt="Banner"
           width={2000}
           height={2000}

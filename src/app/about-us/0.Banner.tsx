@@ -38,6 +38,7 @@ function Banner() {
           absolute max-w-none sm:object-contain xl:object-cover
           align-middle border-none
           "
+          priority={true}
           alt="Banner"
           width={1702}
           height={560}

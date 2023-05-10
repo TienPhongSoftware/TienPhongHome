@@ -5,84 +5,85 @@ import "react-tabs/style/react-tabs.css";
 import Image from "next/image";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-function TabsWorks() {
+interface Item {
+  id: number;
+  tittle: string;
+  textIntro: string;
+  url: string;
+}
+
+const items: Item[] = [
+  {
+    id: 1,
+    tittle: "Employees & Contractor Portals (CPM)",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 2,
+    tittle: "Item 2",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 3,
+    tittle: "Item 3",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 4,
+    tittle: "Item 4",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 5,
+    tittle: "Item 5",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 1,
+    tittle: "Item 1",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 2,
+    tittle: "Item 2",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 3,
+    tittle: "Item 3",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+  {
+    id: 5,
+    tittle: "Item 5",
+    textIntro:
+      "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
+    url: "url 1",
+  },
+];
+
+const TabsWorks: React.FC = () => {
   //Load More, All Tabs
-  type Item = {
-    id: number;
-    tittle: string;
-    textIntro: string;
-    url: string;
-  };
-
-  const items: Item[] = [
-    {
-      id: 1,
-      tittle: "Employees & Contractor Portals (CPM)",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 2,
-      tittle: "Item 2",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 3,
-      tittle: "Item 3",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 4,
-      tittle: "Item 4",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 5,
-      tittle: "Item 5",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 1,
-      tittle: "Item 1",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 2,
-      tittle: "Item 2",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 3,
-      tittle: "Item 3",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-    {
-      id: 5,
-      tittle: "Item 5",
-      textIntro:
-        "A custom construction management system (CPM) which helps to manage employees, contractors, equipment and also streamline operation and inspection processes.",
-      url: "url 1",
-    },
-  ];
-
   const [hasMore, setHasMore] = useState(true);
   const [currentItems, setCurrentItems] = useState<Item[]>(items.slice(0, 6));
   const [loading, setLoading] = useState(false);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const fetchMoreData = () => {
     if (currentItems.length >= items.length) {
@@ -100,12 +101,9 @@ function TabsWorks() {
     }, 1000);
   };
 
-  const [selectedTab, setSelectedTab] = useState(0);
-
   const handleTabSelect = (index: number) => {
     setSelectedTab(index);
   };
-
   //Load More functions
 
   return (
@@ -176,7 +174,6 @@ function TabsWorks() {
                     >
                       <div className="flex flex-wrap px-0 justify-between after:w-WorkTabsAfter">
                         {/* Clone nội dung ở đây */}
-
                         {currentItems.map((item) => (
                           <div
                             key={item.id}
@@ -372,44 +369,13 @@ function TabsWorks() {
           <h2>Content for Tab 4</h2>
           <p>This is the content for Tab 4</p>
         </TabPanel>
-
         <TabPanel>
           <h2>Content for Tab 5</h2>
-          <p>This is the content for Tab 5</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 6</h2>
-          <p>This is the content for Tab 6</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 7</h2>
-          <p>This is the content for Tab 7</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 7</h2>
-          <p>This is the content for Tab 7</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 8</h2>
-          <p>This is the content for Tab 8</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 9</h2>
-          <p>This is the content for Tab 9</p>
-        </TabPanel>
-
-        <TabPanel>
-          <h2>Content for Tab 10</h2>
-          <p>This is the content for Tab 10</p>
+          <p>This is the content for Tab 4</p>
         </TabPanel>
       </Tabs>
     </div>
   );
-}
+};
 
 export default TabsWorks;

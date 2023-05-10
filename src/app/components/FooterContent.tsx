@@ -235,7 +235,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                 <a href="" className="text-white">
                   <Image
                     src="/images/logo/facebook.svg"
-                    className="max-w-full align-middle"
+                    className="max-w-full align-middle w-auto h-auto"
                     alt="My Icon"
                     width={14}
                     height={24}
@@ -246,7 +246,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                 <a href="" className="text-white">
                   <Image
                     src="/images/logo/linkedin.svg"
-                    className="max-w-full align-middle"
+                    className="max-w-full align-middle w-auto h-auto"
                     alt="My Icon"
                     width={24}
                     height={24}
@@ -257,7 +257,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                 <a href="" className="text-white">
                   <Image
                     src="/images/logo/twitter.svg"
-                    className="max-w-full align-middle"
+                    className="max-w-full align-middle w-auto h-auto"
                     alt="My Icon"
                     width={24}
                     height={24}
@@ -268,7 +268,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                 <a href="" className="text-white">
                   <Image
                     src="/images/logo/instagram.svg"
-                    className="max-w-full align-middle"
+                    className="max-w-full align-middle w-auto h-auto"
                     alt="My Icon"
                     width={24}
                     height={24}
@@ -279,7 +279,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                 <a href="" className="text-white">
                   <Image
                     src="/images/logo/youtube.svg"
-                    className="max-w-full align-middle"
+                    className="max-w-full align-middle w-auto h-auto"
                     alt="My Icon"
                     width={24}
                     height={24}
