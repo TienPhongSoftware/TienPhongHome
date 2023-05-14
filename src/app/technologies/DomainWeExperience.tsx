@@ -30,64 +30,7 @@ function DomainWeExperience() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <div className="flex flex-wrap lg:justify-between sm:justify-between md:justify-start text-black">
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-1.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Real Estate
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-2.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Marketing
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-3.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Education
-            </span>
-          </a>
+        <div className="flex flex-wrap lg:justify-center sm:justify-between md:justify-start text-black">
           <a
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
@@ -104,7 +47,7 @@ function DomainWeExperience() {
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Data Management
+              Production Inventory
             </span>
           </a>
           <a
@@ -123,64 +66,7 @@ function DomainWeExperience() {
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Marketplace
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-6.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Recruitment
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-7.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Construction
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-8.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              ERP
+              Flexible Budget
             </span>
           </a>
           <a
@@ -199,26 +85,7 @@ function DomainWeExperience() {
               alt={"Domain We Experience"}
             />
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Procurement
-            </span>
-          </a>
-          <a
-            href=""
-            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
-          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
-          p-TechDomain flex items-center flex-col
-          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
-          "
-          >
-            <Image
-              width={64}
-              height={64}
-              className="max-w-full align-middle"
-              src={"/images/icons/tech-domain-10.svg"}
-              alt={"Domain We Experience"}
-            />
-            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
-              Hospitality
+              Poster Delivery
             </span>
           </a>
           <a
@@ -238,6 +105,25 @@ function DomainWeExperience() {
             />
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Healthcare
+            </span>
+          </a>
+          <a
+            href=""
+            className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
+          lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
+          p-TechDomain flex items-center flex-col
+          hover:scale-110 hover:shadow-cyan-100 hover:shadow-2xl hover:text-sky-400
+          "
+          >
+            <Image
+              width={64}
+              height={64}
+              className="max-w-full align-middle"
+              src={"/images/icons/tech-domain-8.svg"}
+              alt={"Domain We Experience"}
+            />
+            <span className="mt-[24px] text-[18px] font-bold text-black text-center">
+              ERP
             </span>
           </a>
           <a

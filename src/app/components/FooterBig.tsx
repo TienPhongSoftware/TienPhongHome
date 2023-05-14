@@ -6,7 +6,7 @@ import FooterContent from "./FooterContent";
 function FooterBig() {
   return (
     <footer>
-      <div className="lg:py-[96px] sm:py-[48px] bg-transparent">
+      {/* <div className="lg:py-[96px] sm:py-[48px] bg-transparent">
         <div
           className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
 mx-auto max-w-maxContainer"
@@ -302,7 +302,7 @@ mx-auto max-w-maxContainer
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <FooterContent />
     </footer>
   );

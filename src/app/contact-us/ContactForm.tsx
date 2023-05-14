@@ -27,7 +27,46 @@ const options: Option[] = [
 
 registerLocale("en-GB", enGB);
 
+//Send Emails
+const ininValues = {
+  name: "",
+  email: "",
+  company: "",
+  phoneNumber: "",
+  shareAnyThing: "",
+  CheckTime: "",
+  Time: "",
+  Date: "",
+  StartTime: "",
+  EndTime: "",
+  Files: "",
+  message: "",
+};
+
+const initState = { values: ininValues };
+
 function ContactForm() {
+  //Send Emails
+  const [state, setState] = useState(initState);
+
+  const { values } = state;
+
+  const handleFormChange = (target: any) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+  };
+
   //check box All
   const [isActive, setIsActive] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
@@ -129,6 +168,9 @@ py-[120px]
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Name*"
+                          required
+                          value={values.name}
+                          onChange={handleFormChange}
                         />
                       </span>
                       <span className="block relative">
@@ -141,6 +183,8 @@ w-full p-InputContact overflow-visible m-0"
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Email*"
+                          value={values.email}
+                          onChange={handleFormChange}
                         />
                       </span>
                     </div>
@@ -154,6 +198,8 @@ w-full p-InputContact overflow-visible m-0"
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Company*"
+                          value={values.company}
+                          onChange={handleFormChange}
                         />
                       </span>
                       <span className="block relative">
@@ -165,6 +211,8 @@ w-full p-InputContact overflow-visible m-0"
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Phone number *"
+                          value={values.phoneNumber}
+                          onChange={handleFormChange}
                         />
                       </span>
                     </div>
@@ -184,6 +232,8 @@ w-full p-InputContact overflow-visible m-0"
                       leading-[1.5] rounded-[5px] w-full p-InputContact
                       h-[137px]
                       "
+                          value={values.shareAnyThing}
+                          onChange={handleFormChange}
                         ></textarea>
                       </span>
                     </div>
@@ -196,9 +246,10 @@ w-full p-InputContact overflow-visible m-0"
                             <input
                               type="checkbox"
                               name="your-schedule_choice[]"
-                              value="Schedule a talk & we'll call back"
                               className="absolute invisible -z-10 opacity-0"
                               checked={isActive}
+                              value={values.CheckTime}
+                              onChange={handleFormChange}
                             />
                             <span
                               className={`
@@ -265,7 +316,7 @@ w-full p-InputContact overflow-visible m-0"
                     sm:grid-cols-1 sm:gap-1 
                     md:grid-cols-2 md:gap-2
                     transition-all duration-1000
-                    ease-in-out transform
+                    ease-in-out transform z-50 relative
                     ${
                       isActive
                         ? "max-h-[100%] grid opacity-100"
@@ -275,9 +326,10 @@ w-full p-InputContact overflow-visible m-0"
                   >
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
                       <Select
-                        options={options}
                         isSearchable={true}
-                        className="leading-[56px]"
+                        className="leading-[56px] z-50 relative"
+                        options={options}
+                        onChange={handleFormChange}
                       />
                     </div>
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
@@ -296,7 +348,7 @@ w-full p-InputContact overflow-visible m-0"
                           showYearDropdown
                           dropdownMode="select"
                           placeholderText="Date"
-                          className="text-[16px] leading-[56px] w-full
+                          className="text-[16px] leading-[56px] w-full z-50 relative
           border border-[#c2c2c2] rounded-[5px] p-InputContact"
                         />
                       </div>
@@ -311,7 +363,7 @@ w-full p-InputContact overflow-visible m-0"
                         timeCaption="Time"
                         dateFormat="H:mm"
                         placeholderText="Start time"
-                        className="text-[16px] leading-[56px] w-full
+                        className="text-[16px] leading-[56px] w-full z-50 relative
           border border-[#c2c2c2] rounded-[5px] p-InputContact"
                       />
                     </div>
@@ -325,8 +377,8 @@ w-full p-InputContact overflow-visible m-0"
                         timeCaption="Time"
                         dateFormat="H:mm"
                         placeholderText="End time"
-                        className="text-[16px] leading-[56px] w-full
-          border border-[#c2c2c2] rounded-[5px] p-InputContact"
+                        className="text-[16px] leading-[56px] w-full relative
+          border border-[#c2c2c2] rounded-[5px] p-InputContact z-50"
                       />
                     </div>
                   </div>
@@ -411,6 +463,20 @@ w-full p-InputContact overflow-visible m-0"
                         rounded-[24px] relative z-10 font-bold overflow-hidden transition-all
                         duration-500 ease-in-out hover:bg-[#e2165a] hover:border-[#e2165a]
                         cursor-pointer p-ContactButton"
+                        disabled={
+                          !values.name ||
+                          !values.email ||
+                          !values.company ||
+                          !values.phoneNumber ||
+                          !values.shareAnyThing ||
+                          !values.CheckTime ||
+                          !values.Time ||
+                          !values.Date ||
+                          !values.StartTime ||
+                          !values.EndTime ||
+                          !values.Files
+                        }
+                        onClick={onSubmit}
                         value="Submit"
                       />
                     </div>

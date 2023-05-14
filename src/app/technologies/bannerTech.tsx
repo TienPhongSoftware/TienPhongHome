@@ -29,7 +29,7 @@ function BannerTech() {
         className="pt-[80px] text-left justify-start h-[560px]
       relative z-10 flex items-center after:bg-filterBannerPages
       after:z-[-10] after:absolute after:object-cover after:h-full
-      after:w-full after:left-0 after:top-0 after:text-left bg-[url(/images/layout/banner-video-Tien-Phong-software.png)] bg-cover bg-center"
+      after:w-full after:left-0 after:top-0 after:text-left bg-[url(/images/layout/banner-video-Tien-Phong-software.jpg)] bg-cover bg-center"
       >
         <div
           className="xl:px-[120px] sm:px-[24px] lg:px-[64px]

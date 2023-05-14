@@ -47,8 +47,8 @@ function DropFileInput() {
   return (
     <div
       className="w-full h-64 border-dashed border-[3px] border-gray-300 rounded-lg 
-                 flex flex-col justify-center items-center 
-                 text-gray-400 hover:text-gray-500 
+                 flex flex-col justify-center items-center relative
+                 text-gray-400 hover:text-gray-500 z-0
                  hover:border-gray-400 cursor-pointer"
       onDragOver={(e) => e.preventDefault()}
       onDrop={handleDrop}

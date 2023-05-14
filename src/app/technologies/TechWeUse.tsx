@@ -43,7 +43,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"/images/logo/tech-we-use-2.svg"}
+              src={"/images/logo/tech-we-use-8.jpg"}
             />
           </a>
           <a
@@ -85,7 +85,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"/images/logo/tech-we-use-5.svg"}
+              src={"/images/logo/tech-we-use-9-1.png"}
             />
           </a>
           <a
@@ -99,7 +99,7 @@ function TechWeUse() {
               height={72}
               alt={"technology"}
               className="lg:h-[72px] sm:h-[42px] align-middle"
-              src={"/images/logo/tech-we-use-6.svg"}
+              src={"/images/logo/tech-we-use-10-2.png"}
             />
           </a>
           <a

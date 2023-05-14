@@ -425,7 +425,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         >
                           Works
                         </a>
-                        <ul
+                        {/* <ul
                           className={`pointer-events transition-all absolute border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] rounded-[24px] overflow-hidden shadow-lg float-none top-[100%] min-w-[10rem] text-black text-left list-none before:absolute before:bg-white before:z-[-20] ${
                             isDropdownOpenWorks
                               ? "mt-[-20px] opacity-100 visible block"
@@ -474,7 +474,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                               ERP
                             </a>
                           </li>
-                        </ul>
+                        </ul> */}
                       </div>
                     </li>
 
@@ -504,7 +504,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         About us
                       </a>
                     </li>
-                    <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
+                    {/* <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <a
                         href="/careers"
                         className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold  ${
@@ -529,7 +529,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           Think with Tien Phong
                         </a>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

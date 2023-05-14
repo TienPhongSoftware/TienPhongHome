@@ -131,7 +131,7 @@ function HeaderContentMobile(props: Props) {
             >
               Works
             </a>
-            <ul
+            {/* <ul
               className={`p-navDropdown overflow-hidden mx-[-24px]
     rounded-none border-0 bg-[#fafafa] static float-none
     min-w-[10rem] m-NavDropDown text-[1rem] text-[#212529]
@@ -208,7 +208,7 @@ function HeaderContentMobile(props: Props) {
                   ERP
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
           <li
             className="translate-x-0 delay-0 block w-full
@@ -244,7 +244,7 @@ function HeaderContentMobile(props: Props) {
               About us
             </a>
           </li>
-          <li
+          {/* <li
             className="translate-x-0 delay-0 block w-full
              h-[inherit] text-left transition-all duration-[3s]"
           >
@@ -277,7 +277,7 @@ function HeaderContentMobile(props: Props) {
             >
               Think with Tien Phong
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <ul

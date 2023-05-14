@@ -150,6 +150,22 @@ const TabsWorks: React.FC = () => {
             }
             selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
           >
+            Poster Delivery
+          </Tab>
+          <Tab
+            className={
+              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
+            }
+            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
+          >
+            Health Care
+          </Tab>
+          <Tab
+            className={
+              "inline-block bottom-[-1] relative mr-[24px] flex-none text-center list-none p-tabsWorks cursor-pointer max-w-full text-[16px] leading-[76px] px-[10px] whitespace-nowrap mb-0"
+            }
+            selectedClassName="text-[#00aeef] border-b-4 border-[#00aeef]"
+          >
             ERP
           </Tab>
         </TabList>
