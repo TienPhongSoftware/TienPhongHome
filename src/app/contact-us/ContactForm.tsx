@@ -10,8 +10,12 @@ import "react-datepicker/dist/react-datepicker.css";
 import enGB from "date-fns/locale/en-GB";
 import DropFileInput from "./DropFiles";
 
-//Select form
+//SendEmail Import
+import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+//Select form
 interface Option {
   label: string;
   value: string;
@@ -46,6 +50,37 @@ const ininValues = {
 const initState = { values: ininValues };
 
 function ContactForm() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        // console.log("Response received", res);
+        if (res.status === 200) {
+          // console.log("Response succeeded!");
+          toast("Thank you for contacting us!");
+        } else {
+          // console.log("Email/Password is invalid.");
+          toast("Email/Password is invalid.");
+        }
+      })
+      .catch((e) => console.log(e));
+    reset();
+  };
+
+  // console.log("contact Detail", contactDetail);
   //Send Emails
   const [state, setState] = useState(initState);
 
@@ -59,13 +94,6 @@ function ContactForm() {
         [target.name]: target.value,
       },
     }));
-
-  const onSubmit = async () => {
-    setState((prev) => ({
-      ...prev,
-      isLoading: true,
-    }));
-  };
 
   //check box All
   const [isActive, setIsActive] = useState(false);
@@ -112,44 +140,15 @@ py-[120px]
     max-w-ContainerContact 
   mx-auto"
     >
-      <div className="mb-[0.5rem] md:flex items-center justify-between">
+      <div className="mb-[0.5rem] md:flex items-center justify-center">
         <h1 className="text-[50px] font-bold text-center mb-0 leading-[1.2] break-words">
           Contact Us
         </h1>
-        <div className="mb-[36px] text-center flex">
-          <span className="mr-[16px]">
-            <Image
-              width={138}
-              height={152}
-              src={"/images/logo/footer-1.png"}
-              alt="Top-B2-Bcompanies-in-Vietnam"
-              className="max-h-[132px] w-auto h-auto max-w-full"
-            />
-          </span>
-          <span className="mr-[16px]">
-            <Image
-              width={138}
-              height={152}
-              src={"/images/logo/footer-2.png"}
-              alt="Top-B2-Bcompanies-in-Vietnam"
-              className="max-h-[132px] w-auto h-auto max-w-full"
-            />
-          </span>
-          <span>
-            <Image
-              width={138}
-              height={152}
-              src={"/images/logo/footer-3.jpg"}
-              alt="Top-B2-Bcompanies-in-Vietnam"
-              className="max-h-[132px] w-auto h-auto max-w-full sm:invisible md:visible"
-            />
-          </span>
-        </div>
       </div>
       <div className="flex flex-wrap">
         <div className="basis-0 grow max-w-full">
           <div className="p-0 m-0 ">
-            <form action="">
+            <form onSubmit={handleSubmit(onSubmit)} method="POST">
               <div className="text-[#0c152a] font-ThinCus">
                 <div className="px-0 lg:max-w-[1140px] md:max-w-[960px] sm:max-w-[540px] w-full mx-auto">
                   <div
@@ -161,30 +160,26 @@ py-[120px]
                       <span className="mb-[24px] block relative">
                         <input
                           type="text"
-                          name=""
-                          id=""
+                          id="fullName"
                           size={40}
                           className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Name*"
                           required
-                          value={values.name}
-                          onChange={handleFormChange}
+                          {...register("fullName", { required: true })}
                         />
                       </span>
                       <span className="block relative">
                         <input
                           type="text"
-                          name=""
                           size={40}
-                          id=""
+                          id="email"
                           className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Email*"
-                          value={values.email}
-                          onChange={handleFormChange}
+                          {...register("email", { required: true })}
                         />
                       </span>
                     </div>
@@ -192,27 +187,23 @@ w-full p-InputContact overflow-visible m-0"
                       <span className="mb-[24px] block relative">
                         <input
                           type="text"
-                          name=""
-                          id=""
+                          id="company"
                           className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Company*"
-                          value={values.company}
-                          onChange={handleFormChange}
+                          {...register("company", { required: true })}
                         />
                       </span>
                       <span className="block relative">
                         <input
                           type="text"
-                          name=""
-                          id=""
+                          id="phone"
                           className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
                           placeholder="Phone number *"
-                          value={values.phoneNumber}
-                          onChange={handleFormChange}
+                          {...register("phone", { required: true })}
                         />
                       </span>
                     </div>
@@ -221,8 +212,7 @@ w-full p-InputContact overflow-visible m-0"
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
                       <span className="mb-[24px] block relative">
                         <textarea
-                          name=""
-                          id=""
+                          id="message"
                           cols={40}
                           rows={10}
                           placeholder="Please share anything that will help prepare for our talk. *"
@@ -232,24 +222,22 @@ w-full p-InputContact overflow-visible m-0"
                       leading-[1.5] rounded-[5px] w-full p-InputContact
                       h-[137px]
                       "
-                          value={values.shareAnyThing}
-                          onChange={handleFormChange}
+                          {...register("message", { required: true })}
                         ></textarea>
                       </span>
                     </div>
                   </div>
-                  <div className="mx-[-16px] grid grid-cols-2 gap-2">
+                  {/* <div className="mx-[-16px] grid grid-cols-2 gap-2">
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
                       <label className="mb-0 select-none inline-block">
                         <span className="block relative">
                           <span className="ml-0 relative pl-[30px] inline-block m-CheckContact">
                             <input
                               type="checkbox"
-                              name="your-schedule_choice[]"
                               className="absolute invisible -z-10 opacity-0"
                               checked={isActive}
                               value={values.CheckTime}
-                              onChange={handleFormChange}
+                              {...register("timeCheck", { required: true })}
                             />
                             <span
                               className={`
@@ -392,7 +380,7 @@ w-full p-InputContact overflow-visible m-0"
                       </label>
                       <DropFileInput />
                     </div>
-                  </div>
+                  </div> */}
                   <div className="mx-[-16px] grid grid-cols-1 gap-1">
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
                       <label
@@ -447,15 +435,15 @@ w-full p-InputContact overflow-visible m-0"
                         width="304"
                         height="78"
                         role="presentation"
-                        name="a-6jlh7sish5ic"
                         scrolling="no"
+                        name="a-6jlh7sish5ic"
                         sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
                       ></iframe>
                     </div>
                   </div>
                   <div className="mx-[-16px] grid grid-cols-1 gap-1 pt-[48px]">
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full text-center">
-                      <input
+                      <button
                         type="submit"
                         className="bg-[#00aeef] border-2 border-[#00aeef]
                         max-w-[244px] leading-[50px] min-w-[184px] whitespace-nowrap
@@ -463,22 +451,9 @@ w-full p-InputContact overflow-visible m-0"
                         rounded-[24px] relative z-10 font-bold overflow-hidden transition-all
                         duration-500 ease-in-out hover:bg-[#e2165a] hover:border-[#e2165a]
                         cursor-pointer p-ContactButton"
-                        disabled={
-                          !values.name ||
-                          !values.email ||
-                          !values.company ||
-                          !values.phoneNumber ||
-                          !values.shareAnyThing ||
-                          !values.CheckTime ||
-                          !values.Time ||
-                          !values.Date ||
-                          !values.StartTime ||
-                          !values.EndTime ||
-                          !values.Files
-                        }
-                        onClick={onSubmit}
-                        value="Submit"
-                      />
+                      >
+                        Submit
+                      </button>
                     </div>
                   </div>
                   <div className="mx-[-16px] grid grid-cols-1 gap-1">

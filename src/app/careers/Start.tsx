@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Start() {
   return (
@@ -20,7 +21,7 @@ mx-auto"
         </div>
         <div data-aos="fade-up">
           <div className="flex justify-between flex-wrap">
-            <a
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM  sm:flex-WhySM
@@ -38,9 +39,9 @@ mx-auto"
              "
             >
               .NET Technical Lead
-            </a>
+            </Link>
 
-            <a
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -58,8 +59,8 @@ mx-auto"
              "
             >
               Flutter Developer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -77,8 +78,8 @@ mx-auto"
              "
             >
               Full-stack NodeJS/Angular Developer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -96,8 +97,8 @@ mx-auto"
              "
             >
               DevOps Engineer (AWS)
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -115,8 +116,8 @@ mx-auto"
              "
             >
               Full Stack .NET Developer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -134,8 +135,8 @@ mx-auto"
              "
             >
               NodeJS (GraphQL, MongoDB) Developer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -153,8 +154,8 @@ mx-auto"
              "
             >
               Chief Operating Officer (COO)
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -172,8 +173,8 @@ mx-auto"
              "
             >
               Director of Talent
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -191,8 +192,8 @@ mx-auto"
              "
             >
               Project Manager
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -210,8 +211,8 @@ mx-auto"
              "
             >
               Business Development Manager
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -229,8 +230,8 @@ mx-auto"
              "
             >
               Front-end Developer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -248,8 +249,8 @@ mx-auto"
              "
             >
               Customer Success Specialist
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -267,8 +268,8 @@ mx-auto"
              "
             >
               Content Specialist
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -286,8 +287,8 @@ mx-auto"
              "
             >
               Software QA Engineer
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -305,8 +306,8 @@ mx-auto"
              "
             >
               Product Designer (UI/UX)
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -324,8 +325,8 @@ mx-auto"
              "
             >
               Business Analyst
-            </a>
-            <a
+            </Link>
+            <Link
               href=""
               className="text-black 
             xl:flex-flexThinkWE lg:flex-WhySM sm:flex-WhySM
@@ -343,7 +344,7 @@ mx-auto"
              "
             >
               Open Application
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 
 function BannerTech() {
@@ -54,7 +54,7 @@ function BannerTech() {
               Accelerate your development journey with the latest technologies
             </p>
           </div>
-          <a
+          <Link
             data-aos="fade-up"
             data-aos-delay="200"
             href="contact-us"
@@ -86,7 +86,7 @@ function BannerTech() {
       md:px-[5vw]"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </div>

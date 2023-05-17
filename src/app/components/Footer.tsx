@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import FooterContent from "./FooterContent";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -38,7 +38,7 @@ function Footer() {
                   needs and interests.
                 </p>
               </div>
-              <a
+              <Link
                 href="contact-us"
                 className="md:absolute md:mt-[-24px] sm:right-0 
                 lg:mt-[-24px]
@@ -65,7 +65,7 @@ function Footer() {
                      sm:top-auto"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

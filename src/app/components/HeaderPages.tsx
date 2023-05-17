@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
-import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -168,7 +168,7 @@ function HeaderPages() {
           >
             <div className="lg:flex lg:justify-unset xl:justify-between lg:items-center">
               <div className="lg:flex lg:justify-start sm:top-0 sm:left-0">
-                <a
+                <Link
                   href="/"
                   className={`min-h[80px] transition-all m-0
                 flex 
@@ -411,7 +411,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                       />
                     </g>
                   </svg>
-                </a>
+                </Link>
 
                 <div className="sm:hidden lg:flex space-x-6 max-w-full ml-[1.7vw]">
                   <ul className="flex-nowrap whitespace-nowrap webkit-box-orient-horizontal flex-row inline-flex pl-0 mb-0 list-none">
@@ -421,14 +421,14 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                       >
-                        <a
+                        <Link
                           href="/services"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 inline-flex text-[16px] font-bold 
                           ${isScrolledDefault ? "text-white" : ""}
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Services
-                        </a>
+                        </Link>
                         <ul
                           className={`pointer-events transition-all absolute 
                           border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] 
@@ -445,7 +445,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           onMouseLeave={handleMouseLeave}
                         >
                           <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/services/web-application-development-outsourcing"
                               className="pl-16 m-0 p-16px24px
                                bg-white block transition-all duration-300 
@@ -458,10 +458,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                                 className="bg-center bg-no-repeat absolute h-[24px]
                             w-[24px] left-[24px] pointer-events-none text-[#00aeef] duration-300 group-hover:text-white"
                               />
-                            </a>
+                            </Link>
                           </li>
                           <li className="block group m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/services/custom-enterprise-software-development-outsourcing"
                               className="pl-16 m-0 p-16px24px bg-white block transition-all duration-300 relative text-black group-hover:text-white hover:bg-[#fd9f24]"
                             >
@@ -471,7 +471,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                                 className="bg-center bg-no-repeat absolute h-[24px] duration-300
                             w-[24px] left-[24px] pointer-events-none  text-[#f7a233] group-hover:text-white"
                               />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -483,7 +483,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseEnter={handleMouseEnterWorks}
                         onMouseLeave={handleMouseLeaveWorks}
                       >
-                        <a
+                        <Link
                           href="/works"
                           className={`hover:text-[#00aeef] transition-all pr-0 pl-0 
                           inline-flex text-[14px] font-bold  
@@ -491,7 +491,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Works
-                        </a>
+                        </Link>
                         {/* <ul
                           className={`pointer-events transition-all absolute 
                           border-0 left-0 translate-x-[-24px] p-0 bg-[0 0] 
@@ -508,44 +508,44 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           onMouseLeave={handleMouseLeaveWorks}
                         >
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/services/web-application-development-outsourcing"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#00aeef]"
                             >
                               Production Inventory
-                            </a>
+                            </Link>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/services/custom-enterprise-software-development-outsourcing"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Flexible Budget
-                            </a>
+                            </Link>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Poster Delivery
-                            </a>
+                            </Link>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#e2127a]"
                             >
                               Health Care
-                            </a>
+                            </Link>
                           </li>
                           <li className="block m-0 min-h-0 text-left relative transition-all duration-300">
-                            <a
+                            <Link
                               href="/"
                               className="m-0 p-16px24px bg-white block transition-all duration-300 relative text-black hover:text-white hover:bg-[#fd9f24]"
                             >
                               ERP
-                            </a>
+                            </Link>
                           </li>
                         </ul> */}
                       </div>
@@ -557,7 +557,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseEnter={handleMouseEnterTech}
                         onMouseLeave={handleMouseLeaveTech}
                       >
-                        <a
+                        <Link
                           href="/technologies"
                           className={`hover:text-[#00aeef] transition-all 
                           pr-0 pl-0 inline-flex text-[16px] font-bold 
@@ -565,11 +565,11 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Technologies
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
-                      <a
+                      <Link
                         href="/about-us"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
@@ -578,10 +578,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         ${isScrolled ? "text-white" : ""}`}
                       >
                         About us
-                      </a>
+                      </Link>
                     </li>
                     {/* <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
-                      <a
+                      <Link
                         href="/careers"
                         className={`hover:text-[#00aeef] 
                         transition-all pr-0 pl-0 inline-flex 
@@ -590,7 +590,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         ${isScrolled ? "text-white" : ""}`}
                       >
                         Careers
-                      </a>
+                      </Link>
                     </li>
                     <li className="ml-[1.7vw] relative min-h-[80px] transition-all text-center flex justify-center items-center">
                       <div
@@ -598,7 +598,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         onMouseEnter={handleMouseEnterThinkWith}
                         onMouseLeave={handleMouseLeaveThinkWith}
                       >
-                        <a
+                        <Link
                           href="/#"
                           className={`hover:text-[#00aeef] transition-all 
                           pr-0 pl-0 inline-flex text-[16px] font-bold 
@@ -606,7 +606,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                           ${isScrolled ? "text-white" : ""}`}
                         >
                           Think with Tien Phong
-                        </a>
+                        </Link>
                       </div>
                     </li> */}
                   </ul>
@@ -615,7 +615,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               <div className="flex justify-end sm:hidden lg:flex md:ml-[10px]">
                 <ul className="mb-0 flex items-center p-0 break-words">
                   <li className="inline-block ml-4">
-                    <a
+                    <Link
                       href="/contact-us"
                       className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
                       w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
@@ -650,7 +650,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                      `}
                     >
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

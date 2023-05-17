@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface Props {
   isActive: boolean;
@@ -50,14 +51,14 @@ function HeaderContentMobile(props: Props) {
             >
               <FontAwesomeIcon icon={faCaretDown} width={10} />
             </span>
-            <a
+            <Link
               href="services"
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               Services
-            </a>
+            </Link>
             <ul
               className={`p-navDropdown overflow-hidden mx-[-24px]
     rounded-none border-0 bg-[#fafafa] static float-none
@@ -74,40 +75,40 @@ function HeaderContentMobile(props: Props) {
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Web Application Development
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Flutter App Development
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Software Optimization & Enhancement
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
@@ -123,14 +124,14 @@ function HeaderContentMobile(props: Props) {
             >
               <FontAwesomeIcon icon={faCaretDown} width={10} />
             </span>
-            <a
+            <Link
               href="works"
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               Works
-            </a>
+            </Link>
             {/* <ul
               className={`p-navDropdown overflow-hidden mx-[-24px]
     rounded-none border-0 bg-[#fafafa] static float-none
@@ -147,66 +148,66 @@ function HeaderContentMobile(props: Props) {
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Production Inventory
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Flexible Budget
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Poster Delivery
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   Health Care
-                </a>
+                </Link>
               </li>
               <li
                 className="block w-full min-h-[inherit]
                 transition-all duration-3s ease-in-out text-left"
               >
-                <a
+                <Link
                   href=""
                   className="block text-[14px] font-bold
                   text-[#212529] py-0 px-0 
                   leading-[56px] whitespace-nowrap"
                 >
                   ERP
-                </a>
+                </Link>
               </li>
             </ul> */}
           </li>
@@ -222,40 +223,40 @@ function HeaderContentMobile(props: Props) {
             >
               <FontAwesomeIcon icon={faCaretDown} width={10} />
             </span>
-            <a
+            <Link
               href="technologies"
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               Technologies
-            </a>
+            </Link>
           </li>
           <li
             className="translate-x-0 delay-0 block w-full
              h-[inherit] text-left transition-all duration-[3s]"
           >
-            <a
+            <Link
               href="about-us"
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               About us
-            </a>
+            </Link>
           </li>
           {/* <li
             className="translate-x-0 delay-0 block w-full
              h-[inherit] text-left transition-all duration-[3s]"
           >
-            <a
+            <Link
               href="careers"
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               Careers
-            </a>
+            </Link>
           </li>
           <li
             className="translate-x-0 delay-0 block w-full
@@ -269,14 +270,14 @@ function HeaderContentMobile(props: Props) {
             >
               <FontAwesomeIcon icon={faCaretDown} width={10} />
             </span>
-            <a
+            <Link
               href=""
               className="block text-[14px] font-bold
               text-[#0c152a] pt-0 pb-0 leading-[56px] whitespace-nowrap
               px-0"
             >
               Think with Tien Phong
-            </a>
+            </Link>
           </li> */}
         </ul>
       </div>
@@ -285,7 +286,7 @@ function HeaderContentMobile(props: Props) {
         w-full"
       >
         <li className="ml-[24px]">
-          <a
+          <Link
             href="contact-us"
             className={`leading-[36px] pl-[20px] pr-[20px] min-w-[auto] table-cell
                      w-auto h-[40px] p-[0 30px] rounded-[25px] text-center
@@ -309,7 +310,7 @@ function HeaderContentMobile(props: Props) {
                      `}
           >
             Contact Us
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

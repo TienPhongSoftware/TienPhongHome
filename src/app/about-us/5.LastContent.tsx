@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function LastContent() {
   return (
@@ -53,7 +54,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
             lg:max-w-maxAboutUsPartners sm:max-w-full lg:mb-[24px] sm:mb-[48px] text-center
             "
             >
-              <a href="">
+              <Link href="">
                 <Image
                   src="/images/logo/about-us-partner-1.jpg"
                   className="object-contain transition-all
@@ -64,14 +65,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
                   width={442}
                   height={400}
                 />
-              </a>
+              </Link>
             </div>
             <div
               className="lg:flex-flexABUsPartners sm:flex-WhySM
             lg:max-w-maxAboutUsPartners sm:max-w-full lg:mb-[24px] sm:mb-[48px] text-center
             "
             >
-              <a href="">
+              <Link href="">
                 <Image
                   src="/images/logo/about-us-partner-2.jpg"
                   className="object-contain transition-all
@@ -82,14 +83,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
                   width={442}
                   height={400}
                 />
-              </a>
+              </Link>
             </div>
             <div
               className="lg:flex-flexABUsPartners sm:flex-WhySM
             lg:max-w-maxAboutUsPartners sm:max-w-full lg:mb-[24px] sm:mb-[48px] text-center
             "
             >
-              <a href="">
+              <Link href="">
                 <Image
                   src="/images/logo/about-us-partner-3.jpg"
                   className="object-contain transition-all
@@ -100,7 +101,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM
                   width={442}
                   height={400}
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

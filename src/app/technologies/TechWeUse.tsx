@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function TechWeUse() {
   return (
@@ -18,7 +19,7 @@ function TechWeUse() {
         data-aos-delay="300"
       >
         <div className="flex flex-wrap justify-between">
-          <a
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -31,8 +32,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-1.svg"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -45,8 +46,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-8.jpg"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -59,8 +60,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-3.svg"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -73,8 +74,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-4.svg"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -87,8 +88,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-9-1.png"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -101,8 +102,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-10-2.png"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px] 
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -115,8 +116,8 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-7.svg"}
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="transition-all duration-500 ease-in-out lg:flex-TechnologiesUse lg:mb-[24px] sm:mb-[20px]
           sm:flex-TechUseSM bg-white shadow-lg rounded-[16px] p-[24px] flex items-center
@@ -129,7 +130,7 @@ function TechWeUse() {
               className="lg:h-[72px] sm:h-[42px] align-middle"
               src={"/images/logo/tech-we-use-8.svg"}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

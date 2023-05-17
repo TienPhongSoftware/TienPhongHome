@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import FooterContent from "./FooterContent";
+import Link from "next/link";
 
 function FooterBig() {
   return (
@@ -98,7 +99,7 @@ mx-auto max-w-maxContainer
                   className="absolute text-[0] bottom-[32px]
                 w-full text-center left-0 right-0 mt-[32px]"
                 >
-                  <a
+                  <Link
                     href=""
                     className="leading-[32px]
                   max-w-[244px] lg:min-w-[184px] whitespace-nowrap
@@ -113,7 +114,7 @@ mx-auto max-w-maxContainer
                   "
                   >
                     Let’s Talk
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -193,7 +194,7 @@ mx-auto max-w-maxContainer
                   className="absolute text-[0] bottom-[32px]
                 w-full text-center left-0 right-0 mt-[32px]"
                 >
-                  <a
+                  <Link
                     href=""
                     className="leading-[32px]
                   max-w-[244px] lg:min-w-[184px] whitespace-nowrap
@@ -208,7 +209,7 @@ mx-auto max-w-maxContainer
                   "
                   >
                     Let’s Talk
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -281,7 +282,7 @@ mx-auto max-w-maxContainer
                   className="absolute text-[0] bottom-[32px]
                 w-full text-center left-0 right-0 mt-[32px]"
                 >
-                  <a
+                  <Link
                     href=""
                     className="leading-[32px]
                   max-w-[244px] lg:min-w-[184px] whitespace-nowrap
@@ -296,7 +297,7 @@ mx-auto max-w-maxContainer
                   "
                   >
                     Let’s Talk
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import PageWrapper from "./components/PageWrapper";
+import Link from "next/link";
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination, Autoplay } from "swiper";
@@ -106,7 +107,7 @@ function Home() {
                   </p>
                 </div>
                 <div className="sm:flex lg:flex">
-                  <a
+                  <Link
                     href="contact-us"
                     className="mr-6 bg-[#00aeef] border-[#00aeef] 
                   lg:px-[40px] lg:leading-[52px]
@@ -138,7 +139,7 @@ function Home() {
       md:px-[5vw]"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                   <button
                     onClick={scrollToOurServices}
                     type="button"
@@ -654,7 +655,7 @@ function Home() {
                   className="flex flex-wrap justify-evenly 
               sm:max-w-[425px] sm:m-autoWWD md:max-w-none lg:m-0"
                 >
-                  <a
+                  <Link
                     href=""
                     className="lg:flex-flexWWD sm:flex-WhySM relative z-10
                  text-[#0c152a] pb-[40px] max-w-full sm:mb-[64px]
@@ -687,8 +688,8 @@ function Home() {
                     <div className="absolute bottom-0 left-0 text-[#00aeef]">
                       <span className="font-bold">Learn more</span>
                     </div>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href=""
                     className="lg:flex-flexWWD sm:flex-WhySM relative z-10
                  text-[#0c152a] pb-[40px] max-w-full sm:mb-[64px]
@@ -721,7 +722,7 @@ function Home() {
                     <div className="absolute bottom-0 left-0 text-[#00aeef]">
                       <span className="font-bold">Learn more</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -821,13 +822,13 @@ function Home() {
                   >
                     Let’s discover how we make customers happy in detail!
                   </div>
-                  <a
+                  <Link
                     href=""
                     className="text-white decoration-0 
                 leading-0 sm:text-[4vw] lg:text-[18px]"
                   >
                     View all works →
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -837,7 +838,7 @@ function Home() {
                 data-aos="fade-left"
               >
                 <div className="block">
-                  <a
+                  <Link
                     href=""
                     className="md:h-0 md:pb-[76%] float-left relative 
                 z-10 block text-white 
@@ -872,8 +873,8 @@ function Home() {
                     >
                       Marketing Automation Platform
                     </div>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href=""
                     className="lg:h-0 lg:pb-pbImgLittleOTWorkMD 
                 md:pb-pbImgLittleOTWork md:mb-[24px]
@@ -912,8 +913,8 @@ function Home() {
                     >
                       Beauty Marketplace
                     </div>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href=""
                     className="lg:h-0 lg:pb-pbImgLittleOTWorkMD  
                 md:pb-pbImgLittleOTWork md:mb-[24px]
@@ -952,7 +953,7 @@ function Home() {
                     >
                       Property Management System
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

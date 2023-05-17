@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Introduction() {
   return (
@@ -20,7 +21,7 @@ mx-auto max-w-maxContainer overflow-hidden"
           p-ServicesP3 pb-[30px]"
               data-aos="fade-left"
             >
-              <a
+              <Link
                 href=""
                 className="overflow-hidden block mb-4
             md:rounded-ServicesPhoto md:mx-0 sm:mx-[-16px] pb-[59%] h-0
@@ -37,19 +38,19 @@ mx-auto max-w-maxContainer overflow-hidden"
                   width={600}
                   height={400}
                 />
-              </a>
+              </Link>
               <div
                 className="md:mb-[24px] sm:mb-[16px] 
               hover:text-[#00aeef]"
               >
-                <a
+                <Link
                   href=""
                   className="font-bold lg:text-[48px] leading-[1.3] text-black
                  sm:text-[5vw] 
                  md:text-[3vw]"
                 >
                   Web Application Development
-                </a>
+                </Link>
               </div>
               <div className="font-LightCus md:mb-[24px]">
                 We provide full-cycle custom web app development for
@@ -60,12 +61,12 @@ mx-auto max-w-maxContainer overflow-hidden"
                 quality.
               </div>
               <div className="relative bottom-[-10]">
-                <a
+                <Link
                   href=""
                   className="text-[#00aeef] leading-[24px] text-[16px] font-bold"
                 >
                   Learn more
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -82,7 +83,7 @@ mx-auto max-w-maxContainer overflow-hidden"
           p-ServicesP3 pb-[30px]"
               data-aos="fade-left"
             >
-              <a
+              <Link
                 href=""
                 className="overflow-hidden block mb-4
             md:rounded-ServicesPhoto md:mx-0 sm:mx-[-16px] pb-[59%] h-0
@@ -99,19 +100,19 @@ mx-auto max-w-maxContainer overflow-hidden"
                   width={600}
                   height={400}
                 />
-              </a>
+              </Link>
               <div
                 className="md:mb-[24px] sm:mb-[16px] 
               hover:text-[#00aeef]"
               >
-                <a
+                <Link
                   href=""
                   className="font-bold lg:text-[48px] leading-[1.3] text-black
                  sm:text-[5vw] 
                  md:text-[3vw]"
                 >
                   Software Customization & Enhancement
-                </a>
+                </Link>
               </div>
               <div className="font-LightCus md:mb-[24px]">
                 We build custom technical solutions tailored to your specific
@@ -121,12 +122,12 @@ mx-auto max-w-maxContainer overflow-hidden"
                 performance, and rescuing poorly-delivered projects.
               </div>
               <div className="relative bottom-[-10]">
-                <a
+                <Link
                   href=""
                   className="text-[#00aeef] leading-[24px] text-[16px] font-bold"
                 >
                   Learn more
-                </a>
+                </Link>
               </div>
             </div>
           </div>

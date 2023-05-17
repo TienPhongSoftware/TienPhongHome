@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Image from "next/image";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Link from "next/link";
 
 interface Item {
   id: number;
@@ -199,7 +200,7 @@ const TabsWorks: React.FC = () => {
                       shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                           >
                             <div>
-                              <a
+                              <Link
                                 href=""
                                 className="
                            mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
@@ -211,25 +212,25 @@ const TabsWorks: React.FC = () => {
                                   src={"/images/layout/works-1.jpg"}
                                   className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                                 />
-                              </a>
+                              </Link>
                               <div className="md:mb-4 sm:mb-[16]">
-                                <a
+                                <Link
                                   href=""
                                   className="md:font-bold text-[20px] sm:font-[500]"
                                 >
                                   {item.tittle}
-                                </a>
+                                </Link>
                               </div>
                               <div className="font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                                 {item.textIntro}
                               </div>
                               <div className="bottom-[16px] left-[16px] absolute">
-                                <a
+                                <Link
                                   href={item.url}
                                   className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
                                 >
                                   Read more →
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -292,7 +293,7 @@ const TabsWorks: React.FC = () => {
                       shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div className="md:relative md:min-h-[350px] lg:pl-ServicesP2">
-                          <a
+                          <Link
                             href=""
                             className="md:h-full lg:pb-0 lg:w-ServicePhoto md:left-0 md:mx-0 md:rounded-ServicesPhoto lg:absolute
                             sm:mx-[-16px] relative sm:h-0 sm:pb-[59.9%] sm:mb-[16px] sm:overflow-hidden sm:text-[#222428] block"
@@ -304,14 +305,14 @@ const TabsWorks: React.FC = () => {
                               src={"/images/layout/works-1.jpg"}
                               className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                             />
-                          </a>
+                          </Link>
                           <div className="md:mb-4 sm:mb-[16]">
-                            <a
+                            <Link
                               href=""
                               className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.2vw] sm:font-[500]"
                             >
                               Employees & Contractor Portals (CPM)
-                            </a>
+                            </Link>
                           </div>
                           <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                             A custom construction management system (CPM) which
@@ -320,12 +321,12 @@ const TabsWorks: React.FC = () => {
                             processes.
                           </div>
                           <div className="font-bold sm:bottom-[16px] sm:left-[16px] sm:text-[3.8vw] md:relative md:left-[inherit] md:bottom-[inherit]">
-                            <a
+                            <Link
                               href=""
                               className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
                             >
                               Read more →
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -335,7 +336,7 @@ const TabsWorks: React.FC = () => {
                       shadow-2xl rounded-[16px] overflow-hidden relative sm:mb-[50px] p-ServicesP3 text-[#222428]"
                       >
                         <div className="md:relative md:min-h-[350px] lg:pl-ServicesP2">
-                          <a
+                          <Link
                             href=""
                             className="md:h-full lg:pb-0 lg:w-ServicePhoto md:left-0 md:mx-0 md:rounded-ServicesPhoto lg:absolute
                             sm:mx-[-16px] relative sm:h-0 sm:pb-[59.9%] sm:mb-[16px] sm:overflow-hidden sm:text-[#222428] block"
@@ -347,14 +348,14 @@ const TabsWorks: React.FC = () => {
                               src={"/images/layout/works-1.jpg"}
                               className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                             />
-                          </a>
+                          </Link>
                           <div className="md:mb-4 sm:mb-[16]">
-                            <a
+                            <Link
                               href=""
                               className="md:font-bold md:text-[48px] sm:leading-[1.3] sm:text-[5.2vw] sm:font-[500]"
                             >
                               Employees & Contractor Portals (CPM)
-                            </a>
+                            </Link>
                           </div>
                           <div className="md:mb-[24px] font-LightCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[1vw]">
                             A custom construction management system (CPM) which
@@ -363,12 +364,12 @@ const TabsWorks: React.FC = () => {
                             processes.
                           </div>
                           <div className="font-bold sm:bottom-[16px] sm:left-[16px] sm:text-[3.8vw] md:relative md:left-[inherit] md:bottom-[inherit]">
-                            <a
+                            <Link
                               href=""
                               className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
                             >
                               Read more →
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

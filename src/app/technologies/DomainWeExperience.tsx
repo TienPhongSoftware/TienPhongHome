@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function DomainWeExperience() {
   return (
@@ -31,7 +32,7 @@ function DomainWeExperience() {
         data-aos-delay="300"
       >
         <div className="flex flex-wrap lg:justify-center sm:justify-between md:justify-start text-black">
-          <a
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -49,8 +50,8 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Production Inventory
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -68,8 +69,8 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Flexible Budget
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -87,8 +88,8 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Poster Delivery
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -106,8 +107,8 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Healthcare
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -125,8 +126,8 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               ERP
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href=""
             className="lg:mr-[20px] md:mr-[10px] ease-in-out duration-300 transition-all 
           lg:flex-TechDomain sm:flex-TechUseSM md:flex-TechDomainMD md:mb-[10px] lg:mb-[48px] mb-[20px] bg-white shadow-lg rounded-[8px]
@@ -144,7 +145,7 @@ function DomainWeExperience() {
             <span className="mt-[24px] text-[18px] font-bold text-black text-center">
               Others
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

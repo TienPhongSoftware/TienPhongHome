@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
@@ -133,8 +134,8 @@ function Projects() {
                       "
               >
                 <div>
-                  <a
-                    href=""
+                  <Link
+                    href={""}
                     className="
                            mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
                   >
@@ -145,25 +146,28 @@ function Projects() {
                       src={"/images/layout/works-1.jpg"}
                       className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                     />
-                  </a>
+                  </Link>
                   <div className="md:mb-4 sm:mb-[16]">
-                    <a
-                      href=""
+                    <Link
+                      href={""}
                       className="md:font-bold text-[20px] sm:font-[500]
                           group-hover:text-sky-500
                           "
                     >
                       Marketing Automation Platform
-                    </a>
+                    </Link>
                   </div>
                   <div className="font-ThinCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[0.9vw]">
                     <strong>Technologies:</strong> ASP .Net Core, Angular,
                     DevExtreme, RESTful API, Cloud MongoDB, AWS cloud
                   </div>
                   <div className="bottom-[16px] left-0 absolute">
-                    <a className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold">
+                    <Link
+                      href={""}
+                      className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
+                    >
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -194,8 +198,8 @@ function Projects() {
                       "
               >
                 <div>
-                  <a
-                    href=""
+                  <Link
+                    href={""}
                     className="
                            mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
                   >
@@ -206,25 +210,28 @@ function Projects() {
                       src={"/images/layout/works-1.jpg"}
                       className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                     />
-                  </a>
+                  </Link>
                   <div className="md:mb-4 sm:mb-[16]">
-                    <a
-                      href=""
+                    <Link
+                      href={""}
                       className="md:font-bold text-[20px] sm:font-[500]
                           group-hover:text-sky-500
                           "
                     >
                       Marketing Automation Platform
-                    </a>
+                    </Link>
                   </div>
                   <div className="font-ThinCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[0.9vw]">
                     <strong>Technologies:</strong> ASP .Net Core, Angular,
                     DevExtreme, RESTful API, Cloud MongoDB, AWS cloud
                   </div>
                   <div className="bottom-[16px] left-0 absolute">
-                    <a className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold">
+                    <Link
+                      href={""}
+                      className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
+                    >
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -255,8 +262,8 @@ function Projects() {
                       "
               >
                 <div>
-                  <a
-                    href=""
+                  <Link
+                    href={""}
                     className="
                            mx-[-16px] relative sm:h-0 pb-[59.9%] overflow-hidden block mb-[16px]"
                   >
@@ -267,25 +274,28 @@ function Projects() {
                       src={"/images/layout/works-1.jpg"}
                       className=" object-cover w-full h-full transition-all ease-out top-0 left-0 max-w-full absolute"
                     />
-                  </a>
+                  </Link>
                   <div className="md:mb-4 sm:mb-[16]">
-                    <a
-                      href=""
+                    <Link
+                      href={""}
                       className="md:font-bold text-[20px] sm:font-[500]
                           group-hover:text-sky-500
                           "
                     >
                       Marketing Automation Platform
-                    </a>
+                    </Link>
                   </div>
                   <div className="font-ThinCus sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[0.9vw]">
                     <strong>Technologies:</strong> ASP .Net Core, Angular,
                     DevExtreme, RESTful API, Cloud MongoDB, AWS cloud
                   </div>
                   <div className="bottom-[16px] left-0 absolute">
-                    <a className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold">
+                    <Link
+                      href={""}
+                      className="text-[#00aeef] leading-[24px] lg:text-[16px] font-bold"
+                    >
                       Learn more
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

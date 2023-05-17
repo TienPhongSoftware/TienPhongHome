@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function FooterContent() {
   return (
@@ -25,7 +26,7 @@ function FooterContent() {
               sm:order-3 md:order-[unset]
                 lg:pr-[50px] md:mb-[24px] sm:pr-[24px]"
           >
-            <a href="" className="mb-[24px] w-full flex justify-center">
+            <Link href="" className="mb-[24px] w-full flex justify-center">
               <svg
                 version="1.0"
                 xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +197,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                   />
                 </g>
               </svg>
-            </a>
+            </Link>
             <p
               className="mb-[24px] max-w-[316px] text-[14px]
               font-ThinCus
@@ -219,7 +220,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
               sm:text-[3.4vw] md:text-[14px]
               "
             >
-              <a href="" className="mr-[-3px]">
+              <Link href="" className="mr-[-3px]">
                 <Image
                   src="/images/logo/dcma.png"
                   className="hover:scale-110 transition-all
@@ -228,11 +229,11 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                   width={150}
                   height={200}
                 />
-              </a>
+              </Link>
             </p>
             <ul className="flex mb-[1rem] break-words">
               <li className="mr-[24px]">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <Image
                     src="/images/logo/facebook.svg"
                     className="max-w-full align-middle w-auto h-auto"
@@ -240,10 +241,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     width={14}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li className="mr-[24px]">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <Image
                     src="/images/logo/linkedin.svg"
                     className="max-w-full align-middle w-auto h-auto"
@@ -251,10 +252,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li className="mr-[24px]">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <Image
                     src="/images/logo/twitter.svg"
                     className="max-w-full align-middle w-auto h-auto"
@@ -262,10 +263,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li className="mr-[24px]">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <Image
                     src="/images/logo/instagram.svg"
                     className="max-w-full align-middle w-auto h-auto"
@@ -273,10 +274,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li className="mr-[24px]">
-                <a href="" className="text-white">
+                <Link href="" className="text-white">
                   <Image
                     src="/images/logo/youtube.svg"
                     className="max-w-full align-middle w-auto h-auto"
@@ -284,7 +285,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -323,7 +324,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                   flex-col pl-0 mb-0"
                 >
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -332,10 +333,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Web Application Development
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -344,7 +345,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Software Optimization & Enhancement
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -368,7 +369,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                   flex-col pl-0 mb-0"
                 >
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -377,10 +378,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Production Inventory
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -389,10 +390,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Flexible Budget
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -401,10 +402,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Poster Delivery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -413,10 +414,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Health Care
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -425,7 +426,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       ERP
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -449,7 +450,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                   flex-col pl-0 mb-0"
                 >
                   <li>
-                    <a
+                    <Link
                       href=""
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -458,10 +459,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       About us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="careers"
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -470,10 +471,10 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Careers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="contact-us"
                       className="inline-block
                         font-LightCus px-0 text-white p-padNaxFoot
@@ -482,7 +483,7 @@ l-81 -86 -78 -5 c-152 -9 -263 -102 -293 -246 -11 -47 -13 -49 -98 -100 -320
                         sm:text-[3.4vw]"
                     >
                       Contact us
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

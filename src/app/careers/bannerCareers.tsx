@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function BannerCareers() {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -74,7 +75,7 @@ function BannerCareers() {
               <br /> to make a life, not just a living.
             </p>
           </div>
-          <a
+          <Link
             data-aos="fade-up"
             data-aos-delay="200"
             href=""
@@ -106,7 +107,7 @@ function BannerCareers() {
       md:px-[5vw]"
           >
             Jobs @ Tien Phong
-          </a>
+          </Link>
         </div>
       </div>
     </div>

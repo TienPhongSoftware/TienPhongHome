@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function TheWhy() {
   return (
@@ -44,7 +45,7 @@ function TheWhy() {
             </div>
             <div className="lg:max-w-CareersWhyUs lg:flex-AboutUsRowFlex sm:max-w-full sm:flex-WhySM">
               <div className="lg:w-CareersWhyWork md:w-CareersWhyWorkMD text-[0px]">
-                <a
+                <Link
                   href=""
                   className="float-left rounded-[24px] inline-block max-w-maxOTWorksPicsPRS 
                 w-full h-0 pb-[30%] relative z-10 mb-[24px] overflow-hidden"
@@ -57,8 +58,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="pb-[43%] float-right rounded-[24px] inline-block max-w-maxOTWorksPicsPRS
                 w-full h-0 relative z-10 mb-[24px] overflow-hidden"
@@ -71,8 +72,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="pb-[43%] float-left rounded-[24px] inline-block max-w-maxOTWorksPicsPRS
                 w-full h-0 relative z-10 mb-[24px] overflow-hidden"
@@ -85,8 +86,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="float-right rounded-[24px] inline-block max-w-maxOTWorksPicsPRS 
                 w-full h-0 pb-[30%] relative z-10 mb-[24px] overflow-hidden"
@@ -99,7 +100,7 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ function TheWhy() {
           <div className="flex justify-between items-center flex-wrap">
             <div className="lg:max-w-CareersWhyUs lg:flex-AboutUsRowFlex sm:max-w-full sm:flex-WhySM">
               <div className="lg:w-CareersWhyWork md:w-CareersWhyWorkMD text-[0px]">
-                <a
+                <Link
                   href=""
                   className="float-left rounded-[24px] inline-block max-w-maxOTWorksPicsPRS 
                 w-full h-0 pb-[30%] relative z-10 mb-[24px] overflow-hidden"
@@ -121,8 +122,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="pb-[43%] float-right rounded-[24px] inline-block max-w-maxOTWorksPicsPRS
                 w-full h-0 relative z-10 mb-[24px] overflow-hidden"
@@ -135,8 +136,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="pb-[43%] float-left rounded-[24px] inline-block max-w-maxOTWorksPicsPRS
                 w-full h-0 relative z-10 mb-[24px] overflow-hidden"
@@ -149,8 +150,8 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href=""
                   className="float-right rounded-[24px] inline-block max-w-maxOTWorksPicsPRS 
                 w-full h-0 pb-[30%] relative z-10 mb-[24px] overflow-hidden"
@@ -163,7 +164,7 @@ function TheWhy() {
                     alt="The why of Work"
                     className="max-w-full align-middle top-0 left-0 w-full h-full absolute object-cover"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="lg:max-w-CareersWhyUs lg:flex-AboutUsRowFlex sm:max-w-full sm:flex-WhySM">
