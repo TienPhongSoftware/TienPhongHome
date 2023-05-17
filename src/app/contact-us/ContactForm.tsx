@@ -14,6 +14,7 @@ import DropFileInput from "./DropFiles";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LoadingComponent from "../Loading/page";
 
 //Select form
 interface Option {
@@ -57,7 +58,12 @@ function ContactForm() {
     reset,
     formState: { errors },
   } = useForm();
+
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = (data: any) => {
+    setLoading(true);
+
     fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -69,9 +75,11 @@ function ContactForm() {
       .then((res) => {
         // console.log("Response received", res);
         if (res.status === 200) {
+          setLoading(false);
           // console.log("Response succeeded!");
           toast("Thank you for contacting us!");
         } else {
+          setLoading(false);
           // console.log("Email/Password is invalid.");
           toast("Email/Password is invalid.");
         }
@@ -134,100 +142,102 @@ function ContactForm() {
   //Drop Files
 
   return (
-    <div
-      className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
+    <>
+      {loading && <LoadingComponent showLoading={true} />}
+      <div
+        className="xl:px-[120px] sm:px-[24px] lg:px-[64px]
 py-[120px]
     max-w-ContainerContact 
   mx-auto"
-    >
-      <div className="mb-[0.5rem] md:flex items-center justify-center">
-        <h1 className="text-[50px] font-bold text-center mb-0 leading-[1.2] break-words">
-          Contact Us
-        </h1>
-      </div>
-      <div className="flex flex-wrap">
-        <div className="basis-0 grow max-w-full">
-          <div className="p-0 m-0 ">
-            <form onSubmit={handleSubmit(onSubmit)} method="POST">
-              <div className="text-[#0c152a] font-ThinCus">
-                <div className="px-0 lg:max-w-[1140px] md:max-w-[960px] sm:max-w-[540px] w-full mx-auto">
-                  <div
-                    className="mx-[-16px] grid 
+      >
+        <div className="mb-[0.5rem] md:flex items-center justify-center">
+          <h1 className="text-[50px] font-bold text-center mb-0 leading-[1.2] break-words">
+            Contact Us
+          </h1>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="basis-0 grow max-w-full">
+            <div className="p-0 m-0 ">
+              <form onSubmit={handleSubmit(onSubmit)} method="POST">
+                <div className="text-[#0c152a] font-ThinCus">
+                  <div className="px-0 lg:max-w-[1140px] md:max-w-[960px] sm:max-w-[540px] w-full mx-auto">
+                    <div
+                      className="mx-[-16px] grid 
                   md:grid-cols-2 md:gap-2
                   sm:grid-cols-1 sm:gap-1"
-                  >
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
-                      <span className="mb-[24px] block relative">
-                        <input
-                          type="text"
-                          id="fullName"
-                          size={40}
-                          className="text-[16px] py-[15.3px] leading-[1.5] border 
+                    >
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
+                        <span className="mb-[24px] block relative">
+                          <input
+                            type="text"
+                            id="fullName"
+                            size={40}
+                            className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
-                          placeholder="Name*"
-                          required
-                          {...register("fullName", { required: true })}
-                        />
-                      </span>
-                      <span className="block relative">
-                        <input
-                          type="text"
-                          size={40}
-                          id="email"
-                          className="text-[16px] py-[15.3px] leading-[1.5] border 
+                            placeholder="Name*"
+                            required
+                            {...register("fullName", { required: true })}
+                          />
+                        </span>
+                        <span className="block relative">
+                          <input
+                            type="text"
+                            size={40}
+                            id="email"
+                            className="text-[16px] py-[15.3px] leading-[1.5] border 
 border-[#c2c2c2] rounded-[5px] font-ThinCus
 w-full p-InputContact overflow-visible m-0"
-                          placeholder="Email*"
-                          {...register("email", { required: true })}
-                        />
-                      </span>
+                            placeholder="Email*"
+                            {...register("email", { required: true })}
+                          />
+                        </span>
+                      </div>
+                      <div className="px-[16px] py-[8px] basis-0 grow max-w-full relative w-full sm:flex-WhySM lg:block">
+                        <span className="mb-[24px] block relative">
+                          <input
+                            type="text"
+                            id="company"
+                            className="text-[16px] py-[15.3px] leading-[1.5] border 
+border-[#c2c2c2] rounded-[5px] font-ThinCus
+w-full p-InputContact overflow-visible m-0"
+                            placeholder="Company*"
+                            {...register("company", { required: true })}
+                          />
+                        </span>
+                        <span className="block relative">
+                          <input
+                            type="text"
+                            id="phone"
+                            className="text-[16px] py-[15.3px] leading-[1.5] border 
+border-[#c2c2c2] rounded-[5px] font-ThinCus
+w-full p-InputContact overflow-visible m-0"
+                            placeholder="Phone number *"
+                            {...register("phone", { required: true })}
+                          />
+                        </span>
+                      </div>
                     </div>
-                    <div className="px-[16px] py-[8px] basis-0 grow max-w-full relative w-full sm:flex-WhySM lg:block">
-                      <span className="mb-[24px] block relative">
-                        <input
-                          type="text"
-                          id="company"
-                          className="text-[16px] py-[15.3px] leading-[1.5] border 
-border-[#c2c2c2] rounded-[5px] font-ThinCus
-w-full p-InputContact overflow-visible m-0"
-                          placeholder="Company*"
-                          {...register("company", { required: true })}
-                        />
-                      </span>
-                      <span className="block relative">
-                        <input
-                          type="text"
-                          id="phone"
-                          className="text-[16px] py-[15.3px] leading-[1.5] border 
-border-[#c2c2c2] rounded-[5px] font-ThinCus
-w-full p-InputContact overflow-visible m-0"
-                          placeholder="Phone number *"
-                          {...register("phone", { required: true })}
-                        />
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mx-[-16px] grid grid-cols-1 gap-1">
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
-                      <span className="mb-[24px] block relative">
-                        <textarea
-                          id="message"
-                          cols={40}
-                          rows={10}
-                          placeholder="Please share anything that will help prepare for our talk. *"
-                          aria-required="true"
-                          aria-invalid="false"
-                          className="border border-[#c2c2c2] py-[15.3px] 
+                    <div className="mx-[-16px] grid grid-cols-1 gap-1">
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
+                        <span className="mb-[24px] block relative">
+                          <textarea
+                            id="message"
+                            cols={40}
+                            rows={10}
+                            placeholder="Please share anything that will help prepare for our talk. *"
+                            aria-required="true"
+                            aria-invalid="false"
+                            className="border border-[#c2c2c2] py-[15.3px] 
                       leading-[1.5] rounded-[5px] w-full p-InputContact
                       h-[137px]
                       "
-                          {...register("message", { required: true })}
-                        ></textarea>
-                      </span>
+                            {...register("message", { required: true })}
+                          ></textarea>
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  {/* <div className="mx-[-16px] grid grid-cols-2 gap-2">
+                    {/* <div className="mx-[-16px] grid grid-cols-2 gap-2">
                     <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
                       <label className="mb-0 select-none inline-block">
                         <span className="block relative">
@@ -381,22 +391,22 @@ w-full p-InputContact overflow-visible m-0"
                       <DropFileInput />
                     </div>
                   </div> */}
-                  <div className="mx-[-16px] grid grid-cols-1 gap-1">
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
-                      <label
-                        className="mb-0 select-none inline-block"
-                        aria-label=""
-                      >
-                        <span className="block relative">
-                          <span className="ml-0 relative pl-[30px] inline-block m-CheckContact">
-                            <input
-                              type="checkbox"
-                              name="your-schedule_choice[]"
-                              value="Schedule a talk & we'll call back"
-                              className="absolute invisible -z-10 opacity-0"
-                            />
-                            <span
-                              className={`
+                    <div className="mx-[-16px] grid grid-cols-1 gap-1">
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
+                        <label
+                          className="mb-0 select-none inline-block"
+                          aria-label=""
+                        >
+                          <span className="block relative">
+                            <span className="ml-0 relative pl-[30px] inline-block m-CheckContact">
+                              <input
+                                type="checkbox"
+                                name="your-schedule_choice[]"
+                                value="Schedule a talk & we'll call back"
+                                className="absolute invisible -z-10 opacity-0"
+                              />
+                              <span
+                                className={`
                         after:absolute
                         after:h-[20px]
                         after:w-[20px]
@@ -410,110 +420,110 @@ w-full p-InputContact overflow-visible m-0"
                         after:opacity-[.4]
                         after:translate-y-[-50%]
                         `}
-                            >
-                              By clicking submit you agree to our
-                              <a href="" className="text-[#00aeef]">
-                                {" "}
-                                Privacy policy{" "}
-                              </a>
-                              and
-                              <a href="" className="text-[#00aeef]">
-                                {" "}
-                                Cookie policy
-                              </a>
+                              >
+                                By clicking submit you agree to our
+                                <a href="" className="text-[#00aeef]">
+                                  {" "}
+                                  Privacy policy{" "}
+                                </a>
+                                and
+                                <a href="" className="text-[#00aeef]">
+                                  {" "}
+                                  Cookie policy
+                                </a>
+                              </span>
                             </span>
                           </span>
-                        </span>
-                      </label>
+                        </label>
+                      </div>
                     </div>
-                  </div>
-                  <div className="mx-[-16px] grid grid-cols-1 gap-1">
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
-                      <iframe
-                        title="reCAPTCHA"
-                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdfRqgUAAAAAHKwkYA2Uw8RU0z1pzpwsKpQnz58&amp;co=aHR0cHM6Ly9lbmxhYnNvZnR3YXJlLmNvbTo0NDM.&amp;hl=vi&amp;v=4PnKmGB9wRHh1i04o7YUICeI&amp;size=normal&amp;cb=tb4n2v10snyr"
-                        width="304"
-                        height="78"
-                        role="presentation"
-                        scrolling="no"
-                        name="a-6jlh7sish5ic"
-                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                      ></iframe>
+                    <div className="mx-[-16px] grid grid-cols-1 gap-1">
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
+                        <iframe
+                          title="reCAPTCHA"
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdfRqgUAAAAAHKwkYA2Uw8RU0z1pzpwsKpQnz58&amp;co=aHR0cHM6Ly9lbmxhYnNvZnR3YXJlLmNvbTo0NDM.&amp;hl=vi&amp;v=4PnKmGB9wRHh1i04o7YUICeI&amp;size=normal&amp;cb=tb4n2v10snyr"
+                          width="304"
+                          height="78"
+                          role="presentation"
+                          scrolling="no"
+                          name="a-6jlh7sish5ic"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                        ></iframe>
+                      </div>
                     </div>
-                  </div>
-                  <div className="mx-[-16px] grid grid-cols-1 gap-1 pt-[48px]">
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full text-center">
-                      <button
-                        type="submit"
-                        className="bg-[#00aeef] border-2 border-[#00aeef]
+                    <div className="mx-[-16px] grid grid-cols-1 gap-1 pt-[48px]">
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full text-center">
+                        <button
+                          type="submit"
+                          className="bg-[#00aeef] border-2 border-[#00aeef]
                         max-w-[244px] leading-[50px] min-w-[184px] whitespace-nowrap
                         inline-block px-[40px] text-center text-[18px] text-white
                         rounded-[24px] relative z-10 font-bold overflow-hidden transition-all
                         duration-500 ease-in-out hover:bg-[#e2165a] hover:border-[#e2165a]
                         cursor-pointer p-ContactButton"
-                      >
-                        Submit
-                      </button>
+                        >
+                          Submit
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                  <div className="mx-[-16px] grid grid-cols-1 gap-1">
-                    <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full text-center">
-                      <div className="bg-white shadow-lg rounded-[8px] p-[24px] text-center mt-[120px]">
-                        <div className="font-bold mb-[24px] text-[20px] text-[#818181]">
-                          Get in touch for more information
-                        </div>
-                        <div
-                          className="mx-auto font-ThinCus md:table
+                    <div className="mx-[-16px] grid grid-cols-1 gap-1">
+                      <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full text-center">
+                        <div className="bg-white shadow-lg rounded-[8px] p-[24px] text-center mt-[120px]">
+                          <div className="font-bold mb-[24px] text-[20px] text-[#818181]">
+                            Get in touch for more information
+                          </div>
+                          <div
+                            className="mx-auto font-ThinCus md:table
                           sm:block
                         sm:max-w-[425px] md:max-w-full
                         text-center
                         "
-                        >
-                          <div
-                            className="md:table-row
+                          >
+                            <div
+                              className="md:table-row
                             sm:block
                           sm:relative md:static
                           sm:mb-[24px] md:mb-0
                           "
-                          >
-                            <div
-                              className="md:pr-[26px] md:p-ContactIcon 
+                            >
+                              <div
+                                className="md:pr-[26px] md:p-ContactIcon 
                               text-left 
                             sm:pl-0 sm:absolute md:static 
                             sm:top-[-5px] md:top-0 
                             sm:block md:table-cell
                             items-start
                             "
-                            >
-                              <Image
-                                width={25}
-                                height={25}
-                                alt="Contact Icon"
-                                src={"/images/icons/contact-4.svg"}
-                              />
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-bold p-ContactIcon
+                              >
+                                <Image
+                                  width={25}
+                                  height={25}
+                                  alt="Contact Icon"
+                                  src={"/images/icons/contact-4.svg"}
+                                />
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-bold p-ContactIcon
                             text-left sm:block md:table-cell
                             sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                             sm:mb-[5px] md:mb-0 
                             sm:pl-[30px] md:pl-0
                             "
-                            >
-                              Sales:
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                Sales:
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                             text-left sm:block md:table-cell 
                             sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                             sm:mb-[5px] md:mb-0 
                             sm:pl-[30px] md:pl-0
                             "
-                            >
-                              <a href="tel:+84983757506">(+84) 905 666 770</a>
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                <a href="tel:+84983757506">(+84) 905 666 770</a>
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                             text-left sm:block md:table-cell
                             sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                             md:relative md:pl-[14px] 
@@ -525,62 +535,62 @@ w-full p-InputContact overflow-visible m-0"
                             sm:mb-[5px] md:mb-0 
                             sm:pl-[30px] 
                             "
-                            >
-                              <span className="relative inline-block">
-                                <a
-                                  href="mailto:info@tienphong.it"
-                                  className="hover:text-sky-400"
-                                >
-                                  info@tienphong.it
-                                </a>
-                              </span>
+                              >
+                                <span className="relative inline-block">
+                                  <a
+                                    href="mailto:info@tienphong.it"
+                                    className="hover:text-sky-400"
+                                  >
+                                    info@tienphong.it
+                                  </a>
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                          <div
-                            className="md:table-row
+                            <div
+                              className="md:table-row
                             sm:block
                           sm:relative md:static
                           sm:mb-[24px] md:mb-0
                           "
-                          >
-                            <div
-                              className="md:pr-[26px] md:p-ContactIcon 
+                            >
+                              <div
+                                className="md:pr-[26px] md:p-ContactIcon 
                               text-left 
                             sm:pl-0 sm:absolute md:static 
                             sm:top-[-5px] md:top-0 
                             sm:block md:table-cell
                             items-start
                             "
-                            >
-                              <Image
-                                width={25}
-                                height={25}
-                                alt="Contact Icon"
-                                src={"/images/icons/contact-5.svg"}
-                              />
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-bold p-ContactIcon
+                              >
+                                <Image
+                                  width={25}
+                                  height={25}
+                                  alt="Contact Icon"
+                                  src={"/images/icons/contact-5.svg"}
+                                />
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-bold p-ContactIcon
                               text-left sm:block md:table-cell
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] md:pl-0
                               "
-                            >
-                              Marketing:
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                Marketing:
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                               text-left sm:block md:table-cell 
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] md:pl-0
                               "
-                            >
-                              <a href="tel:+84983757506">(+84) 905 666 770</a>
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                <a href="tel:+84983757506">(+84) 905 666 770</a>
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                               text-left sm:block md:table-cell
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               md:relative md:pl-[14px] 
@@ -592,62 +602,62 @@ w-full p-InputContact overflow-visible m-0"
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] 
                               "
-                            >
-                              <span className="relative inline-block">
-                                <a
-                                  href="mailto:info@tienphong.it"
-                                  className="hover:text-sky-400"
-                                >
-                                  info@tienphong.it
-                                </a>
-                              </span>
+                              >
+                                <span className="relative inline-block">
+                                  <a
+                                    href="mailto:info@tienphong.it"
+                                    className="hover:text-sky-400"
+                                  >
+                                    info@tienphong.it
+                                  </a>
+                                </span>
+                              </div>
                             </div>
-                          </div>
-                          <div
-                            className="md:table-row
+                            <div
+                              className="md:table-row
                             sm:block
                           sm:relative md:static
                           sm:mb-[24px] md:mb-0
                           "
-                          >
-                            <div
-                              className="md:pr-[26px] md:p-ContactIcon 
+                            >
+                              <div
+                                className="md:pr-[26px] md:p-ContactIcon 
                               text-left 
                             sm:pl-0 sm:absolute md:static 
                             sm:top-[-5px] md:top-0 
                             sm:block md:table-cell
                             items-start
                             "
-                            >
-                              <Image
-                                width={25}
-                                height={25}
-                                alt="Contact Icon"
-                                src={"/images/icons/contact-6.svg"}
-                              />
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-bold p-ContactIcon
+                              >
+                                <Image
+                                  width={25}
+                                  height={25}
+                                  alt="Contact Icon"
+                                  src={"/images/icons/contact-6.svg"}
+                                />
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-bold p-ContactIcon
                               text-left sm:block md:table-cell
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] md:pl-0
                               "
-                            >
-                              Careers:
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                Careers:
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                               text-left sm:block md:table-cell 
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] md:pl-0
                               "
-                            >
-                              <a href="tel:+84983757506">(+84) 905 666 770</a>
-                            </div>
-                            <div
-                              className="md:pr-[14px] font-ThinCus p-ContactIcon
+                              >
+                                <a href="tel:+84983757506">(+84) 905 666 770</a>
+                              </div>
+                              <div
+                                className="md:pr-[14px] font-ThinCus p-ContactIcon
                               text-left sm:block md:table-cell
                               sm:text-[3.5vw] md:text-[2vw] lg:text-[1rem]
                               md:relative md:pl-[14px] 
@@ -659,15 +669,16 @@ w-full p-InputContact overflow-visible m-0"
                               sm:mb-[5px] md:mb-0 
                               sm:pl-[30px] 
                               "
-                            >
-                              <span className="relative inline-block">
-                                <a
-                                  href="mailto:info@tienphong.it"
-                                  className="hover:text-sky-400"
-                                >
-                                  info@tienphong.it
-                                </a>
-                              </span>
+                              >
+                                <span className="relative inline-block">
+                                  <a
+                                    href="mailto:info@tienphong.it"
+                                    className="hover:text-sky-400"
+                                  >
+                                    info@tienphong.it
+                                  </a>
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -675,12 +686,13 @@ w-full p-InputContact overflow-visible m-0"
                     </div>
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <ToastContainer />
+    </>
   );
 }
 

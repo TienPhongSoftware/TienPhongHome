@@ -1,4 +1,4 @@
-import "./css/globals.css";
+import "../../public/css/globals.css";
 
 export const metadata = {
   title: "Tien Phong",

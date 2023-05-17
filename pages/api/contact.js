@@ -32,10 +32,10 @@ export default async function (req, res) {
   await new Promise((resolve, reject) => {
     transporter.sendMail(mailData, function (err, info) {
       if (err) {
-        console.log(err);
+        //console.log(err);
         reject(err);
       } else {
-        console.log(info);
+        //console.log(info);
         resolve(info);
       }
     });
