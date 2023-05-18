@@ -89,21 +89,23 @@ function ContactForm() {
       body: JSON.stringify(data),
     })
       .then((res) => {
-        if (isCaptchaVerified) {
-          // Xử lý logic khi Captcha đã được xác minh và nút "Submit" được nhấp
-          if (res.status === 200) {
+        if (res.status === 200) {
+          if (isCaptchaVerified) {
+            // Xử lý logic khi Captcha đã được xác minh và nút "Submit" được nhấp
             setLoading(false);
-            // console.log("Response succeeded!");
             toast("Thank you for contacting us!");
           } else {
+            // Xử lý logic khi Captcha không hợp lệ và nút "Submit" được nhấp
             setLoading(false);
-            // console.log("Email/Password is invalid.");
-            toast("Email/Password is invalid.");
+            toast("Invalid captcha. Cannot submit form.");
+            return;
           }
         } else {
-          // Xử lý logic khi Captcha không hợp lệ và nút "Submit" được nhấp
-          toast("Invalid captcha. Cannot submit form.");
+          setLoading(false);
+          // console.log("Email/Password is invalid.");
+          toast("Email/Password is invalid.");
         }
+
         // console.log("Response received", res);
       })
       .catch((e) => console.log(e));
