@@ -14,7 +14,7 @@ import DropFileInput from "./DropFiles";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LoadingComponent from "../Loading/page";
+import LoadingComponent from "../../../components/share/AppLoading";
 
 //Select form
 interface Option {
