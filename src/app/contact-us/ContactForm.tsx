@@ -16,6 +16,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import LoadingComponent from "../../../components/share/AppLoading";
 
+//Captcha
+import ReCAPTCHA from "react-google-recaptcha";
+
 //Select form
 interface Option {
   label: string;
@@ -51,6 +54,19 @@ const ininValues = {
 const initState = { values: ininValues };
 
 function ContactForm() {
+  //Captcha
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
+  const handleCaptchaVerify = (response: string | null) => {
+    if (response) {
+      setIsCaptchaVerified(true);
+    } else {
+      setIsCaptchaVerified(false);
+    }
+  };
+
+  //Captcha
+
   const {
     register,
     handleSubmit,
@@ -73,16 +89,22 @@ function ContactForm() {
       body: JSON.stringify(data),
     })
       .then((res) => {
-        // console.log("Response received", res);
-        if (res.status === 200) {
-          setLoading(false);
-          // console.log("Response succeeded!");
-          toast("Thank you for contacting us!");
+        if (isCaptchaVerified) {
+          // Xử lý logic khi Captcha đã được xác minh và nút "Submit" được nhấp
+          if (res.status === 200) {
+            setLoading(false);
+            // console.log("Response succeeded!");
+            toast("Thank you for contacting us!");
+          } else {
+            setLoading(false);
+            // console.log("Email/Password is invalid.");
+            toast("Email/Password is invalid.");
+          }
         } else {
-          setLoading(false);
-          // console.log("Email/Password is invalid.");
-          toast("Email/Password is invalid.");
+          // Xử lý logic khi Captcha không hợp lệ và nút "Submit" được nhấp
+          toast("Invalid captcha. Cannot submit form.");
         }
+        // console.log("Response received", res);
       })
       .catch((e) => console.log(e));
     reset();
@@ -439,16 +461,10 @@ w-full p-InputContact overflow-visible m-0"
                     </div>
                     <div className="mx-[-16px] grid grid-cols-1 gap-1">
                       <div className="px-[16px] py-[8px] basis-[0] grow max-w-full relative w-full">
-                        <iframe
-                          title="reCAPTCHA"
-                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdfRqgUAAAAAHKwkYA2Uw8RU0z1pzpwsKpQnz58&amp;co=aHR0cHM6Ly9lbmxhYnNvZnR3YXJlLmNvbTo0NDM.&amp;hl=vi&amp;v=4PnKmGB9wRHh1i04o7YUICeI&amp;size=normal&amp;cb=tb4n2v10snyr"
-                          width="304"
-                          height="78"
-                          role="presentation"
-                          scrolling="no"
-                          name="a-6jlh7sish5ic"
-                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                        ></iframe>
+                        <ReCAPTCHA
+                          sitekey="6Ld_XRsmAAAAADfev60np3UEgjZ73rPFZKrXQxs8"
+                          onChange={handleCaptchaVerify}
+                        />
                       </div>
                     </div>
                     <div className="mx-[-16px] grid grid-cols-1 gap-1 pt-[48px]">
