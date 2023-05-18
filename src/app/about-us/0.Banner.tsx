@@ -28,16 +28,17 @@ function Banner() {
         className={`visible z-[-10000]  top-0 left-0
       overflow-hidden transform translate-x-0 
       translate-y-0 translate-z-0 h-[560px] lg:w-[1483px] xl:w-full
-      sm:w-[414px] md:w-[820px]
+      sm:w-[414px] md:w-[820px] bg-center bg-repeat object-center
       ${isScrollCus ? "" : "fixed"}
       `}
       >
         <Image
           src="/images/layout/banner-1.jpg"
-          className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
+          className=" bg-center object-center sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] 
+          absolute max-w-none sm:object-contain xl:object-cover
           align-middle border-none
           "
+          priority={true}
           alt="Banner"
           width={1702}
           height={560}
@@ -63,7 +64,7 @@ function Banner() {
             Your Tech Partner <br /> on Demand.
           </h1>
           <div
-            className="lg:text-[1.2vw] sm:text-[5vw] 
+            className="lg:text-[1.7vw] xl:text-[1.2vw] sm:text-[5vw] 
           md:text-[3vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"

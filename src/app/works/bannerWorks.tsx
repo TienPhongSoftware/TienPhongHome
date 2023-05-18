@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function BannerWorks() {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -34,11 +35,12 @@ function BannerWorks() {
       `}
       >
         <Image
-          src="/images/layout/banner-2.jpg"
+          src="/images/layout/banner-video-Tien-Phong-software.jpg"
           className="
-          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] max-w-none sm:object-contain xl:object-cover
-          align-middle border-none
+          absolute sm:h-[560px] lg:h-[638px] sm:w-[1702px] lg:w-[1916px] md:h-[560px] md:w-[1680px] max-w-none sm:object-cover xl:object-cover
+          align-middle border-none bg-center bg-cover
           "
+          priority={true}
           alt="Banner"
           width={2000}
           height={2000}
@@ -57,20 +59,57 @@ function BannerWorks() {
         >
           <h1
             className="text-white font-bold mb-[0.5rem]
-            lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
+            lg:text-[56px] sm:text-[10vw] md:text-[6vw]
           leading-[1.2]"
             data-aos="fade-up"
           >
-            A reliable one-stop source for <br /> your software development
+            Unveiling
+            <br /> our client-centric approach
           </h1>
           <div
-            className="lg:text-[1.2vw] sm:text-[5vw] 
-          md:text-[3vw] text-white font-ThinCus mb-[44px]"
+            className="xl:text-[1.2vw] sm:text-[5vw] 
+          md:text-[3vw] lg:text-[1.7vw] text-white font-ThinCus mb-[44px]"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <p>Act with speed and agility</p>
+            <p>
+              Delve into the intricacies of our triumphs and unravel the stories
+              behind our success.
+            </p>
           </div>
+          <Link
+            data-aos="fade-up"
+            data-aos-delay="200"
+            href="contact-us"
+            className="mr-6 bg-[#00aeef] border-[#00aeef] 
+                  lg:px-[40px] lg:leading-[52px]
+      lg:min-w-[184px] lg:text-[16px] max-w-[244px] whitespace-nowrap
+      inline-block text-center text-white border-2 rounded-[32px] relative
+      z-10 font-bold overflow-hidden transition-all outline-0 isolate
+      before:z-[-1]
+      before:content['']
+      before:absolute
+      before:w-full
+      before:h-full
+      before:bg-white
+      before:left-[-100%]
+      before:top-0
+      before:transition-all
+      before:duration-[0.5s]
+      hover:before:left-0
+      hover:duration-500
+      hover:text-black
+      sm:min-w-[34vw]
+      sm:text-[3.8vw]
+      sm:leading-[10vw]
+      sm:px-[5vw]
+      md:min-w-[10vw]
+      md:text-[2.8vw]
+      md:leading-[8vw]
+      md:px-[5vw]"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>

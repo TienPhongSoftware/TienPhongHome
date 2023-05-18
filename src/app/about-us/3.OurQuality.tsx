@@ -8,8 +8,8 @@ function OurQuality() {
 mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
       >
         <h2
-          className="mb-[56px] font-bold
-        lg:text-[3vw] sm:text-[9vw] md:text-[6vw]"
+          className="mb-[56px] font-bold text-black
+        lg:text-[4.1vw] xl:text-[3vw] sm:text-[9vw] md:text-[6vw]"
         >
           Our quality standards
         </h2>
@@ -18,8 +18,8 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 md:text-[2.5vw] font-LightCus"
         >
           <p
-            className="mb-[10px] lg:text-[1.1vw] sm:text-[5vw] 
-              md:text-[2.5vw]"
+            className="mb-[10px] lg:text-[1.5vw]  text-blackxl:text-[1.1vw] sm:text-[5vw] 
+              md:text-[2.5vw] text-black"
           >
             From vision to implementation, our team works closely to translate
             your ideas into industry-leading software, mobile, and web
@@ -28,7 +28,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             company standards to guide us through the diverse and complex world.
             So, what are they?
           </p>
-          <ul className="my-[48px] list-none">
+          <ul className="my-[48px] list-none text-black">
             <li
               className="mb-[12px] 
             lg:bg-[.8860759494vw] lg:pl-[3vw]
@@ -38,7 +38,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 High functionality solutions tailored for your industry domains
               </span>
             </li>
@@ -51,7 +51,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 Stay updated with modern technology stacks
               </span>
             </li>
@@ -64,7 +64,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 High performing, 99% guaranteed uptime
               </span>
             </li>
@@ -77,7 +77,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 Integrate seamlessly into your infrastructure
               </span>
             </li>
@@ -90,7 +90,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 Delight your users, boost the engagement and retention
               </span>
             </li>
@@ -103,7 +103,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 Agile and transparency
               </span>
             </li>
@@ -116,7 +116,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             bg-no-repeat bg-listIcon
             "
             >
-              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw] ">
+              <span className="font-[400] sm:text-[5.5vw] md:text-[2.5vw] lg:text-[1.5vw]  text-black">
                 On-time and on-budget
               </span>
             </li>

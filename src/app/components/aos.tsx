@@ -1,8 +1,16 @@
-"use client";
-import AOS from "aos";
+import Aos from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos";
+import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
-AOS.init();
+function AOS() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+  return null;
+}
 
-export default AOS;
+export default dynamic(() => Promise.resolve(AOS), {
+  ssr: false,
+});

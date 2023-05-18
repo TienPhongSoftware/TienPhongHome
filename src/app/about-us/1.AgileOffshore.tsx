@@ -11,7 +11,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
           <h2
             className="mb-[48px]
             lg:text-[4vw] sm:text-[10vw] md:text-[6vw]
-            font-bold"
+            font-bold text-black"
             data-aos="fade-up"
             data-aos-offset="-300"
           >
@@ -19,14 +19,14 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
           </h2>
           <div
             className="
-              lg:text-[1.2vw] sm:text-[5vw] 
-          md:text-[3vw] font-ThinCus"
+              xl:text-[1.2vw] lg:text-[1.6vw] sm:text-[5vw] 
+          md:text-[3vw] font-ThinCus text-black"
             data-aos-delay="100"
             data-aos-offset="-300"
             data-aos="fade-up"
           >
-            Tien Phong Software is a young and enthusiastic tech company based in
-            Danang, Vietnam. At our core, we provide Agile Offshore Software
+            Tien Phong Software is a young and enthusiastic tech company based
+            in Danang, Vietnam. At our core, we provide Agile Offshore Software
             Development for enterprises, startups, IT consulting vendors,
             digital agencies across the sea.
           </div>
@@ -43,8 +43,8 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
           >
             <h3
               className="
-              lg:text-[2vw] sm:text-[6vw] md:text-[3vw]
-              mb-[32px] text-center font-bold leading-[1.2]
+              lg:text-[2.7vw] xl:text-[2vw] sm:text-[6vw] md:text-[3vw]
+              mb-[32px] text-center font-bold leading-[1.2] text-black
               "
             >
               Quick facts about Tien Phong
@@ -63,7 +63,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               >
                 <span
                   className="
-                  lg:text-[2.5vw] sm:text-[8.5vw] md:text-[4vw]
+                  lg:text-[3.4vw] xl:text-[2.5vw] sm:text-[8.5vw] md:text-[4vw]
                   font-bold block
                   "
                 >
@@ -71,7 +71,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 </span>
                 <span
                   className="text-[#818181] font-ThinCus
-                  lg:text-[1.2vw] sm:text-[3.5vw] 
+                  lg:text-[1.4vw] xl:text-[1.2vw] sm:text-[3.5vw] 
                   md:text-[2.5vw] "
                 >
                   industry experience
@@ -87,7 +87,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               >
                 <span
                   className="
-                  lg:text-[2.5vw] sm:text-[8.5vw] md:text-[4vw]
+                  lg:text-[3.4vw] xl:text-[2.5vw] md:text-[4vw]
                   font-bold block
                   "
                 >
@@ -95,7 +95,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 </span>
                 <span
                   className="text-[#818181] font-ThinCus
-                  lg:text-[1.2vw] sm:text-[3.5vw] 
+                  lg:text-[1.4vw] xl:text-[1.2vw] sm:text-[3.5vw] 
                   md:text-[2.5vw] "
                 >
                   industry experience
@@ -111,7 +111,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
               >
                 <span
                   className="
-                  lg:text-[2.5vw] sm:text-[8.5vw] md:text-[4vw]
+                  lg:text-[3.4vw] xl:text-[2.5vw] md:text-[4vw]
                   font-bold block
                   "
                 >
@@ -119,7 +119,7 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
                 </span>
                 <span
                   className="text-[#818181] font-ThinCus
-                  lg:text-[1.2vw] sm:text-[3.5vw] 
+                  lg:text-[1.4vw] xl:text-[1.2vw] sm:text-[3.5vw] 
                   md:text-[2.5vw] "
                 >
                   industry experience
@@ -132,16 +132,16 @@ mx-auto lg:max-w-maxPartner sm:max-w-maxPartnerSM"
             >
               <h4
                 className="
-                lg:text-[1.2vw] sm:text-[3.5vw] 
-                md:text-[2.5vw] font-bold
+                lg:text-[1.6vw] xl:text-[1.2vw] sm:text-[3.5vw] 
+                md:text-[2.5vw] font-bold mb-[16px] text-black
                 "
               >
                 And the fact about the name {"Tien Phong"}
               </h4>
               <div
                 className="
-                lg:text-[1vw] sm:text-[3.5vw] 
-                md:text-[2.5vw] font-LightCus
+                lg:text-[1.4vw] xl:text-[1vw] sm:text-[3.5vw] 
+                md:text-[2.5vw] font-LightCus text-black
                 "
               >
                 {"It's"} the abbreviation of Enterprise Lab. Our mission is to
