@@ -89,6 +89,7 @@ function ContactForm() {
       body: JSON.stringify(data),
     })
       .then((res) => {
+        console.log(JSON.stringify(res));
         if (res.status === 200) {
           if (isCaptchaVerified) {
             // Xử lý logic khi Captcha đã được xác minh và nút "Submit" được nhấp
